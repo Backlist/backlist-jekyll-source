@@ -2,6 +2,7 @@ module Jekyll
   class Person
     attr_reader :first_name
     attr_reader :last_name
+    attr_reader :bio
 
     def initialize(id,context)
       @id = id
