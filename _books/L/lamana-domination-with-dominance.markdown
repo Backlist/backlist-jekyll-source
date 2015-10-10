@@ -11,3 +11,13 @@ oclc: 209334777
 amzn: 0822343118
 isbn: 9780822342939
 ---
+
+@book{lamana2008,
+  author = {Gonzalo Lamana},
+  title = {Domination with Dominance: {Inca-Spanish} Encounters in {Early} {Spanish} {Peru}},
+  address = {Durham, NC},
+  publisher = {Duke University Press},
+  year = {2008},
+  isbn = {9780822342939},
+  backlistId = {f0a1ad725afcde63}
+}

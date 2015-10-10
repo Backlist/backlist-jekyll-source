@@ -11,3 +11,13 @@ oclc: 778564023
 amzn: 0156028263
 isbn: 9780151225606
 ---
+# Need to add original publication year
+@book{hemming2003,
+  author = {John Hemming},
+  title = {The Conquest of the {Incas}},
+  address = {Boston},
+  publisher = {Mariner Books},
+  year = {2003},
+  isbn = {9780151225606},
+  backlistId = {d821c5a3ef29dec4}
+}
