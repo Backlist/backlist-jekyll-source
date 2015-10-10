@@ -3,20 +3,20 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$baseFontFamily: "ff-meta-serif-web-pro", Georgia, serif;
-$baseFontSize:   16px;
-$smallFontSize:  $baseFontSize * 0.875;
+// Variables
 $baseLineHeight: 1.5;
 
 $spacingUnit:     30px;
 
-$textColor:       #131638;
-$backgroundColor: #ffffc3;
+$textColor:        #131638;
+$backgroundColor:  #ffffc3;
 $accentColor:      #272e6f;
 
+$highlight1Color:  #ffc55c;
+$highlight2Color:  #e95d35;
+
 $lightInterfaceStroke: #f00;
-$darkInterfaceStroke: #f00;
+$darkInterfaceStroke:  #f00;
 
 // Width of the content area
 $contentWidth:    800px;
@@ -24,7 +24,16 @@ $contentWidth:    800px;
 $onPalm:          600px;
 $onLaptop:        800px;
 
+// Mixins
+@mixin serif-font-stack {
+  font-family: "ff-meta-serif-web-pro", Georgia, serif;
+  font-weight: 500;
+}
 
+@mixin sans-serif-font-stack {
+  font-family: "ff-meta-web-pro-condensed", sans-serif;
+  font-weight: 400;
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

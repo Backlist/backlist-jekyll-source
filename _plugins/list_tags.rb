@@ -4,10 +4,10 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       @idx = text.to_i
       @labels = [
-        'The Lay of the Land',
-        'Depths',
-        'New Ground',
-        'Lives'
+        'Places to Start',
+        'Digging In',
+        'New Moves',
+        'Voices and Lives'
       ]
     end
 

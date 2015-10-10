@@ -12,13 +12,12 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $baseFontFamily;
-    font-size: $baseFontSize;
-    line-height: $baseLineHeight;
-    font-weight: 300;
-    color: $textColor;
+    @include serif-font-stack;
     background-color: $backgroundColor;
-    -webkit-text-size-adjust: 100%;
+    color: $textColor;
+    font-size: 16px;
+    line-height: $baseLineHeight;
+    -webkit-text-size-adjust: 100%; // TODO: Research
 }
 
 
