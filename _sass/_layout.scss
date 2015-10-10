@@ -230,10 +230,19 @@ body {
   h2 {
     @include sans-serif-font-stack;
 
+    background: -moz-repeating-linear-gradient(top, rgba($highlight1Color, .3333), $backgroundColor);
+    background: repeating-linear-gradient(top, rgba($highlight1Color, .3333), $backgroundColor);
+    border: {
+      color: $highlight1Color;
+      style: solid;
+      width: 1px 0 0 0;
+    }
     color: $accentColor;
     font-size: 1.75em; // 28px
     font-weight: 100;
     letter-spacing: .05em;
+    margin-top: $spacingUnit * 2;
+    padding: .333333em 0 1.66666667em 0;
 
     @include media-query($onLaptop) {
       font-size: 28px; // TODO: Proportional

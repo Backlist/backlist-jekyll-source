@@ -3,7 +3,7 @@ layout: list
 title: "Conquest of the Incas"
 date: 2015-07-23 17:38:00
 permalink: "/lists/conquest-of-the-incas"
-categories: 
+categories:
     - latin-america
     - 16th-century
 author: 9aae0c269fca498a
@@ -16,8 +16,6 @@ Or not. Historians and anthropologists tend to bristle at such an easy and inevi
 What emerges is a conquest that was far from simple; that ended not in 1532 but in 1572; that killed almost all of its supposed victors long before it was over; that left the Inca royal family and their sacred cult of imperial dead intact longer than nearly any other New World empire; that led the people of the Andes and some Europeans to consider what past historians thought unthinkable: the return of the kingdom to its now-Christian indigenous lords.
 
 The following books aren’t about the defeat of the Incas, per se: they are about the creation and survival of Peru.
-
-***
 
 {% list_section_header 0 %}
 
