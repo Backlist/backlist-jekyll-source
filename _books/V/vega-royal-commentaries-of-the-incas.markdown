@@ -9,6 +9,8 @@ editors:
     - be5491ce5320bb0f
 translators:
     - ccfcdeef03dc4bff
+categories:
+    - primary
 original_publication_year: 1609
 has_cover_image: false
 oclc: 69021023

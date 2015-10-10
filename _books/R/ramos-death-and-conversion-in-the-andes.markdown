@@ -5,6 +5,8 @@ casual_citation: 'Gabriela Ramos, _Death and Conversion in the Andes: Lima and C
 title: 'Death and Conversion in the Andes: Lima and Cuzco, 1532-1670'
 authors:
     - 59eadf77521862b6
+categories:
+    - secondary
 original_publication_year: 2010
 has_cover_image: false
 oclc: 806331870

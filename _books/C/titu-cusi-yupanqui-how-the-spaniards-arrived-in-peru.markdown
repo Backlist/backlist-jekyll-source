@@ -7,6 +7,8 @@ authors:
     - d2ae059bab35d68b
 translators:
     - 4756dbf1e51376c9
+categories:
+    - primary
 original_publication_year: 1570
 has_cover_image: false
 oclc: 65644421

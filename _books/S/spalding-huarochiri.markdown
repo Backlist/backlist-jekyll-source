@@ -5,6 +5,8 @@ casual_citation: 'Karen Spalding, _Huarochiri: An Andean Society under Inca and 
 title: 'Huarochiri: An Andean Society under Inca and Spanish Rule'
 authors:
     - be5491ce5320bb0f
+categories:
+    - secondary
 original_publication_year: 1984
 has_cover_image: false
 oclc: 246092348

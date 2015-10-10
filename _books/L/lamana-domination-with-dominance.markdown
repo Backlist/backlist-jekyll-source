@@ -5,6 +5,8 @@ casual_citation: 'Gonzalo Lamana, _Domination with Dominance: Inca-Spanish Encou
 title: 'Domination with Dominance: Inca-Spanish Encounters in Early Spanish Peru'
 authors:
     - e31d3d6912fa7e2e
+categories:
+    - secondary
 original_publication_year: 2008
 has_cover_image: false
 oclc: 209334777

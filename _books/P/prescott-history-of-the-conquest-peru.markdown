@@ -5,6 +5,8 @@ casual_citation: 'William H. Prescott, _History of the Conquest of Peru_ (2005 [
 title: 'History of the Conquest of Peru'
 authors:
     - c7a639f44d64aa35
+categories:
+    - secondary
 original_publication_year: 1847
 has_cover_image: false
 oclc: 57549687

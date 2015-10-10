@@ -5,6 +5,8 @@ casual_citation: 'Jeremy Ravi Mumford, _Vertical Empire: The General Resettlemen
 title: 'Vertical Empire: The General Resettlement of Indians in the Colonial Andes'
 authors:
     - 516f87673cd05e60
+categories:
+    - secondary
 original_publication_year: 2012
 has_cover_image: false
 oclc: 776533328
