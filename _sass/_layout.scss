@@ -225,7 +225,7 @@ body {
 }
 
 .post-content {
-  margin: $spacingUnit;
+  margin: $spacingUnit 0;
 
   h2 {
     @include sans-serif-font-stack;

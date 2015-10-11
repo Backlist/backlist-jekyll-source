@@ -9,6 +9,8 @@ categories:
 author: 9aae0c269fca498a
 ---
 
+{::options parse_block_html="true" /}
+{% introblock %}
 On November 16, 1532, Francisco Pizarro and as few as 160 Spaniards captured an Inca prince named Atahualpa, killed over 2,000 of his men, and conquered an empire that united the Andes Mountains of South America, from southern Colombia to northern Chile. The conquistadors called this kingdom Peru.  In the decades following, its silver transformed Spain from a crusader kingdom with pretensions of re-taking Jerusalem from the Turks to history’s first global empire. And because of Pizarro’s sword, his harquebusiers, and a mystery illness that had laid Atahualpa’s father low. As you may have read: Guns, Germs, and Steel.
 
 Or not. Historians and anthropologists tend to bristle at such an easy and inevitable version of the events that placed Peru under Spanish control. The following eight books tell a different story, at once more exciting and more tragic. Their most important lesson is this: although European weapons and disease were indeed crucial to giving the conquistadors’ a head-start, that advantage disappeared when ranked against the Incas’ reach and numerical advantage. To explain how the Spanish conquered the Incas, they instead credit the alliances made with the many Indian groups discontented with Inca rule, as well as alliances made with Incas themselves, including Atahualpa. Those alliances then became the foundation of an incredible colonial society, surprisingly just, suddenly violent, that lasted for nearly three hundred years—almost twice as long as England’s colonies in North America.
@@ -16,6 +18,8 @@ Or not. Historians and anthropologists tend to bristle at such an easy and inevi
 What emerges is a conquest that was far from simple; that ended not in 1532 but in 1572; that killed almost all of its supposed victors long before it was over; that left the Inca royal family and their sacred cult of imperial dead intact longer than nearly any other New World empire; that led the people of the Andes and some Europeans to consider what past historians thought unthinkable: the return of the kingdom to its now-Christian indigenous lords.
 
 The following books aren’t about the defeat of the Incas, per se: they are about the creation and survival of Peru.
+{% endintroblock %}
+{::options parse_block_html="false" /}
 
 {% list_section_header 0 %}
 
