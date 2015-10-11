@@ -73,17 +73,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $accentColor;
-    text-decoration: none;
+  color: $accentColor;
+  text-decoration: underline;
 
-    &:visited {
-        color: darken($accentColor, 15%);
-    }
-
-    &:hover {
-        color: $textColor;
-        text-decoration: underline;
-    }
+  &:hover {
+    color: $highlight2Color;
+    text-decoration: underline;
+  }
 }
 
 /**

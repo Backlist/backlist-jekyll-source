@@ -3,22 +3,22 @@ layout: default
 ---
 <div class="list">
 
-  <header class="post-header">
+  <header class="post-header"><div class="wrapper">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
+    <div class="post-meta">
       {{ page.author | person_full_name }} • 
-      {{ page.date | date: "%b %-d, %Y" }}
-    </p>
-  </header>
+      {{ page.date | date: "%B %-d, %Y" }} •
+      <ul class="categories"><!--
+        {% for page_category in page.categories %}{% for category in site.data['categories'] %}{% if page_category == category.id %}
+          --><li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li><!--
+        {% endif %}{% endfor %}{% endfor %}
+        -->
+      </ul>
+    </div>
+  </div></header>
 
   <article class="post-content">
     {{ content }}
-
-    <ul class="categories">
-      {% for page_category in page.categories %}{% for category in site.data['categories'] %}{% if page_category == category.id %}
-        <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-      {% endif %}{% endfor %}{% endfor %}
-    </ul>
   </article>
 
 </div>
