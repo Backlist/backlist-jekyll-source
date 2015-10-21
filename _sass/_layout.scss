@@ -146,8 +146,32 @@ body {
   color: $backgroundColor;
   padding: $spacingUnit 0;
 
+  p.description {
+    @include serif-font-stack;
+
+    font: {
+      size: 1.25em;
+      style: italic;
+    }
+    margin: 0 $spacingUnit 1em $spacingUnit;
+    line-height: 1.8;
+  }
+
   a {
     color: $backgroundColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $highlight1Color;
+
+      .icon {
+        > svg {
+          path {
+            fill: $highlight1Color;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -157,9 +181,12 @@ body {
 }
 
 .contact-list,
+.page-list,
 .social-media-list {
-    list-style: none;
-    margin-left: 0;
+  font-size: 1.25em;
+  line-height: 1.8em;
+  list-style: none;
+  margin-left: 0;
 }
 
 .footer-col-wrapper {
@@ -175,8 +202,8 @@ body {
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacingUnit} / 2));
-    width:         calc(35% - (#{$spacingUnit} / 2));
+    width: -webkit-calc(60% - (#{$spacingUnit} / 2));
+    width:         calc(60% - (#{$spacingUnit} / 2));
 }
 
 .footer-col-2 {
@@ -185,20 +212,28 @@ body {
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacingUnit} / 2));
-    width:         calc(45% - (#{$spacingUnit} / 2));
+    width: -webkit-calc(20% - (#{$spacingUnit} / 2));
+    width:         calc(20% - (#{$spacingUnit} / 2));
 }
 
 @include media-query($onLaptop) {
-    .footer-col-1,
+    .footer-col-1 {
+      width: -webkit-calc(67% - (#{$spacingUnit} / 2));
+      width:         calc(67% - (#{$spacingUnit} / 2));
+    }
+
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacingUnit} / 2));
-        width:         calc(50% - (#{$spacingUnit} / 2));
+      width: -webkit-calc(33% - (#{$spacingUnit} / 2));
+      width:         calc(33% - (#{$spacingUnit} / 2));
     }
 
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacingUnit} / 2));
-        width:         calc(100% - (#{$spacingUnit} / 2));
+      width: -webkit-calc(100% - (#{$spacingUnit} / 2));
+      width:         calc(100% - (#{$spacingUnit} / 2));
+
+      .contact-list {
+        margin-left: $spacingUnit;
+      }
     }
 }
 
@@ -207,6 +242,11 @@ body {
         float: none;
         width: -webkit-calc(100% - (#{$spacingUnit} / 2));
         width:         calc(100% - (#{$spacingUnit} / 2));
+
+        .contact-list,
+        .page-list {
+          margin-left: $spacingUnit;
+        }
     }
 }
 

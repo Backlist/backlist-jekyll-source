@@ -3,6 +3,8 @@ title: Backlist
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://backlist.cc" # the base hostname & protocol for your site
 twitter_username: bcklst
+github_username: backlist
+email: info@backlist.cc
 
 # Data
 collections:
