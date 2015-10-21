@@ -8,7 +8,7 @@ authors:
 categories:
     - secondary
 original_publication_year: 2012
-has_cover_image: false
+has_cover_image: true
 oclc: 776533328
 amzn: 0822353105
 isbn: 9780822352969

@@ -29,25 +29,25 @@ module Jekyll
 
   class ListIntroBlockTag < Liquid::Tag
     def render(context)
-      '<div class="intro-block"><div class="wrapper">'
+      '<div class="intro-block wrapper">'
     end
   end
 
   class EndListIntroBlockTag < Liquid::Tag
     def render(context)
-      '</div></div>'
+      '</div>'
     end
   end
 
   class ListBookBlockTag < Liquid::Tag
     def render(context)
-      '<div class="book-block"><div class="wrapper">'
+      '<div class="book-block wrapper">'
     end
   end
 
   class EndListBookBlockTag < Liquid::Tag
     def render(context)
-      '</div></div>'
+      '</div>'
     end
   end
 

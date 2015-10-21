@@ -2,6 +2,7 @@
 layout: list
 title: "Conquest of the Incas"
 date: 2015-07-23 17:38:00
+header: "header-temp.jpg"
 permalink: "/lists/conquest-of-the-incas"
 categories:
     - latin-america

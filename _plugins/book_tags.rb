@@ -26,6 +26,11 @@ module Jekyll
         if book
           result = ''
           result += '<div class="book-meta-block">'
+
+          if book.has_cover_image
+            result += "<img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\">"
+          end
+          
           result += '<div class="citation">'
           result += Kramdown::Document.new(
                         "### #{book.casual_citation}", 
@@ -33,11 +38,6 @@ module Jekyll
                         ).to_html()
           result += '</div>'
 
-          if book.has_cover_image
-
-          else
-
-          end
 
           result += '</div>'
         else

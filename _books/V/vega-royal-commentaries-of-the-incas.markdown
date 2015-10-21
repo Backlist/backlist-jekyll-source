@@ -12,7 +12,7 @@ translators:
 categories:
     - primary
 original_publication_year: 1609
-has_cover_image: false
+has_cover_image: true
 oclc: 69021023
 amzn: 0872208435
 isbn: 9780872208438

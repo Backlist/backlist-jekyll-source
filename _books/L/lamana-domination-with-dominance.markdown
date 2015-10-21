@@ -8,7 +8,7 @@ authors:
 categories:
     - secondary
 original_publication_year: 2008
-has_cover_image: false
+has_cover_image: true
 oclc: 209334777
 amzn: 0822343118
 isbn: 9780822342939

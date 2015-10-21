@@ -8,9 +8,10 @@ $baseLineHeight: 1.5;
 
 $spacingUnit:     30px;
 
-$textColor:        #131638;
-$backgroundColor:  #ffffc3;
-$accentColor:      #272e6f;
+$textColor:             #131638;
+$backgroundColor:       #ffffc3;
+$insetBackgroundColor:  lighten($backgroundColor,4%);
+$accentColor:           #272e6f;
 
 $highlight1Color:  #ffc55c;
 $highlight2Color:  #e95d35;
@@ -19,7 +20,7 @@ $lightInterfaceStroke: #f00;
 $darkInterfaceStroke:  #f00;
 
 // Width of the content area
-$contentWidth:    800px;
+$contentWidth:    880px;
 
 $onPalm:          600px;
 $onLaptop:        800px;
@@ -33,6 +34,19 @@ $onLaptop:        800px;
 @mixin sans-serif-font-stack {
   font-family: "ff-meta-web-pro-condensed", sans-serif;
   font-weight: 400;
+}
+
+@mixin transition-stack($values: all ease .1s) {
+  -moz-transition: $values;
+  -webkit-transition: $values;
+  transition: $values;
+}
+
+@mixin size-to-border {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @mixin header-gradient {

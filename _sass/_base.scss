@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  */
 body {
     @include serif-font-stack;
-    background-color: $backgroundColor;
+    background-color: $accentColor;
     color: $textColor;
     font-size: 16px;
     line-height: $baseLineHeight;
@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: $accentColor;
+  outline: none;
   text-decoration: underline;
 
   &:hover {
@@ -87,20 +88,21 @@ a {
  */
  // TODO: Revisit this for removal
 .wrapper {
-    max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit} * 2));
-    max-width:         calc(#{$contentWidth} - (#{$spacingUnit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacingUnit;
-    padding-left: $spacingUnit;
-    @extend %clearfix;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit} * 2));
+  max-width:         calc(#{$contentWidth} - (#{$spacingUnit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @extend %clearfix;
 
-    @include media-query($onLaptop) {
-        max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit}));
-        max-width:         calc(#{$contentWidth} - (#{$spacingUnit}));
-        padding-right: $spacingUnit / 2;
-        padding-left: $spacingUnit / 2;
-    }
+  @include media-query($onLaptop) {
+    max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit}));
+    max-width:         calc(#{$contentWidth} - (#{$spacingUnit}));
+  }
 }
 
 
