@@ -2,12 +2,14 @@
 layout: homepage
 ---
 
-<div class="home wrapper">
-  <div class="home-left-col">
-    <h1>Backlist</h1>
+<div class="home top-row wrapper">
+  <div class="home-left-col inverse">
+    <h1>
+      <img src="images/interface/homepage-logo.png" alt="Backlist" width="280" />
+    </h1>
   </div>
-  <div class="home-right-col">
-    <p class="tag-callout">
+  <div class="home-right-col inverse">
+    <p class="tagline-callout">
       <b>Historians</b> share the <b>histories</b>, <b>primary sources</b>, and <b>novels</b> they love.
     </p>
   </div>
@@ -17,14 +19,15 @@ layout: homepage
   {% assign grabbed_post = false %}
   {% for post in site.posts %}{% if post.layout == 'list' %}{% if grabbed_post != true %}
     {% assign grabbed_post = true %}
+    <h2 class="featured-list">New List</h2>
     <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.header }});"><div class="featured-list">
       <div class="details-card">
-        <h2>
+        <h3>
           <a href="{{ post.url }}">
             {{ post.title }}
             <span class="metadata">{{ post.author | person_full_name }}</span>
           </a>
-        </h2>
+        </h3>
         <p class="description">
           {{ post.description }}
         </p>
@@ -32,11 +35,8 @@ layout: homepage
     </div></div>
   {% endif %}{% endif %}{% endfor %}
 </div>
-<div class="home wrapper">
-  <div class="home-left-col">
-    <p></p>
-  </div>
-  <div class="home-right-col">
+<div class="home categories-row wrapper">
+  <div class="third-col left">
     <div class="categories-block">
       <h3>When</h3>
       <ul class="categories">
@@ -45,7 +45,9 @@ layout: homepage
         {% endif %}{% endfor %}
       </ul>
     </div>
+  </div>
 
+  <div class="third-col mid">
     <div class="categories-block">
       <h3>Where</h3>
       <ul class="categories">
@@ -54,7 +56,9 @@ layout: homepage
         {% endif %}{% endfor %}
       </ul>
     </div>
+  </div>
 
+  <div class="third-col right">
     <div class="categories-block">
       <h3>What</h3>
       <ul class="categories">
@@ -63,6 +67,19 @@ layout: homepage
         {% endif %}{% endfor %}
       </ul>
     </div>
-
   </div>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      var maxHeight = 0;
+
+      $('.categories-row .third-col .categories-block').each(function() {
+        if ($(this).height() > maxHeight) {
+          maxHeight = $(this).height();
+        }
+      });
+
+      $('.categories-row .third-col .categories-block').height(maxHeight);
+    });
+  </script>
 </div>

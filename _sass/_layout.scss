@@ -266,7 +266,18 @@ body {
 body.homepage {
   .home {
     clear: block;
-    padding: ($spacingUnit * 2) 0;
+    margin-bottom: $spacingUnit;
+    position: relative;
+
+    &.top-row {
+      padding-top: $spacingUnit;
+      padding-bottom: $spacingUnit;
+    }
+
+    &.categories-row {
+      padding-top: $spacingUnit;
+      padding-bottom: $spacingUnit;
+    }
   }
 
   .home-left-col {
@@ -278,6 +289,10 @@ body.homepage {
     width: -webkit-calc(70% - #{$spacingUnit});
     width: -moz-calc(70% - #{$spacingUnit});
     width: calc(70% - #{$spacingUnit});
+
+    &.inverse {
+      width: 30%;
+    }
   }
 
   .home-right-col {
@@ -286,6 +301,40 @@ body.homepage {
     display: block;
     float: right;
     width: 30%;
+
+    &.inverse {
+      width: -webkit-calc(70% - #{$spacingUnit});
+      width: -moz-calc(70% - #{$spacingUnit});
+      width: calc(70% - #{$spacingUnit});
+    }
+  }
+
+  .tagline-callout {
+    font: {
+      size: 1.6em;
+    }
+    line-height: 1;
+    margin-top: -1.2em;
+    position: absolute;
+      top: 50%;
+  }
+
+  h2.featured-list {
+    @include sans-serif-font-stack;
+
+    background-color: $accentColor;
+    color: $backgroundColor;
+    font: {
+      size: 1.1em;
+      weight: 700;
+    }
+    line-height: 1;
+    margin: 0;
+    padding: .5em;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
   }
 
   .featured-list-wrapper {
@@ -293,11 +342,6 @@ body.homepage {
       position: 50% 0;
       repeat: repeat-x;
       size: auto 240px;
-    }
-    border: {
-      color: $accentColor;
-      style: solid;
-      width: 4px 0 0 0;
     }
 
     .featured-list {
@@ -315,9 +359,14 @@ body.homepage {
 
       .details-card {
         background-color: $backgroundColor;
+        border: {
+          color: $highlight1Color;
+          style: solid;
+          width: 1px 0 0 0;
+        }
         margin: 0 $spacingUnit;
 
-        h2 {
+        h3 {
           font: {
             size: 2em;
             weight: 700;
@@ -358,18 +407,20 @@ body.homepage {
   }
 
   .categories-block {
+    @include header-gradient;
+
     border: {
       color: $highlight1Color;
       style: solid;
       width: 0 0 1px 0;
     }
-    margin: 0 0 $spacingUnit 0;
 
     h3 {
       @include sans-serif-font-stack;
 
       background-color: $highlight1Color;
       color: $backgroundColor;
+      font-size: 1.1em;
       font-weight: 700;
       line-height: 1;
       margin-bottom: 0;
@@ -381,8 +432,6 @@ body.homepage {
     }
 
     ul.categories {
-      @include header-gradient;
-
       list-style-type: none;
       margin: 0;
       padding: ($spacingUnit / 2);
@@ -409,6 +458,16 @@ body.homepage {
 .page-content {
   background-color: $backgroundColor;
   padding: 0 0 ($spacingUnit * 2) 0;
+}
+
+.third-col {
+  float: left;
+  margin-right: $spacingUnit;
+  width: (.3333333333 * ($contentWidth - ($spacingUnit * 2)));
+
+  &.right {
+    margin-right: 0;
+  }
 }
 
 .page-heading {
