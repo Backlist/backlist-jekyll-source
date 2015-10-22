@@ -1,39 +1,68 @@
 ---
-layout: default
+layout: homepage
 ---
 
-<div class="home">
+<div class="home wrapper">
+  <div class="home-left-col">
+    <h1>Backlist</h1>
+  </div>
+  <div class="home-right-col">
+    <p class="tag-callout">
+      <b>Historians</b> share the <b>histories</b>, <b>primary sources</b>, and <b>novels</b> they love.
+    </p>
+  </div>
+</div>
 
-  <h1 class="page-heading">New Lists</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}{% if post.layout == "list" %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+<div class="home wrapper">
+  {% assign grabbed_post = false %}
+  {% for post in site.posts %}{% if post.layout == 'list' %}{% if grabbed_post != true %}
+    {% assign grabbed_post = true %}
+    <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.header }});"><div class="featured-list">
+      <div class="details-card">
         <h2>
-          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <span class="metadata">{{ post.author | person_full_name }}</span>
+          </a>
         </h2>
+        <p class="description">
+          {{ post.description }}
+        </p>
+      </div>
+    </div></div>
+  {% endif %}{% endif %}{% endfor %}
+</div>
+<div class="home wrapper">
+  <div class="home-left-col">
+    <p></p>
+  </div>
+  <div class="home-right-col">
+    <div class="categories-block">
+      <h3>When</h3>
+      <ul class="categories">
+        {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
+          <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
 
-        {{ post.author | person_full_name }}
-      <li>
-    {% endif %}{% endfor %}
-  </ul>
+    <div class="categories-block">
+      <h3>Where</h3>
+      <ul class="categories">
+        {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
+          <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
 
-  <h1 class="page-heading">Blog</h1>
+    <div class="categories-block">
+      <h3>What</h3>
+      <ul class="categories">
+        {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
+          <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}{% if post.layout == "post" %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endif %}{% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" }}">via RSS</a></p>
-
+  </div>
 </div>

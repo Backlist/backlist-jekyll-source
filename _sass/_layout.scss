@@ -4,6 +4,14 @@ body {
     style: solid;
     width: 2px 0 0 0;
   }
+
+  &.homepage {
+    border: {
+      color: $highlight1Color;
+      style: solid;
+      width: 4px 0 0 0;
+    }
+  }
 }
 
 /**
@@ -251,6 +259,149 @@ body {
 }
 
 
+// ***
+//  Homepage
+// ***
+
+body.homepage {
+  .home {
+    clear: block;
+    padding: ($spacingUnit * 2) 0;
+  }
+
+  .home-left-col {
+    @include size-to-border;
+
+    display: block;
+    float: left;
+    margin-right: $spacingUnit;
+    width: -webkit-calc(70% - #{$spacingUnit});
+    width: -moz-calc(70% - #{$spacingUnit});
+    width: calc(70% - #{$spacingUnit});
+  }
+
+  .home-right-col {
+    @include size-to-border;
+
+    display: block;
+    float: right;
+    width: 30%;
+  }
+
+  .featured-list-wrapper {
+    background: {
+      position: 50% 0;
+      repeat: repeat-x;
+      size: auto 240px;
+    }
+    border: {
+      color: $accentColor;
+      style: solid;
+      width: 4px 0 0 0;
+    }
+
+    .featured-list {
+      background: -moz-linear-gradient(top,  rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // FF3.6+
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba($backgroundColor, .4)), color-stop(100%, $backgroundColor)); // Chrome,Safari4+
+      background: -webkit-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // Chrome10+,Safari5.1+
+      background: -o-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // Opera 11.10+
+      background: -ms-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // IE10+
+      background: linear-gradient(to bottom, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // W3C
+      background: {
+        position: 50% 0;
+        size: auto 240px;
+      }
+      padding-top: $spacingUnit * 4;
+
+      .details-card {
+        background-color: $backgroundColor;
+        margin: 0 $spacingUnit;
+
+        h2 {
+          font: {
+            size: 2em;
+            weight: 700;
+          }
+          line-height: 1.1;
+
+          a {
+            @include header-gradient;
+            @include transition-stack(all ease .5s);
+
+            display: block;
+            padding: .5em;
+            text-decoration: none;
+
+            &:hover {
+              background-color: $highlight1Color;
+              background-color: rgba($highlight1Color, .2);
+              color: $accentColor;
+            }
+          }
+
+          .metadata {
+            display: block;
+            font: {
+              size: .5em;
+              weight: 400;
+            }
+            padding: 0 .1em;
+          }
+        }
+
+        p.description {
+          margin: 1em;
+          max-width: 700px;
+        }
+      }
+    }
+  }
+
+  .categories-block {
+    border: {
+      color: $highlight1Color;
+      style: solid;
+      width: 0 0 1px 0;
+    }
+    margin: 0 0 $spacingUnit 0;
+
+    h3 {
+      @include sans-serif-font-stack;
+
+      background-color: $highlight1Color;
+      color: $backgroundColor;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: .5em;
+      text: {
+        align: center;
+        transform: uppercase;
+      }
+    }
+
+    ul.categories {
+      @include header-gradient;
+
+      list-style-type: none;
+      margin: 0;
+      padding: ($spacingUnit / 2);
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin-right: 1em;
+
+        a {
+          @include sans-serif-font-stack;
+
+          color: $accentColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
 /**
  * Page content

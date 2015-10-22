@@ -4,6 +4,16 @@ title: "Conquest of the Incas"
 date: 2015-07-23 17:38:00
 header: "header-temp.jpg"
 permalink: "/lists/conquest-of-the-incas"
+description: "To explain how the Spanish conquered the Incas, we must credit the alliances made with the many Indian groups discontented with Inca rule, as well as alliances made with Incas themselves, including Atahualpa. Those alliances then became the foundation of an incredible colonial society, surprisingly just, suddenly violent, that lasted for nearly three hundred years—almost twice as long as England’s colonies in North America."
+books:
+    - d821c5a3ef29dec4 
+    - f0a1ad725afcde63 
+    - 0fc4b3f92c2a6936 
+    - 2fc95e2aaa5e0217 
+    - 0a26df4b0847a28a 
+    - 6d6422c6c18ff0cb 
+    - 09a5262dfddf4acc 
+    - 53c1c16b2878cbfa 
 categories:
     - latin-america
     - 16th-century
