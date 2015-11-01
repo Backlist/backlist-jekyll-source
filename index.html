@@ -41,7 +41,7 @@ layout: homepage
       <h3>When</h3>
       <ul class="categories">
         {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
-          <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
         {% endif %}{% endfor %}
       </ul>
     </div>
@@ -52,7 +52,7 @@ layout: homepage
       <h3>Where</h3>
       <ul class="categories">
         {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
-          <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
         {% endif %}{% endfor %}
       </ul>
     </div>
@@ -63,7 +63,7 @@ layout: homepage
       <h3>What</h3>
       <ul class="categories">
         {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
-          <li><a href="{{ category.id | prepend: 'categories/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
         {% endif %}{% endfor %}
       </ul>
     </div>

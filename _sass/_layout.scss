@@ -14,6 +14,12 @@ body {
   }
 }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /**
  * Site header
  */
@@ -48,7 +54,6 @@ body {
   display: block;
   float: left;
   height: 77px;
-  margin-left: $spacingUnit;
   margin-bottom: 0;
   position: relative;
   width: 135px;
@@ -74,9 +79,9 @@ body {
 
 .site-nav {
   float: right;
-  line-height: 56px; // TODO: Proportional
-  margin-right: $spacingUnit;
-  position: relative;
+  position: absolute;
+    right: 0;
+    bottom: $spacingUnit;
 
   .menu-icon {
     display: none;
@@ -84,11 +89,13 @@ body {
 
   .page-link {
     color: $backgroundColor;
-    line-height: $baseLineHeight;
+    font: {
+      size: 1.25em;
+    }
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
-      margin-left: 20px; // TODO: Use $spacingUnit ?
+      margin-left: $spacingUnit;
     }
   }
 
@@ -154,17 +161,6 @@ body {
   color: $backgroundColor;
   padding: $spacingUnit 0;
 
-  p.description {
-    @include serif-font-stack;
-
-    font: {
-      size: 1.25em;
-      style: italic;
-    }
-    margin: 0 $spacingUnit 1em $spacingUnit;
-    line-height: 1.8;
-  }
-
   a {
     color: $backgroundColor;
     text-decoration: none;
@@ -181,11 +177,32 @@ body {
       }
     }
   }
+
+  p.credit {
+    color: $highlight1Color;
+
+    a {
+      background: {
+        image: linear-gradient(transparent 50%, $highlight2Color 50%);
+        position: 0 90%;
+        repeat: repeat-x;
+        size: 2px 2px;
+      }
+      color: $highlight1Color;
+      text-shadow: 2px 0 0 $accentColor, 1px 0 0 $accentColor, -1px 0 0 $accentColor, -2px 0 0 $accentColor;
+
+      &:hover {
+        color: $highlight2Color;
+      }
+    }
+  }
 }
 
-.footer-heading {
-    font-size: 18px; // TODO: Proportional
-    margin-bottom: $spacingUnit / 2;
+.page-list {
+  li {
+    display: inline-block;
+    margin-right: 1em;
+  }
 }
 
 .contact-list,
@@ -246,16 +263,16 @@ body {
 }
 
 @include media-query($onPalm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacingUnit} / 2));
-        width:         calc(100% - (#{$spacingUnit} / 2));
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacingUnit} / 2));
+    width:         calc(100% - (#{$spacingUnit} / 2));
 
-        .contact-list,
-        .page-list {
-          margin-left: $spacingUnit;
-        }
+    .contact-list,
+    .page-list {
+      margin-left: $spacingUnit;
     }
+  }
 }
 
 
@@ -281,8 +298,6 @@ body.homepage {
   }
 
   .home-left-col {
-    @include size-to-border;
-
     display: block;
     float: left;
     margin-right: $spacingUnit;
@@ -296,8 +311,6 @@ body.homepage {
   }
 
   .home-right-col {
-    @include size-to-border;
-
     display: block;
     float: right;
     width: 30%;
@@ -460,6 +473,16 @@ body.homepage {
   padding: 0 0 ($spacingUnit * 2) 0;
 }
 
+.two-thirds-col {
+  float: left;
+  margin-right: $spacingUnit;
+  width: $spacingUnit + (2 * (.33333333333 * ($contentWidth - ($spacingUnit * 2))));
+
+  &.right {
+    margin-right: 0;
+  }
+}
+
 .third-col {
   float: left;
   margin-right: $spacingUnit;
@@ -499,7 +522,17 @@ body.homepage {
       margin-right: .5em;
 
       a {
+        background: {
+          image: linear-gradient(transparent 50%, $highlight2Color 50%);
+          position: 0 90%;
+          repeat: repeat-x;
+          size: 2px 2px;
+        }
         color: $highlight1Color;
+        text: {
+          decoration: none;
+          shadow: 2px 0 0 $accentColor, 1px 0 0 $accentColor, -1px 0 0 $accentColor, -2px 0 0 $accentColor;
+        }
 
         &:hover {
           color: $highlight2Color;
@@ -514,6 +547,115 @@ body.homepage {
   font-size: 24px; // TODO: Proportional
 }
 
+
+/**
+ * Categories
+ */
+
+.display-table {
+  background-color: $insetBackgroundColor;
+
+  .table-tab-bar {
+    ul {
+      border: {
+        color: $highlight1Color;
+        style: solid;
+        width: 0 0 1px 0;
+      }
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    li {
+      display: inline-block;
+      width: 25%;
+
+      a {
+        @include sans-serif-font-stack;
+        @include transition-stack;
+
+        color: $highlight2Color;
+        display: inline-block;
+        font: {
+          size: 1.25em;
+          weight: 700;
+        }
+        padding: .5em 1em;
+        text: {
+          align: center;
+          decoration: none;
+          transform: uppercase;
+        }
+        width: 100%;
+
+        &.here {
+          background-color: $highlight1Color;
+        }
+
+        &:hover {
+          background-color: $highlight1Color;
+        }
+      }
+    }
+  }
+
+  .table-panel {
+    display: none;
+    padding: $spacingUnit * 2;
+    text-align: center;
+
+    &.here {
+      display: block;
+    }
+
+    ul.categories {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        font: {
+          size: 1.5em;
+          weight: 700;
+        }
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+ul.category-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    h3 {
+      font: {
+        size: 1.5em;
+        weight: 700;
+      }
+      margin-bottom: 0;
+
+      a {
+        background: {
+          image: linear-gradient(transparent 50%, $highlight2Color 50%);
+          position: 0 90%;
+          repeat: repeat-x;
+          size: 2px 2px;
+        }
+        text-shadow: 2px 0 0 $backgroundColor, 1px 0 0 $backgroundColor, -1px 0 0 $backgroundColor, -2px 0 0 $backgroundColor;
+      }
+    }
+
+    p.metadata {
+      margin: 0;
+    }
+  }
+}
 
 /**
  * Posts
@@ -565,8 +707,6 @@ body.homepage {
   }
 
   .title-card {
-    @include size-to-border;
-
     background-color: $accentColor;
     background-color: rgba($accentColor, .8);
     color: $backgroundColor;
@@ -574,6 +714,16 @@ body.homepage {
     position: absolute;
       left: 0;
       bottom: 0;
+  }
+}
+
+.page-header {
+  padding: 1em 0;
+}
+
+.page-title {
+  font: {
+    size: 3em;
   }
 }
 
@@ -647,8 +797,6 @@ body.homepage {
   }
 
   .intro-block {
-    @include size-to-border;
-
     background-color: $insetBackgroundColor;
     font-size: 1.125em; // 18px
     line-height: 166.66666667%;
@@ -662,8 +810,6 @@ body.homepage {
   }
 
   .book-block {
-    @include size-to-border;
-
     background-color: $insetBackgroundColor;
     margin: ($spacingUnit / 2) auto;
     padding: ($spacingUnit * 2) ($spacingUnit * 2) $spacingUnit ($spacingUnit * 2) ;

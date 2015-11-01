@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="page">
+  <header class="page-header wrapper">
+    <h1 class="page-title">Lists for ‘{{ page.title }}’</h1>
+  </header>
+
+  <div class="wrapper">
+    <ul class="category-lists">
+      {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
+        <li>
+          <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+          <p class="metadata">
+            By {{ post.author | person_full_name }} • 
+            Published {{ post.date | date: "%B %-d, %Y" }}
+          </p>
+        </li>
+      {% endif %}{% endfor %}{% endfor %}
+    </ul>
+  </div>
+</div>

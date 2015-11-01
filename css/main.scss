@@ -42,13 +42,6 @@ $onLaptop:        800px;
   transition: $values;
 }
 
-@mixin size-to-border {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 @mixin header-gradient {
   background: #ffffc3;
   background: -moz-linear-gradient(top,  rgba(#ffc55c, .2) 0%, rgba(#ffffc3, .2) 100%); // FF3.6+

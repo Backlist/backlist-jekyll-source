@@ -75,11 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $accentColor;
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
 
   &:hover {
     color: $highlight2Color;
-    text-decoration: underline;
   }
 }
 
