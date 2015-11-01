@@ -46,7 +46,8 @@ module Jekyll
 
       @tokens[:oclc] = book.data['oclc'] if book.data['oclc']
       @tokens[:amzn] = book.data['amzn'] if book.data['amzn']
-      @tokens[:isbn] = book.data['isbn'] if book.data['isbn']
+      @tokens[:indiebound] = book.data['indiebound'] if book.data['indiebound']
+      @tokens[:powells] = book.data['powells'] if book.data['powells']
       @tokens[:betterworld] = book.data['betterworld'] if book.data['betterworld']
       @tokens[:betterworld_image] = book.data['betterworld_image'] if book.data['betterworld_image']
     end
@@ -58,13 +59,18 @@ module Jekyll
       case slug
       when :amzn
         if @tokens[:amzn]
-          url = "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/theappe0c-20" # TODO: replace Appendix affiliate token
+          url = "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/clionautics-20"
           label = 'Buy from Amazon'
         end
       when :indiebound
-        if @tokens[:isbn]
+        if @tokens[:indiebound]
           url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=appendixjournal" # TODO: replace Appendix affiliate token
           label = 'Buy from Indiebound'
+        end
+      when :powells
+        if @tokens[:powells]
+          url = "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_wgt"
+          label = 'Buy from Powell’s'
         end
       when :betterworld
         if @tokens[:betterworld] and @tokens[:betterworld_image]
