@@ -12,6 +12,9 @@ has_cover_image: true
 oclc: 861478109
 amzn: 0674058259
 isbn: 9780674058255
+powells: tupac-amaru-rebellion-9780674058255
+indiebound: 9780674058255
+direct: http://www.hup.harvard.edu/catalog.php?isbn=9780674058255
 ---
 @book{walker2014,
     author = {Charles F. Walker},

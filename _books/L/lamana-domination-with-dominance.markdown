@@ -12,6 +12,9 @@ has_cover_image: true
 oclc: 209334777
 amzn: 0822343118
 isbn: 9780822342939
+indiebound: 9780822343110
+powells: domination-without-dominance-inca-spanish-encounters-in-early-colonial-peru-9780822343110
+direct: https://www.dukeupress.edu/Domination-without-Dominance/
 ---
 
 @book{lamana2008,

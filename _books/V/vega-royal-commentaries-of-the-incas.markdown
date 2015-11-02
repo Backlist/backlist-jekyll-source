@@ -16,6 +16,8 @@ has_cover_image: true
 oclc: 69021023
 amzn: 0872208435
 isbn: 9780872208438
+powells: royal-commentaries-of-the-incas-and-general-history-of-peru-abridged-06-edition-9780872208438
+direct: http://www.hackettpublishing.com/the-royal-commentaries-of-the-incas-and-general-history-of-peru-abridged
 ---
 # Need to include original publication year
 @book{garcilaso2006,

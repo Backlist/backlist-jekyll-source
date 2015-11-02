@@ -14,6 +14,8 @@ has_cover_image: true
 oclc: 65644421
 amzn: 0872208281
 isbn: 9780872208285
+powells: history-of-how-the-spaniards-arrived-in-peru-9780872208285
+direct: http://www.hackettpublishing.com/history-of-how-the-spaniards-arrived-in-peru
 ---
 # Need to add original publication year
 @book{yupanqui2006,

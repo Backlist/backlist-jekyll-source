@@ -8,10 +8,13 @@ authors:
 categories:
     - secondary
 original_publication_year: 1984
-has_cover_image: false
+has_cover_image: true
 oclc: 246092348
 amzn: 0804715165
 isbn: 9780804715164
+powells: huarochiri-an-andean-society-under-inc-9780804715164
+indiebound: 9780804715164
+direct: http://www.sup.org/books/title/?id=3102
 ---
 
 # Include original publication year

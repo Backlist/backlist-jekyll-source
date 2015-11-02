@@ -12,6 +12,9 @@ has_cover_image: true
 oclc: 57549687
 amzn: 0486440079
 isbn: 9780486440071
+powells: history-of-the-conquest-of-peru-9780486440071
+indiebound: 9780486440071
+direct: http://store.doverpublications.com/0486440079.html
 ---
 # Need to include original year
 @book{prescott2005,

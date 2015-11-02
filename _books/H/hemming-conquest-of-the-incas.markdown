@@ -12,7 +12,9 @@ has_cover_image: true
 oclc: 778564023
 amzn: 0156028263
 indiebound: 9780156028264
+powells: conquest-of-the-incas-9780156028264
 isbn: 9780156028264
+direct: http://www.hmhco.com/shop/books/The-Conquest-of-the-Incas/9780156028264
 ---
 # Need to add original publication year
 @book{hemming2003,

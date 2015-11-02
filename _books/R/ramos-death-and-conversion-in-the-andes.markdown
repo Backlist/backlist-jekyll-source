@@ -12,6 +12,9 @@ has_cover_image: true
 oclc: 806331870
 amzn: 0268040281
 isbn: 9780268040284
+powells: death-and-conversion-in-the-andes-9780268040284
+indiebound: 9780268040284
+direct: http://undpress.nd.edu/books/P01378
 ---
 
 # Check rules for series

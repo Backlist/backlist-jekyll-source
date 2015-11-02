@@ -12,6 +12,9 @@ has_cover_image: true
 oclc: 776533328
 amzn: 0822353105
 isbn: 9780822352969
+powells: vertical-empire-9780822353102
+indiebound: 9780822353102
+direct: https://www.dukeupress.edu/vertical-empire
 ---
 
 @book{mumford2012,
