@@ -48,6 +48,7 @@ module Jekyll
       @tokens[:amzn] = book.data['amzn'] if book.data['amzn']
       @tokens[:indiebound] = book.data['indiebound'] if book.data['indiebound']
       @tokens[:powells] = book.data['powells'] if book.data['powells']
+      @tokens[:direct] = book.data['direct'] if book.data['direct']
       @tokens[:betterworld] = book.data['betterworld'] if book.data['betterworld']
       @tokens[:betterworld_image] = book.data['betterworld_image'] if book.data['betterworld_image']
     end
@@ -71,6 +72,11 @@ module Jekyll
         if @tokens[:powells]
           url = "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_wgt"
           label = 'Buy from Powell’s'
+        end
+      when :direct
+        if @tokens[:direct]
+          url = @tokens[:direct]
+          label = 'Buy from Publisher'
         end
       when :betterworld
         if @tokens[:betterworld] and @tokens[:betterworld_image]

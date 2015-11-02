@@ -64,7 +64,7 @@ module Jekyll
         if book
           result = ''
           result += '<ul class="affiliate-grid">'
-          [:amzn, :indiebound, :betterworld, :oclc].each do |slug|
+          [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
             result += "<li>#{book.build_link_for(slug)}</li>" if book.has_link_for?(slug)
           end
           result += '</ul>'
