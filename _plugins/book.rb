@@ -96,8 +96,6 @@ module Jekyll
     def has_link_for?(slug)
       if slug == :betterworld
         @tokens[:betterworld] and @tokens[:betterworld_image]
-      elsif slug == :indiebound
-        @tokens[:isbn]
       else
         @tokens[slug]
       end

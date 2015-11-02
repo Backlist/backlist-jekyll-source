@@ -8,7 +8,7 @@ authors:
 categories:
     - secondary
 original_publication_year: 2010
-has_cover_image: false
+has_cover_image: true
 oclc: 806331870
 amzn: 0268040281
 isbn: 9780268040284

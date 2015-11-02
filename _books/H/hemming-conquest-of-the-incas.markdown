@@ -8,10 +8,11 @@ authors:
 categories:
     - secondary
 original_publication_year: 1970
-has_cover_image: false
+has_cover_image: true
 oclc: 778564023
 amzn: 0156028263
-isbn: 9780151225606
+indiebound: 9780156028264
+isbn: 9780156028264
 ---
 # Need to add original publication year
 @book{hemming2003,

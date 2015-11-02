@@ -8,7 +8,7 @@ authors:
 categories:
     - secondary
 original_publication_year: 1847
-has_cover_image: false
+has_cover_image: true
 oclc: 57549687
 amzn: 0486440079
 isbn: 9780486440071
