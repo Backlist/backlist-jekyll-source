@@ -840,8 +840,10 @@ ul.category-lists {
   ul.affiliate-grid {
     @include sans-serif-font-stack;
 
+    clear: both;
     margin: $spacingUnit 0 0 0;
     padding: 0;
+    text-align: center;
 
     li {
       font-size: .875em; // 14px
