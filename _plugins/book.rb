@@ -62,21 +62,25 @@ module Jekyll
         if @tokens[:amzn]
           url = "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/clionautics-20"
           label = 'Buy from Amazon'
+          affiliate = true
         end
       when :indiebound
         if @tokens[:indiebound]
           url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=appendixjournal" # TODO: replace Appendix affiliate token
           label = 'Buy from Indiebound'
+          affiliate = true
         end
       when :powells
         if @tokens[:powells]
           url = "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_wgt"
           label = 'Buy from Powell’s'
+          affiliate = true
         end
       when :direct
         if @tokens[:direct]
           url = @tokens[:direct]
           label = 'Buy from Publisher'
+          affiliate = false
         end
       when :betterworld
         if @tokens[:betterworld] and @tokens[:betterworld_image]
@@ -87,15 +91,20 @@ module Jekyll
         if @tokens[:oclc]
           url = "http://worldcat.org/oclc/#{@tokens[:oclc]}"
           label = 'Find at your library'
+          affiliate = false
         end
       else
         return "ERROR: There was not a link handler for the slug '#{slug}'."
       end
 
       if url.length > 0 and label.length > 0
-        "<a href='#{url}' target='_blank'>#{label}</a>"
+        if affiliate
+          return "<a href=\"#{url}\" class=\"affiliate\" target=\"_blank\">#{label}<span></span></a>"
+        else
+          return "<a href=\"#{url}\" target=\"_blank\">#{label}<span></span></a>"
+        end
       else
-        "ERROR: The link constructor for the slug '#{slug}' was poorly defined."
+        return "ERROR: The link constructor for the slug '#{slug}' was poorly defined."
       end
     end
     

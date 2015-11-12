@@ -27,12 +27,12 @@ $onLaptop:        800px;
 
 // Mixins
 @mixin serif-font-stack {
-  font-family: "ff-meta-serif-web-pro", Georgia, serif;
-  font-weight: 500;
+  font-family: "cordale", Georgia, serif;
+  font-weight: 400;
 }
 
 @mixin sans-serif-font-stack {
-  font-family: "ff-meta-web-pro-condensed", sans-serif;
+  font-family: "aller", sans-serif;
   font-weight: 400;
 }
 

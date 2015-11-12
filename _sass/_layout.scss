@@ -184,7 +184,7 @@ body {
     a {
       background: {
         image: linear-gradient(transparent 50%, $highlight2Color 50%);
-        position: 0 90%;
+        position: 0 94%;
         repeat: repeat-x;
         size: 2px 2px;
       }
@@ -524,14 +524,13 @@ body.homepage {
       a {
         background: {
           image: linear-gradient(transparent 50%, $highlight2Color 50%);
-          position: 0 90%;
+          position: 0 94%;
           repeat: repeat-x;
           size: 2px 2px;
         }
         color: $highlight1Color;
         text: {
           decoration: none;
-          shadow: 2px 0 0 $accentColor, 1px 0 0 $accentColor, -1px 0 0 $accentColor, -2px 0 0 $accentColor;
         }
 
         &:hover {
@@ -643,10 +642,12 @@ ul.category-lists {
       a {
         background: {
           image: linear-gradient(transparent 50%, $highlight2Color 50%);
-          position: 0 90%;
+          position: 0 94%;
           repeat: repeat-x;
           size: 2px 2px;
         }
+        display: inline-block;
+        line-height: 1;
         text-shadow: 2px 0 0 $backgroundColor, 1px 0 0 $backgroundColor, -1px 0 0 $backgroundColor, -2px 0 0 $backgroundColor;
       }
     }
@@ -723,7 +724,7 @@ ul.category-lists {
 
 .page-title {
   font: {
-    size: 3em;
+    size: 2.5em;
   }
 }
 
@@ -752,8 +753,8 @@ ul.category-lists {
     }
     color: $accentColor;
     font-size: 2em; // 32px
-    font-weight: 400;
-    letter-spacing: .05em;
+    font-weight: 100;
+    letter-spacing: -.025em;
     margin-top: $spacingUnit * 4;
     padding: ($spacingUnit / 4) 0 ($spacingUnit / 2) 0;
     text-transform: uppercase;
@@ -841,7 +842,7 @@ ul.category-lists {
     @include sans-serif-font-stack;
 
     clear: both;
-    margin: $spacingUnit 0 0 0;
+    margin: ($spacingUnit * 2) 0 0 0;
     padding: 0;
     text-align: center;
 
@@ -852,17 +853,34 @@ ul.category-lists {
       margin-bottom: .6666667em;
 
       a {
+        @include transition-stack;
+
         border: 1px solid $highlight1Color;
         border-radius: 1em;
         color: $highlight2Color;
         display: inline-block;
-        padding: .33333em 1.33333em;
+        padding: .5em 1.33333em;
         text-decoration: none;
-        vertical-align: middle;
 
         &:hover {
+          background-color: $highlight1Color;
           border-color: $highlight2Color;
-          color: $highlight2Color;
+          color: $insetBackgroundColor;
+
+          &.affiliate span {
+            color: $insetBackgroundColor;
+          }
+        }
+
+        &.affiliate {
+          span {
+            color: $highlight1Color;
+            font-weight: 700;
+            margin-left: .75em;
+          }
+          span:after {
+            content: "$";
+          }
         }
       }
     }
