@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="list-directory wrapper">
-  <h1>All Lists</h1>
+  <header class="page-header">
+    <h1 class="page-title">All Lists</h1>
+  </header>
 
   <ul class="list-of-lists">
     {% for post in site.posts %}{% if post.layout == 'list' %}
