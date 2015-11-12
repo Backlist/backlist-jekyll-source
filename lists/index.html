@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="list-directory wrapper">
+  <h1>All Lists</h1>
+
+  <ul class="list-of-lists">
+    {% for post in site.posts %}{% if post.layout == 'list' %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <p class="metadata">
+          By {{ post.author | person_full_name }} •
+          Published {{ post.date | date: "%B %-d, %Y" }}
+        </p>
+      </li>
+    {% endif %}{% endfor %}
+  </ul>
+</div>

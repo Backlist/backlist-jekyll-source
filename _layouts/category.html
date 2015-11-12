@@ -7,12 +7,12 @@ layout: default
   </header>
 
   <div class="wrapper">
-    <ul class="category-lists">
+    <ul class="list-of-lists">
       {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
         <li>
           <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
           <p class="metadata">
-            By {{ post.author | person_full_name }} • 
+            By {{ post.author | person_full_name }} •
             Published {{ post.date | date: "%B %-d, %Y" }}
           </p>
         </li>

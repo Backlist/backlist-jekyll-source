@@ -466,6 +466,21 @@ body.homepage {
 }
 
 /**
+ * Lists Directory
+ */
+
+.list-directory {
+  padding-top: $spacingUnit * 2;
+  padding-bottom: $spacingUnit * 2;
+
+  ul.lists {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/**
  * Page content
  */
 .page-content {
@@ -626,7 +641,7 @@ body.homepage {
   }
 }
 
-ul.category-lists {
+ul.list-of-lists {
   list-style-type: none;
   margin: 0;
   padding: 0;
