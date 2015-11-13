@@ -10,6 +10,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'category.html')
       self.data['category'] = category['id']
       self.data['title'] = category['display_name']
+      self.data['header'] = "Browse Lists for ‘#{category['display_name']}’"
     end
   end
 
