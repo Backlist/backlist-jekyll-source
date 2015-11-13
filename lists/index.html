@@ -1,25 +1,53 @@
 ---
-layout: default
+title: Categories
+header: Browse by Category
+layout: page
 ---
 
-<div class="list-directory wrapper">
-  <header class="page-header">
-    <h1 class="page-title">All Lists</h1>
-  </header>
+<div class="wrapper">
+  <div id="categories-table" class="display-table">
+    <div class="table-tab-bar">
+      <ul class="tabs">
+        <li><a id="all-categories-tab" href="#" class="here">All</a></li><!--
+        --><li><a id="chrono-categories-tab" href="#">When</a></li><!--
+        --><li><a id="geo-categories-tab" href="#">Where</a></li><!--
+        --><li><a id="theme-categories-tab" href="#">What</a></li>
+      </ul>
+    </div>
+    <div class="table-panels">
+      <div id="all-categories-panel" class="table-panel here">
+        {% categories_table all %}
+      </div>
+      <div id="chrono-categories-panel" class="table-panel">
+        {% categories_table chrono %}
+      </div>
+      <div id="geo-categories-panel" class="table-panel">
+        {% categories_table geo %}
+      </div>
+      <div id="theme-categories-panel" class="tabel-panel">
+        {% categories_table theme %}
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var tabPanelPairs = [
+      ['#all-categories-tab', '#all-categories-panel'],
+      ['#chrono-categories-tab', '#chrono-categories-panel'],
+      ['#geo-categories-tab', '#geo-categories-panel'],
+      ['#theme-categories-tab', '#theme-categories-panel']
+    ];
 
-  <ul class="list-of-lists">
-    {% for post in site.posts %}{% if post.layout == 'list' %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h3>
-        <p class="metadata">
-          By {{ post.author | person_full_name }} •
-          Published {{ post.date | date: "%B %-d, %Y" }}
-        </p>
-      </li>
-    {% endif %}{% endfor %}
-  </ul>
+    $(tabPanelPairs).each(function() {
+      var $tab = $(this[0]), $panel = $(this[1]);
+
+      $(this[0]).on('click', function(e) {
+        e.preventDefault();
+        $('#categories-table .table-tab-bar a').removeClass('here');
+        $('#categories-table .table-panel').removeClass('here');
+
+        $tab.addClass('here');
+        $panel.addClass('here');
+      });
+    });
+  </script>
 </div>
