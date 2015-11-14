@@ -7,12 +7,12 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="icon" type="image/x-icon" href="favicon.png" />
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
-  
+
+  <script src="{{ site.baseurl }}includes/scripts/lib/zepto.min.js"></script>
+
   <script src="https://use.typekit.net/wze0hjz.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  
+
   <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
