@@ -2,8 +2,6 @@
 layout: page
 ---
 
-{% include categories/table.html %}
-
 <div class="wrapper">
   <ul class="list-of-lists">
     {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
@@ -11,3 +9,10 @@ layout: page
     {% endif %}{% endfor %}{% endfor %}
   </ul>
 </div>
+
+{% include categories/table.html prefix='bottom' %}
+
+<script type="text/javascript">
+var bottomTablePanel = new CategoriesTable('bottom');
+bottomTablePanel.setup();
+</script>

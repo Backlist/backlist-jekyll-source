@@ -4,14 +4,17 @@ header: Browse All Lists
 layout: page
 ---
 
-<div class="page">
-  {% include categories/table.html %}
-
-  <div class="wrapper">
-    <ul class="list-of-lists">
-      {% for post in site.posts %}{% if post.layout == 'list' %}
-        {% include categories/list_line_item.html %}
-      {% endif %}{% endfor %}
-    </ul>
-  </div>
+<div class="wrapper">
+  <ul class="list-of-lists">
+    {% for post in site.posts %}{% if post.layout == 'list' %}
+      {% include categories/list_line_item.html %}
+    {% endif %}{% endfor %}
+  </ul>
 </div>
+
+{% include categories/table.html prefix='bottom' %}
+
+<script type="text/javascript">
+var bottomTablePanel = new CategoriesTable('bottom');
+bottomTablePanel.setup();
+</script>

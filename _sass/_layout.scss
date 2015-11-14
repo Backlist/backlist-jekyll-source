@@ -646,9 +646,23 @@ body.homepage {
   }
 }
 
+.categories-controls {
+  @include sans-serif-font-stack;
+
+  margin: 0 0 ($spacingUnit / 2) 0;
+
+  a {
+    color: $highlight2Color;
+
+    &:hover {
+      color: $highlight1Color;
+    }
+  }
+}
+
 ul.list-of-lists {
   list-style-type: none;
-  margin: 0;
+  margin: $spacingUnit 0;
   padding: 0;
 
   li {
@@ -738,14 +752,12 @@ ul.list-of-lists {
   }
 }
 
-.page-header {
-  padding: 1em 0;
-}
-
 .page-title {
   font: {
     size: 2.5em;
   }
+  letter-spacing: -1px;
+  margin-bottom: 0;
 }
 
 .post-title {
