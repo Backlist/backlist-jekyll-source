@@ -13,3 +13,15 @@
 - id: united-states
   display_name: 'United States'
   group: geo
+
+- id: diplomatic-international
+  display_name: 'Diplomatic / International'
+  group: theme
+
+- id: empire
+  display_name: 'Empire'
+  group: theme
+
+- id: peace-and-conflict
+  display_name: 'Peace and Conflict'
+  group: theme

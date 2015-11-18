@@ -11,6 +11,7 @@ categories:
   - latin-america
   - united-states
   - 20th-century
+  - diplomatic-international
 author: 526db1511fa09665
 ---
 {::options parse_block_html="true" /}
