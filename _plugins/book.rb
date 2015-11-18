@@ -27,7 +27,7 @@ module Jekyll
       @authors = []
       @editors = []
       @translators = []
-      people_pairs = [[@authors, book.data['authors']], 
+      people_pairs = [[@authors, book.data['authors']],
                         [@editors, book.data['editors']],
                         [@translators, book.data['translators']]]
 
@@ -66,7 +66,7 @@ module Jekyll
         end
       when :indiebound
         if @tokens[:indiebound]
-          url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=appendixjournal" # TODO: replace Appendix affiliate token
+          url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=clionautcs"
           label = 'Buy from Indiebound'
           affiliate = true
         end
@@ -107,7 +107,7 @@ module Jekyll
         return "ERROR: The link constructor for the slug '#{slug}' was poorly defined."
       end
     end
-    
+
     def has_link_for?(slug)
       if slug == :betterworld
         @tokens[:betterworld] and @tokens[:betterworld_image]
