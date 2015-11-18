@@ -42,10 +42,10 @@ $onLaptop:        800px;
   transition: $values;
 }
 
-@mixin special-link-underline($background: $backgroundColor) {
+@mixin special-link-underline($background: $backgroundColor, $verticalPosition: 94%) {
   background: {
     image: linear-gradient(transparent 50%, $highlight2Color 50%);
-    position: 0 94%;
+    position: 0 $verticalPosition;
     repeat: repeat-x;
     size: 2px 2px;
   }

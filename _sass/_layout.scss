@@ -182,7 +182,7 @@ body {
     color: $highlight1Color;
 
     a {
-      @include special-link-underline($accentColor);
+      @include special-link-underline($background: $accentColor, $verticalPosition: 98%);
       color: $highlight1Color;
 
       &:hover {
@@ -564,7 +564,7 @@ body.homepage {
       margin-right: .5em;
 
       a {
-        @include special-link-underline(transparent);
+        @include special-link-underline($background: transparent, $verticalPosition: 98%);
         color: $highlight1Color;
         text: {
           decoration: none;
@@ -581,6 +581,16 @@ body.homepage {
 .post-link {
   display: block;
   font-size: 24px; // TODO: Proportional
+}
+
+.bio-block {
+  margin-top: $spacingUnit * 2;
+  padding-left: $spacingUnit * 2;
+  padding-right: $spacingUnit * 2;
+
+  p a {
+    @include special-link-underline($verticalPosition: 66.66667%);
+  }
 }
 
 
@@ -881,6 +891,10 @@ ul.list-of-lists {
     margin-left: 1em;
     padding: ($spacingUnit / 2) $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
     height: 240px;
+  }
+
+  p a {
+    @include special-link-underline($background: $insetBackgroundColor, $verticalPosition: 66.66667%);
   }
 
   ul.affiliate-grid {
