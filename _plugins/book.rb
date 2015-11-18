@@ -79,7 +79,7 @@ module Jekyll
       when :direct
         if @tokens[:direct]
           url = @tokens[:direct]
-          label = 'Buy from Publisher'
+          label = 'Visit Publisher'
           affiliate = false
         end
       when :betterworld
