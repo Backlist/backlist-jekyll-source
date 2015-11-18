@@ -513,6 +513,12 @@ body.homepage {
 .page-content {
   background-color: $backgroundColor;
   padding: 0 0 ($spacingUnit * 2) 0;
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 1em 0;
+  }
 }
 
 .two-thirds-col {
