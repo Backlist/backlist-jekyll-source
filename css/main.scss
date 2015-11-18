@@ -42,6 +42,17 @@ $onLaptop:        800px;
   transition: $values;
 }
 
+@mixin special-link-underline($background: $backgroundColor) {
+  background: {
+    image: linear-gradient(transparent 50%, $highlight2Color 50%);
+    position: 0 94%;
+    repeat: repeat-x;
+    size: 2px 2px;
+  }
+
+  text-shadow: 2px 0 0 $background, 1px 0 0 $background, -1px 0 0 $background, -2px 0 0 $background;
+}
+
 @mixin header-gradient {
   background: #ffffc3;
   background: -moz-linear-gradient(top,  rgba(#ffc55c, .2) 0%, rgba(#ffffc3, .2) 100%); // FF3.6+

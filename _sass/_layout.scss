@@ -182,14 +182,8 @@ body {
     color: $highlight1Color;
 
     a {
-      background: {
-        image: linear-gradient(transparent 50%, $highlight2Color 50%);
-        position: 0 94%;
-        repeat: repeat-x;
-        size: 2px 2px;
-      }
+      @include special-link-underline($accentColor);
       color: $highlight1Color;
-      text-shadow: 2px 0 0 $accentColor, 1px 0 0 $accentColor, -1px 0 0 $accentColor, -2px 0 0 $accentColor;
 
       &:hover {
         color: $highlight2Color;
@@ -332,7 +326,7 @@ body.homepage {
       top: 50%;
   }
 
-  h2.featured-list {
+  h2.featured-banner {
     @include sans-serif-font-stack;
 
     background-color: $accentColor;
@@ -348,6 +342,33 @@ body.homepage {
       align: center;
       transform: uppercase;
     }
+  }
+
+  .recent-lists-wrapper {
+    background-color: $insetBackgroundColor;
+    padding: $spacingUnit / 2;
+
+    h2 {
+      margin-top: -($spacingUnit / 2);
+      margin-right: -($spacingUnit / 2);
+      margin-left: -($spacingUnit / 2);
+    }
+
+    a.bottom-link {
+
+      color: $highlight1Color;
+      display: block;
+      font: {
+        size: 1.25em;
+      }
+      margin-top: $spacingUnit;
+      text-align: center;
+      
+      &:hover {
+        color: $highlight2Color;
+      }
+    }
+
   }
 
   .featured-list-wrapper {
@@ -419,7 +440,7 @@ body.homepage {
     }
   }
 
-  .categories-block {
+  .homepage-bucket {
     @include header-gradient;
 
     border: {
@@ -427,6 +448,7 @@ body.homepage {
       style: solid;
       width: 0 0 1px 0;
     }
+    margin-bottom: $spacingUnit;
 
     h3 {
       @include sans-serif-font-stack;
@@ -542,12 +564,7 @@ body.homepage {
       margin-right: .5em;
 
       a {
-        background: {
-          image: linear-gradient(transparent 50%, $highlight2Color 50%);
-          position: 0 94%;
-          repeat: repeat-x;
-          size: 2px 2px;
-        }
+        @include special-link-underline(transparent);
         color: $highlight1Color;
         text: {
           decoration: none;
@@ -666,6 +683,8 @@ ul.list-of-lists {
   padding: 0;
 
   li {
+    margin-bottom: 1em;
+
     h3 {
       font: {
         size: 1.5em;
@@ -674,15 +693,9 @@ ul.list-of-lists {
       margin-bottom: 0;
 
       a {
-        background: {
-          image: linear-gradient(transparent 50%, $highlight2Color 50%);
-          position: 0 94%;
-          repeat: repeat-x;
-          size: 2px 2px;
-        }
+        @include special-link-underline;
         display: inline-block;
         line-height: 1;
-        text-shadow: 2px 0 0 $backgroundColor, 1px 0 0 $backgroundColor, -1px 0 0 $backgroundColor, -2px 0 0 $backgroundColor;
       }
     }
 

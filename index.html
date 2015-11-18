@@ -19,7 +19,7 @@ layout: homepage
   {% assign grabbed_post = false %}
   {% for post in site.posts %}{% if post.layout == 'list' %}{% if grabbed_post != true %}
     {% assign grabbed_post = true %}
-    <h2 class="featured-list">New List</h2>
+    <h2 class="featured-banner">New List</h2>
     <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.header }});"><div class="featured-list">
       <div class="details-card">
         <h3>
@@ -37,7 +37,7 @@ layout: homepage
 </div>
 <div class="home categories-row wrapper">
   <div class="third-col left">
-    <div class="categories-block">
+    <div class="homepage-bucket">
       <h3>When</h3>
       <ul class="categories">
         {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
@@ -48,7 +48,7 @@ layout: homepage
   </div>
 
   <div class="third-col mid">
-    <div class="categories-block">
+    <div class="homepage-bucket">
       <h3>Where</h3>
       <ul class="categories">
         {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
@@ -59,7 +59,7 @@ layout: homepage
   </div>
 
   <div class="third-col right">
-    <div class="categories-block">
+    <div class="homepage-bucket">
       <h3>What</h3>
       <ul class="categories">
         {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
@@ -73,13 +73,42 @@ layout: homepage
     $(document).on('ready', function() {
       var maxHeight = 0;
 
-      $('.categories-row .third-col .categories-block').each(function() {
+      $('.categories-row .third-col .homepage-bucket').each(function() {
         if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();
         }
       });
 
-      $('.categories-row .third-col .categories-block').height(maxHeight);
+      $('.categories-row .third-col .homepage-bucket').height(maxHeight);
     });
   </script>
+</div>
+
+<div class="home wrapper">
+  <div class="two-thirds-col recent-lists-wrapper">
+    <h2 class="featured-banner">Recent Lists</h2>
+    <ul class="list-of-lists">
+      {% for post in site.posts %}{% if post.layout == 'list' %}{% if forloop.index > 1 %}{% if forloop.index < 6 %}
+        {% include categories/list_line_item.html %}
+      {% endif %}{% endif %}{% endif %}{% endfor %}
+    </ul>
+
+    <a class="bottom-link" href="{{ site.baseurl }}lists">Browse All Lists…</a>
+  </div>
+
+  <div class="third-col right">
+    <div class="homepage-bucket">
+      <h3>Keep in Touch</h3>
+      <p>
+        Stub for following us on social media and newsletter
+      </p>
+    </div>
+
+    <div class="homepage-bucket">
+      <h3>Read a Book</h3>
+      <p>
+        Stub for random book recommendation
+      </p>
+    </div>
+  </div>
 </div>
