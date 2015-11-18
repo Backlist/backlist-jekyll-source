@@ -2,7 +2,7 @@
 layout: list
 title: "The History of U.S.-Cuban Relations"
 date: 2015-11-17 17:38:00
-header: ''
+header: 'keller-us-cuba-relations.jpg'
 permalink: '/lists/history-of-us-cuba-relations'
 description: ''
 books:
