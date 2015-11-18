@@ -56,21 +56,21 @@ But if there’s a common motif that emerges, especially in light of the two cou
 <!-- Ferrer, Insurgent Cuba -->
 {% bookblock %}
 {% book_meta 417c35fadf8165cc %}
-While this book focuses mostly on domestic Cuban struggles for independence from Spain in the late nineteenth century, its insights into racial politics help readers appreciate the significant cultural distance between the United States and Cuba. Ferrer convincingly demonstrates that Cuban nationalism and the effects of U.S. imperialism are impossible to understand without looking at the multiracial fighting force that led and then lost Cuba’s war for true independence and racial equality.
+{% book_capsule While this book focuses mostly on domestic Cuban struggles for independence from Spain in the late nineteenth century, its insights into racial politics help readers appreciate the significant cultural distance between the United States and Cuba. Ferrer convincingly demonstrates that Cuban nationalism and the effects of U.S. imperialism are impossible to understand without looking at the multiracial fighting force that led and then lost Cuba’s war for true independence and racial equality. %}
 {% book_links 417c35fadf8165cc %}
 {% endbookblock %}
 
 <!-- Gosse, Where the Boys Are -->
 {% bookblock %}
 {% book_meta 0dadd2a9063e9630 %}
-This book explores the Cuban Revolution’s impact in the United States and the ways that fidelismo helped inspire the political and social struggles of the sixties. U.S. culture was transformed by that captivating yet controversial revolution next door.
+{% book_capsule This book explores the Cuban Revolution’s impact in the United States and the ways that fidelismo helped inspire the political and social struggles of the sixties. U.S. culture was transformed by that captivating yet controversial revolution next door. %}
 {% book_links 0dadd2a9063e9630 %}
 {% endbookblock %}
 
 <!-- Eckstein, The Immigrant Divide -->
 {% bookblock %}
 {% book_meta 3c1cd7bcf72a49c9 %}
-This fascinating book analyzes generational shifts in the Cuban exile community, as well as how and why this uniquely influential group’s impact on U.S.-Cuban relations, the United States, and Cuba has changed over time.
+{% book_capsule This fascinating book analyzes generational shifts in the Cuban exile community, as well as how and why this uniquely influential group’s impact on U.S.-Cuban relations, the United States, and Cuba has changed over time. %}
 {% book_links 3c1cd7bcf72a49c9 %}
 {% endbookblock %}
 
@@ -79,14 +79,14 @@ This fascinating book analyzes generational shifts in the Cuban exile community,
 <!-- Gleijeses, Conflicting Missions -->
 {% bookblock %}
 {% book_meta 922ca8769ba865b5 %}
-Together with its sequel, [_Visions of Freedom_](), this book tells the epic tale of Cuban, U.S., and (to a lesser extent) Soviet struggles over the fate of Africa. Gleijeses was the first historian allowed access to classified Cuban archives, and he uses them to great effect to uncover the surprising roles that the tiny Caribbean island played in Africa’s decolonization and postcolonial struggles.
+{% book_capsule Together with its sequel, [_Visions of Freedom_](http://www.amazon.com/exec/obidos/asin/1469628325/ref=nosim/clionautics-20), this book tells the epic tale of Cuban, U.S., and (to a lesser extent) Soviet struggles over the fate of Africa. Gleijeses was the first historian allowed access to classified Cuban archives, and he uses them to great effect to uncover the surprising roles that the tiny Caribbean island played in Africa’s decolonization and postcolonial struggles. %}
 {% book_links 922ca8769ba865b5 %}
 {% endbookblock %}
 
 <!-- LeoGrande and Kornbluh, Back Channel to Cuba -->
 {% bookblock %}
 {% book_meta 9e574b66f7070937 %}
-While most books on U.S.-Cuban relations focus on the hostile aspects, this one uncover the long history of secret bilateral attempts to repair the damaged relationship following the Cuban Revolution. Published mere weeks before Obama and Castro made their announcement of rapprochement, this book provides insight into the various obstacles that stymied previous efforts.
+{% book_capsule While most books on U.S.-Cuban relations focus on the hostile aspects, this one uncover the long history of secret bilateral attempts to repair the damaged relationship following the Cuban Revolution. Published mere weeks before Obama and Castro made their announcement of rapprochement, this book provides insight into the various obstacles that stymied previous efforts. %}
 {% book_links 9e574b66f7070937 %}
 {% endbookblock %}
 
@@ -95,13 +95,13 @@ While most books on U.S.-Cuban relations focus on the hostile aspects, this one 
 <!-- Guevara, Guerrilla Warfare -->
 {% bookblock %}
 {% book_meta 3635f5e7c9f3f2c3 %}
-In this short book, Che Guevara presents a theory of guerrilla warfare based on his experience in the Cuban Revolution. His ideas, which inspired a generation of revolutionaries, give insight into the Cold War context that helped poison U.S.-Cuban relations.
+{% book_capsule In this short book, Che Guevara presents a theory of guerrilla warfare based on his experience in the Cuban Revolution. His ideas, which inspired a generation of revolutionaries, give insight into the Cold War context that helped poison U.S.-Cuban relations. %}
 {% book_links 3635f5e7c9f3f2c3 %}
 {% endbookblock %}
 
 <!-- Eire, Waiting for Snow in Havana -->
 {% bookblock %}
 {% book_meta d982aeb96ffd583a %}
-Carlos Eire, Waiting for Snow in Havana: Confessions of a Cuban Boy (2003). Eire’s memoir of his childhood in Cuba and his lonely escape to the United States in 1962 at the age of eleven is haunting and beautiful. His evocative description of the world he and his family lost helps readers better understand the human costs of the Cuban Revolution.
+{% book_capsule Carlos Eire, Waiting for Snow in Havana: Confessions of a Cuban Boy (2003). Eire’s memoir of his childhood in Cuba and his lonely escape to the United States in 1962 at the age of eleven is haunting and beautiful. His evocative description of the world he and his family lost helps readers better understand the human costs of the Cuban Revolution. %}
 {% book_links d982aeb96ffd583a %}
 {% endbookblock %}
