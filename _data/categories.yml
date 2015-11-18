@@ -2,16 +2,8 @@
   display_name: '16th Century'
   group: chrono
 
-- id: 19th-century
-  display_name: '19th Century'
-  group: chrono
-
 - id: 20th-century
   display_name: '20th Century'
-  group: chrono
-
-- id: 1960s
-  display_name: '1960s'
   group: chrono
 
 - id: latin-america
