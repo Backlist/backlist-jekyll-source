@@ -363,7 +363,7 @@ body.homepage {
       }
       margin-top: $spacingUnit;
       text-align: center;
-      
+
       &:hover {
         color: $highlight2Color;
       }
@@ -889,7 +889,7 @@ ul.list-of-lists {
     clear: both;
     margin: ($spacingUnit * 2) 0 0 0;
     padding: 0;
-    text-align: center;
+    // text-align: center;
 
     li {
       font-size: .875em; // 14px
@@ -904,7 +904,7 @@ ul.list-of-lists {
         border-radius: 1em;
         color: $highlight2Color;
         display: inline-block;
-        padding: .5em 1.33333em;
+        padding: .25em 1em;
         text-decoration: none;
 
         &:hover {
