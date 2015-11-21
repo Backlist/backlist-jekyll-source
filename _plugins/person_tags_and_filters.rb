@@ -2,7 +2,7 @@ module Jekyll
 
   module AuthorBioFilter
     def author_bio(input)
-      person = Person.new(input.strip, @context)
+      person = Person.new(input.strip, @context.registers[:site])
 
       if person
         name = "#{person.first_name} #{person.last_name}"
@@ -18,7 +18,7 @@ module Jekyll
 
   module PersonFullNameFilter
     def person_full_name(input)
-      person = Person.new(input.strip, @context)
+      person = Person.new(input.strip, @context.registers[:site])
 
       if person
         result = person.full_name

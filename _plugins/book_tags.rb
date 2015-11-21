@@ -21,7 +21,7 @@ module Jekyll
 
     def render(context)
       if @id
-        book = Book.new(@id,context)
+        book = Book.new(@id,context.registers[:site])
 
         if book
           result = ''
@@ -30,10 +30,10 @@ module Jekyll
           if book.has_cover_image
             result += "<img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\">"
           end
-          
+
           result += '<div class="citation">'
           result += Kramdown::Document.new(
-                        "### #{book.casual_citation}", 
+                        "### #{book.casual_citation}",
                         auto_ids: false
                         ).to_html()
           result += '</div>'
@@ -59,7 +59,7 @@ module Jekyll
 
     def render(context)
       if @id
-        book = Book.new(@id,context)
+        book = Book.new(@id,context.registers[:site])
 
         if book
           result = ''

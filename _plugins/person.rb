@@ -4,10 +4,9 @@ module Jekyll
     attr_reader :last_name
     attr_reader :bio
 
-    def initialize(id,context)
+    def initialize(id, site)
       @id = id
 
-      site = context.registers[:site]
       people = site.collections['people'].docs.select { |p| p.data['id'].to_s == id.to_s }
       person = people.first
 

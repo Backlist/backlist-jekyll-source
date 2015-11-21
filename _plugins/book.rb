@@ -13,10 +13,9 @@ module Jekyll
 
     attr_reader :tokens
 
-    def initialize(id, context)
+    def initialize(id, site)
       @id = id
 
-      site = context.registers[:site]
       books = site.collections['books'].docs.select { |b| b.data['id'].to_s == id.to_s }
       book = books.first
 
@@ -34,7 +33,7 @@ module Jekyll
       people_pairs.each do |pair|
         if pair[1]
           pair[1].each do |id|
-            pair[0] << Person.new(id,context)
+            pair[0] << Person.new(id,site)
           end
         end
       end

@@ -5,13 +5,13 @@ module Jekyll
     attr_reader :permalink
     attr_reader :author
 
-    def initialize(post,context)
+    def initialize(post,site)
       @title = post.data['title']
       # TODO: Add timestamp functionality
       @permalink = post.data['permalink']
-      @author = Person.new(post.data['author'],context)
+      @author = Person.new(post.data['author'], site)
 
-      puts post.categories
+      # puts post.categories
       # TODO: Categories
     end
   end
