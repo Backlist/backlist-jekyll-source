@@ -3,12 +3,22 @@ module Jekyll
 
   class BookCapsuleTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
-      @review = text
+      @book_id = text.split(',').first.strip
+      @list_id = text.split(',').last.strip
       super
     end
 
     def render(context)
-      Kramdown::Document.new(@review).to_html()
+      book = Book.new(@book_id, context.registers[:site])
+      result = "<div markdown=\"1\">\n"
+      if not book.reviews.nil?
+        book.reviews.each do |review|
+          if review[0] == @list_id
+            result += review[1]
+          end
+        end
+      end
+      result += "</div>\n"
     end
   end
 

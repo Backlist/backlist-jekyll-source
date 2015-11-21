@@ -1,4 +1,5 @@
 ---
+id: 7052479f9a771ab6
 layout: list
 title: "The History of U.S.-Cuban Relations"
 date: 2015-11-17 17:38:00
@@ -43,75 +44,75 @@ But if there’s a common motif that emerges, especially in light of the two cou
 <!-- Sweig, Cuba: What Everyone Needs to Know -->
 {% bookblock %}
 {% book_meta cbe0936f600a1a67 %}
-{% book_capsule This engaging book is a great place to begin. It gives an in-depth overview of the history and recent state of Cuba, including its relations with the United States, in an informal, question-and-answer format. %}
+{% book_capsule cbe0936f600a1a67, 7052479f9a771ab6 %}
 {% book_links cbe0936f600a1a67 %}
 {% endbookblock %}
 
 <!-- Pérez, On Becoming Cuban -->
 {% bookblock %}
-{% book_meta 9a8b106982cccdf5 %}
-{% book_capsule This vast cultural history of the U.S.-Cuban relationship explores the unique ties that developed between the two countries in the hundred years preceding the Cuban Revolution. The book shows how everyday encounters with the United States and its people, sports, entertainment industry, markets, and values shaped Cubans’ varied understandings of their own national identity. %}
-{% book_links 9a8b106982cccdf5 %}
+{% book_meta    9a8b106982cccdf5 %}
+{% book_capsule 9a8b106982cccdf5, 7052479f9a771ab6 %}
+{% book_links   9a8b106982cccdf5 %}
 {% endbookblock %}
 
 <!-- Schoultz, That Infernal Little Cuban Republic -->
 {% bookblock %}
-{% book_meta 32d1f7b9828bdea8 %}
-{% book_capsule Though less than a decade old, this book became an instant “classic” thanks to its clear and comprehensive overview of fifty years of U.S. policy toward the Cuban Revolution. It provides a nuanced analysis of the ideological roots of U.S. leaders’ multiple misguided attempts to determine Cuba’s fate. %}
-{% book_links 32d1f7b9828bdea8 %}
+{% book_meta    32d1f7b9828bdea8 %}
+{% book_capsule 32d1f7b9828bdea8, 7052479f9a771ab6 %}
+{% book_links   32d1f7b9828bdea8 %}
 {% endbookblock %}
 
 {% list_section_header 1 %}
 
 <!-- Ferrer, Insurgent Cuba -->
 {% bookblock %}
-{% book_meta 417c35fadf8165cc %}
-{% book_capsule While this book focuses mostly on domestic Cuban struggles for independence from Spain in the late nineteenth century, its insights into racial politics help readers appreciate the significant cultural distance between the United States and Cuba. Ferrer convincingly demonstrates that Cuban nationalism and the effects of U.S. imperialism are impossible to understand without looking at the multiracial fighting force that led and then lost Cuba’s war for true independence and racial equality. %}
-{% book_links 417c35fadf8165cc %}
+{% book_meta    417c35fadf8165cc %}
+{% book_capsule 417c35fadf8165cc, 7052479f9a771ab6 %}
+{% book_links   417c35fadf8165cc %}
 {% endbookblock %}
 
 <!-- Gosse, Where the Boys Are -->
 {% bookblock %}
-{% book_meta 0dadd2a9063e9630 %}
-{% book_capsule This book explores the Cuban Revolution’s impact in the United States and the ways that fidelismo helped inspire the political and social struggles of the sixties. U.S. culture was transformed by that captivating yet controversial revolution next door. %}
-{% book_links 0dadd2a9063e9630 %}
+{% book_meta    0dadd2a9063e9630 %}
+{% book_capsule 0dadd2a9063e9630, 7052479f9a771ab6 %}
+{% book_links   0dadd2a9063e9630 %}
 {% endbookblock %}
 
 <!-- Eckstein, The Immigrant Divide -->
 {% bookblock %}
-{% book_meta 3c1cd7bcf72a49c9 %}
-{% book_capsule This fascinating book analyzes generational shifts in the Cuban exile community, as well as how and why this uniquely influential group’s impact on U.S.-Cuban relations, the United States, and Cuba has changed over time. %}
-{% book_links 3c1cd7bcf72a49c9 %}
+{% book_meta    3c1cd7bcf72a49c9 %}
+{% book_capsule 3c1cd7bcf72a49c9, 7052479f9a771ab6 %}
+{% book_links   3c1cd7bcf72a49c9 %}
 {% endbookblock %}
 
 {% list_section_header 2 %}
 
 <!-- Gleijeses, Conflicting Missions -->
 {% bookblock %}
-{% book_meta 922ca8769ba865b5 %}
-{% book_capsule Together with its sequel, [_Visions of Freedom_](http://www.amazon.com/exec/obidos/asin/1469628325/ref=nosim/clionautics-20), this book tells the epic tale of Cuban, U.S., and (to a lesser extent) Soviet struggles over the fate of Africa. Gleijeses was the first historian allowed access to classified Cuban archives, and he uses them to great effect to uncover the surprising roles that the tiny Caribbean island played in Africa’s decolonization and postcolonial struggles. %}
-{% book_links 922ca8769ba865b5 %}
+{% book_meta    922ca8769ba865b5 %}
+{% book_capsule 922ca8769ba865b5, 7052479f9a771ab6 %}
+{% book_links   922ca8769ba865b5 %}
 {% endbookblock %}
 
 <!-- LeoGrande and Kornbluh, Back Channel to Cuba -->
 {% bookblock %}
-{% book_meta 9e574b66f7070937 %}
-{% book_capsule While most books on U.S.-Cuban relations focus on the hostile aspects, this one uncover the long history of secret bilateral attempts to repair the damaged relationship following the Cuban Revolution. Published mere weeks before Obama and Castro made their announcement of rapprochement, this book provides insight into the various obstacles that stymied previous efforts. %}
-{% book_links 9e574b66f7070937 %}
+{% book_meta    9e574b66f7070937 %}
+{% book_capsule 9e574b66f7070937, 7052479f9a771ab6 %}
+{% book_links   9e574b66f7070937 %}
 {% endbookblock %}
 
 {% list_section_header 3 %}
 
 <!-- Guevara, Guerrilla Warfare -->
 {% bookblock %}
-{% book_meta 3635f5e7c9f3f2c3 %}
-{% book_capsule In this short book, Che Guevara presents a theory of guerrilla warfare based on his experience in the Cuban Revolution. His ideas, which inspired a generation of revolutionaries, give insight into the Cold War context that helped poison U.S.-Cuban relations. %}
-{% book_links 3635f5e7c9f3f2c3 %}
+{% book_meta    3635f5e7c9f3f2c3 %}
+{% book_capsule 3635f5e7c9f3f2c3, 7052479f9a771ab6 %}
+{% book_links   3635f5e7c9f3f2c3 %}
 {% endbookblock %}
 
 <!-- Eire, Waiting for Snow in Havana -->
 {% bookblock %}
-{% book_meta d982aeb96ffd583a %}
-{% book_capsule Carlos Eire, Waiting for Snow in Havana: Confessions of a Cuban Boy (2003). Eire’s memoir of his childhood in Cuba and his lonely escape to the United States in 1962 at the age of eleven is haunting and beautiful. His evocative description of the world he and his family lost helps readers better understand the human costs of the Cuban Revolution. %}
-{% book_links d982aeb96ffd583a %}
+{% book_meta    d982aeb96ffd583a %}
+{% book_capsule d982aeb96ffd583a, 7052479f9a771ab6 %}
+{% book_links   d982aeb96ffd583a %}
 {% endbookblock %}

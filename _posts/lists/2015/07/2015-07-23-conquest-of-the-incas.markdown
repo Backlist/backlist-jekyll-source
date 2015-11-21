@@ -1,4 +1,5 @@
 ---
+id: adece18449a0062b
 layout: list
 title: "The Conquest of the Incas"
 date: 2015-07-23 17:38:00
@@ -40,70 +41,70 @@ The following books aren’t just about the defeat of the Incas. They are about 
 
 <!-- Hemming, Conquest of the Incas -->
 {% bookblock %}
-{% book_meta d821c5a3ef29dec4 %}
-{% book_capsule For nearly fifty years, this has been one of the best narrative histories ever written, full stop. Richly synthesized, it begins with Cajamarca and goes into wonderful detail on the forty-year resistance led by Atahualpa’s younger brother Manco and his sons, who tried to stay politically and religiously independent of Spanish rule. %}
-{% book_links d821c5a3ef29dec4  %}
+{% book_meta    d821c5a3ef29dec4 %}
+{% book_capsule d821c5a3ef29dec4, adece18449a0062b %}
+{% book_links   d821c5a3ef29dec4  %}
 {% endbookblock %}
 
 
 <!-- Lamana, Domination with Dominance -->
 {% bookblock %}
-{% book_meta f0a1ad725afcde63 %}
-{% book_capsule Never mind the jargon. This is an absolutely fascinating book on how Andean expectations shaped the conquest. It pulls apart the conquistadors’ contradictory accounts to show why military supremacy did not translate into cultural domination; why Incas ruled in Cusco for a quarter-century after 1532; and how Spaniards struggled to understand why war could only be waged on full moons. %}
-{% book_links f0a1ad725afcde63 %}
+{% book_meta    f0a1ad725afcde63 %}
+{% book_capsule f0a1ad725afcde63, adece18449a0062b %}
+{% book_links   f0a1ad725afcde63 %}
 {% endbookblock %}
 
 {% list_section_header 1 %}
 
 <!-- Spalding, Huarochiri -->
 {% bookblock %}
-{% book_meta 0fc4b3f92c2a6936 %}
-{% book_capsule The Incas were conquerors too. How did they compare to the Spaniards, from the perspective of Indians who weren’t rich and powerful? The modern social history of the Andes began here, as Spalding plumbed Peruvian archives to show how Spanish rule constricted the wealth, health, and land of smaller groups already living on the edge. %}
-{% book_links 0fc4b3f92c2a6936 %}
+{% book_meta    0fc4b3f92c2a6936 %}
+{% book_capsule 0fc4b3f92c2a6936, adece18449a0062b %}
+{% book_links   0fc4b3f92c2a6936 %}
 {% endbookblock %}
 
 <!-- Prescott, History of the Conquest of Peru -->
 {% bookblock %}
-{% book_meta 2fc95e2aaa5e0217 %}
-{% book_capsule Until Hemming, Prescott’s rollicking account of the conquest reigned. It has its problems. Whereas Jared Diamond gives too much credit to ‘guns, germs, and steel’ as an explanation, Prescott leans on ‘God, Gold, and Glory.’ Nearly-innocent Incas are rapidly and tragically outclassed by Spanish villains, and little notice is given to non-Inca Indians. But its use of original sources was innovative for its time, and its writing is justly famed. %}
-{% book_links 2fc95e2aaa5e0217 %}
+{% book_meta    2fc95e2aaa5e0217 %}
+{% book_capsule 2fc95e2aaa5e0217, adece18449a0062b %}
+{% book_links   2fc95e2aaa5e0217 %}
 {% endbookblock %}
 
 {% list_section_header 2 %}
 
 <!-- Ramos, Death and Conversion in the Andes -->
 {% bookblock %}
-{% book_meta 0a26df4b0847a28a %}
-{% book_capsule Not every Inca or Indian could be a covert rebel, secretly worshipping the sun and old religious icons. In looking at why Indians after the conquest buried themselves in churches and wrote wills in Spanish, Ramos explains how they navigated a new political landscape. This is the story of how Peru’s Indians came to believe themselves more Christian than the Spanish. %}
-{% book_links 0a26df4b0847a28a %}
+{% book_meta    0a26df4b0847a28a %}
+{% book_capsule 0a26df4b0847a28a, adece18449a0062b %}
+{% book_links   0a26df4b0847a28a %}
 {% endbookblock %}
 
 <!-- Mumford, Vertical Empire -->
 {% bookblock %}
-{% book_meta 6d6422c6c18ff0cb %}
-{% book_capsule The dividing line between the Peru of the Incas and the Peru of the Spanish lies not in 1532 but 1569, when the Viceroy Francisco de Toledo arrived, executed the last independent Inca, and resettled over a million Indians to maximize the colony’s silver production. But this revisionist history argues that Toledo’s reforms preserved as much as they dismantled. Many indigenous communities who still exist today date their legal foundation to this moment. %}
-{% book_links 6d6422c6c18ff0cb %}
+{% book_meta    6d6422c6c18ff0cb %}
+{% book_capsule 6d6422c6c18ff0cb, adece18449a0062b %}
+{% book_links   6d6422c6c18ff0cb %}
 {% endbookblock %}
 
 {% list_section_header 3 %}
 
 <!-- Titu Cusi Yupanqui, How the Spaniards Arrived in Peru -->
 {% bookblock %}
-{% book_meta 09a5262dfddf4acc %}
-{% book_capsule It was Titu Cusi’s younger brother Tupac Amaru that Toledo executed when he arrived. A few years before, while ruling their jungle kingdom east of Cusco, Titu Cusi dictated a message that he hoped would stir the conscience of the Spanish king. It arrived too late to make a difference, but this fiery letter from one emperor to another—thick with sad detail—still cuts to the bone. %}
-{% book_links 09a5262dfddf4acc %}
+{% book_meta    09a5262dfddf4acc %}
+{% book_capsule 09a5262dfddf4acc, adece18449a0062b %}
+{% book_links   09a5262dfddf4acc %}
 {% endbookblock %}
 
 <!-- Garcilaso de la Vega, Royal Commentaries of the Incas -->
 {% bookblock %}
-{% book_meta 53c1c16b2878cbfa %}
-{% book_capsule The Incas never left. In the early seventeenth century, the son of an Inca princess and a conquistador published this history of his mother’s people, of the greatness that he believed the Spanish had misunderstood. Some of Garcilaso’s memories are a little too golden, but their beauty lastingly helped Europe understand what had been lost. In the eighteenth and nineteenth centuries Garcilaso inspired Indians and Spaniards alike to take up arms again, in the name of an Inca kingdom, or republic, reborn. %}
-{% book_links 53c1c16b2878cbfa %}
+{% book_meta    53c1c16b2878cbfa %}
+{% book_capsule 53c1c16b2878cbfa, adece18449a0062b %}
+{% book_links    53c1c16b2878cbfa %}
 {% endbookblock %}
 
 <!-- Walker, Tupac Amaru Rebellion -->
 {% bookblock %}
 {% book_meta a0a657ee8843a8c2 %}
-{% book_capsule One Inca so inspired was José Gabriel Condorcanqui. In 1780, José Gabriel styled himself Tupac Amaru II and launched a rebellion that swept across southern Peru. Walker’s history brings his struggle to life, and breathes deep sadness into the horrific execution of José Gabriel and his wife and co-plotter Micaela Bastidas, after which the resistance staggered along for another three ever more violent years. In 1821, Peru would declare for independence, but the contract of justice created after the Spanish conquest ended here. %}
+{% book_capsule a0a657ee8843a8c2, adece18449a0062b %}
 {% book_links a0a657ee8843a8c2 %}
 {% endbookblock %}

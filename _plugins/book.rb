@@ -8,6 +8,8 @@ module Jekyll
     attr_reader :editors
     attr_reader :translators
 
+    attr_reader :reviews
+
     attr_reader :original_publication_year
     attr_reader :has_cover_image
 
@@ -18,6 +20,10 @@ module Jekyll
 
       books = site.collections['books'].docs.select { |b| b.data['id'].to_s == id.to_s }
       book = books.first
+
+      if !book
+        return false
+      end
 
       @full_citation = book.data['full_citation']
       @casual_citation = book.data['casual_citation']
@@ -35,6 +41,13 @@ module Jekyll
           pair[1].each do |id|
             pair[0] << Person.new(id,site)
           end
+        end
+      end
+
+      @reviews = []
+      if book.data['reviews']
+        book.data['reviews'].each do |review|
+          @reviews << [review['list_id'], review['text']]
         end
       end
 
