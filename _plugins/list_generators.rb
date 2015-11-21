@@ -8,7 +8,12 @@ module Jekyll
 
       site.posts.docs.each do |post|
         if post.data['layout'] == 'list'
-          content = build_bibtex_list(post.data['books'], site)
+          author = Person.new(post.data['author'], site)
+          content = "\# Works cited in ‘#{post.data['title']}’ at Backlist\n"
+          content += "\# By #{author.full_name}\n"
+          content += "\# Published #{post.data['date'].strftime('%B %d, %Y')}\n"
+          content += "\# http://backlist.cc#{post.data['permalink']}\n\n"
+          content += build_bibtex_list(post.data['books'], site)
           f = File.new(File.join(site.source, post.permalink + '.bib'), 'w+')
           f.write(content)
           f.close()
