@@ -928,9 +928,9 @@ ul.list-of-lists {
     background: {
       color: $insetBackgroundColor;
       image: url('/images/interface/small-1-color-logomark.png');
-      position: 50% calc(100% - 1.5em);
+      position: 50% calc(100% - 1em);
       repeat: no-repeat;
-      size: 24px 23px;
+      size: 12px 12px;
     }
     border: {
       color: $highlight1Color;
