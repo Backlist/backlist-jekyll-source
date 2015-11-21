@@ -918,6 +918,14 @@ ul.list-of-lists {
     margin: 0 auto;
     padding: $spacingUnit * 2;
 
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
     p:first-child:first-line {
       font-weight: 700;
       letter-spacing: .025em;
