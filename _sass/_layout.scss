@@ -599,6 +599,40 @@ body.homepage {
   }
 }
 
+.biblio-block {
+  @include sans-serif-font-stack;
+  margin-top: $spacingUnit;
+  padding-left: $spacingUnit * 2;
+  padding-right: $spacingUnit * 2;
+
+  ul.citation-sources {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      line-height: 100%;
+      margin-right: $spacingUnit;
+      position: relative;
+
+      &.label {
+        font-weight: 700;
+      }
+
+      a {
+        color: $highlight2Color;
+        line-height: 100%;
+
+        &:hover {
+          color: $highlight1Color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 
 /**
  * Categories

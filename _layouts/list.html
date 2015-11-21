@@ -27,5 +27,12 @@ layout: default
   <div class="bio-block wrapper">
     {{ page.author | author_bio }}
   </div>
+  <div class="biblio-block wrapper">
+    <ul class="citation-sources">
+      <li class="label">Cited Works:</li><!--
+      --><li><a href="{{ page.zotero }}">Zotero</a></li><!--
+      --><li><a href="{{ siteUrl }}{{ page.permalink }}.bib">BibTeX</a></li>
+    </ul>
+  </div>
 
 </div>
