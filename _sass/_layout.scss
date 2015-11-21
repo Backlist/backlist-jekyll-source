@@ -665,7 +665,7 @@ body.homepage {
         color: $highlight2Color;
         display: inline-block;
         font: {
-          size: 1.25em;
+          // size: 1.25em;
           weight: 700;
         }
         padding: .5em 1em;
@@ -689,7 +689,7 @@ body.homepage {
 
   .table-panel {
     display: none;
-    padding: $spacingUnit * 2;
+    padding: $spacingUnit;
     text-align: center;
 
     &.here {
@@ -702,12 +702,31 @@ body.homepage {
       padding: 0;
 
       li {
+        color: $highlight1Color;
         display: inline-block;
         font: {
-          size: 1.5em;
+          size: 1.25em;
           weight: 700;
         }
-        margin-right: 1em;
+        margin-right: .5em;
+
+        &:after {
+          content: '•';
+        }
+
+        &:last-child {
+          &:after { content: ''; }
+        }
+
+
+        a {
+          color: $accentColor;
+          margin-right: .5em;
+
+          &:hover {
+            color: $highlight2Color;
+          }
+        }
       }
     }
   }
@@ -716,13 +735,14 @@ body.homepage {
 .categories-controls {
   @include sans-serif-font-stack;
 
-  margin: 0 0 ($spacingUnit / 2) 0;
+  margin: ($spacingUnit * 2) 0 0 0;
+  text-align: center;
 
   a {
-    color: $highlight2Color;
+    color: $highlight1Color;
 
     &:hover {
-      color: $highlight1Color;
+      color: $highlight2Color;
     }
   }
 }
