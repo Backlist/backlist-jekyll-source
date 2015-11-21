@@ -1,5 +1,19 @@
 module Jekyll
 
+  module ListLinkFilter
+    def list_link(input)
+      list = List.new(input.strip, @context.registers[:site])
+
+      if list
+        result = "<a href=\"#{list.permalink}\">#{list.title}</a>"
+      else
+        result = "<p>ERROR: There is no list associated with the specified id ‘#{input.strip}’.</p>"
+      end
+
+      result
+    end
+  end
+
   class ListSectionHeaderTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       @idx = text.to_i
@@ -53,6 +67,8 @@ module Jekyll
 
 
 end
+
+Liquid::Template.register_filter(Jekyll::ListLinkFilter)
 
 Liquid::Template.register_tag('list_section_header', Jekyll::ListSectionHeaderTag)
 Liquid::Template.register_tag('bookblock', Jekyll::ListBookBlockTag)

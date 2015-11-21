@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+<div class="wrapper">
+  <ul class="list-of-citations">
+    {% for book in site.books %}
+      {% assign first_letter = book['full_citation'] | truncate: 1, '' | downcase %}
+      {% if first_letter == page.filter %}
+        <li>
+          <h3>{{ book['full_citation'] | markdown_span }}</h3>
+          <ul class="citations">
+            <li class="label">Cited in:</li>
+            {% for review in book['reviews'] %}
+              <li>{{ review.list_id | list_link }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
