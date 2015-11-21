@@ -25,7 +25,7 @@ module Jekyll
 
         if book
           result = ''
-          result += '<div class="book-meta-block">'
+          result += "<div class=\"book-meta-block\" id=\"#{@id}\">"
 
           if book.has_cover_image
             result += "<img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\">"
