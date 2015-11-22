@@ -9,8 +9,13 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'bibliography.html')
       self.data['filter'] = filter.to_s
-      self.data['title'] = 'TODO: temp title'
-      self.data['header'] = 'Books'
+      if filter == :all
+        self.data['title'] = 'Books'
+        self.data['header'] = 'Books'
+      else
+        self.data['title'] = "Books for ‘#{filter.to_s.upcase}’"
+        self.data['header'] = "Books for ‘#{filter.to_s.upcase}’"
+      end
     end
   end
 
@@ -27,7 +32,7 @@ module Jekyll
         else
           filter_dir = filter.to_s.upcase
         end
-        site.pages << BibliographyPage.new(site, site.source, File.join('bibliography', filter_dir), filter)
+        site.pages << BibliographyPage.new(site, site.source, File.join('books', filter_dir), filter)
       end
     end
 
