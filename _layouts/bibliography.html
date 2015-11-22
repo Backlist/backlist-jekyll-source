@@ -6,15 +6,7 @@ layout: page
 <div class="wrapper">
   <ul class="list-of-citations">
     {% for book in site.books %}
-      {% assign first_letter = book['full_citation'] | truncate: 1, '' | downcase %}
-      {% if page.filter == 'all' %}
-        {% assign output_flag = true %}
-      {% elsif page.filter == first_letter %}
-        {% assign output_flag = true %}
-      {% else %}
-        {% assign output_flag = false %}
-      {% endif %}
-      {% if output_flag %}
+      {% if page.book_ids contains book['id'] %}
         {% if book['reviews'].size > 0 %}
           <li>
             <h3>{{ book['full_citation'] | markdown_span }}</h3>
@@ -29,6 +21,12 @@ layout: page
       {% endif %}
     {% endfor %}
   </ul>
+
+  <ul class="pagination">
+    {% if page.page_number > 1 %}<li><a href="/books/{{ page.filter }}/{{ page.page_number | minus: 1 }}">Previous Entries</a></li>{% endif %}{% if page.page_number < page.max_page %}<li><a href="/books/{{ page.filter }}/{{ page.page_number | plus: 1 }}">More Entries</a></li>{% endif %}
+  </ul>
+  {% if page.max_page > 1 %}
+    <p class="page-number">(Page {{ page.page_number}} of {{ page.max_page }})</p>
+  {% endif %}
 </div>
-{% filter_table %}
 {% endstrip %}

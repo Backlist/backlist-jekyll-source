@@ -747,6 +747,51 @@ body.homepage {
   }
 }
 
+p.page-number {
+  @include sans-serif-font-stack;
+  font: {
+    size: .75em;
+    weight: 300;
+  }
+  margin: ($spacingUnit / 4) auto 0 auto;
+  text-align: center;
+}
+
+ul.pagination {
+  list-style-type: none;
+  margin: $spacingUnit auto 0 auto;
+  padding: 0;
+  text-align: center;
+
+  li {
+    color: $highlight1Color;
+    display: inline-block;
+    margin-right: .5em;
+
+    &:after {
+      content: '•';
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        content: '';
+      }
+    }
+
+    a {
+      color: $highlight2Color;
+      margin-right: .5em;
+
+      &:hover {
+        color: $highlight1Color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 ul.list-of-lists {
   list-style-type: none;
   margin: $spacingUnit 0;
