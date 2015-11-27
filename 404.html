@@ -6,9 +6,9 @@ permalink: /404.html
   <div class="image-underlay library"></div>
   <div class="content-overlay">
     <div class="content">
-      <h2>Lost in the stacks?</h2>
+      <h2>404: Lost in the stacks?</h2>
       <p>
-        Why not read about <a href="#">XXX</a>?
+        Why not read about <a id="another-list-link" href="/lists/conquest-of-the-incas">The Conquest of the Incas</a>?
       </p>
     </div>
   </div>
@@ -16,3 +16,11 @@ permalink: /404.html
     <a href="https://commons.wikimedia.org/wiki/File%3ALibrary-shelves-bibliographies-Graz.jpg">Image by Dr. Marcus Gossler, CC-BY-SA-3.0, via Wikimedia Commons</a>
   </p>
 </div>
+
+<script type="text/javascript">
+$.getJSON('/data-includes/404-page-links.json', function(data) {
+  var randomLink = data[Math.floor(Math.random() * data.length)];
+  $('#another-list-link').attr('href', randomLink['permalink']);
+  $('#another-list-link').html(randomLink['title']);
+});
+</script>
