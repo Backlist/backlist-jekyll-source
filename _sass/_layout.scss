@@ -493,6 +493,77 @@ body.homepage {
 }
 
 /**
+ * 404 Page
+  */
+
+.error-page {
+  padding-top: $spacingUnit;
+
+  .image-underlay {
+    background: {
+      repeat: no-repeat;
+      size: 100%;
+    }
+    margin-top: $spacingUnit;
+    max-width: 100%;
+    opacity: 0.3;
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    z-index: 0;
+
+    &.library {
+      background: {
+        image: url(/images/interface/404-library.jpg);
+      }
+    }
+  }
+
+  .content-overlay {
+    @include header-gradient;
+    max-width: 100%;
+    opacity: 1.0;
+    padding: 37.5% 0;
+    position: relative;
+    z-index: 1;
+
+    .content {
+      margin-top: -3em;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+
+      h2 {
+        font: {
+          size: 3em;
+          weight: 700;
+        }
+      }
+
+      a {
+        @include sans-serif-font-stack;
+
+        background-color: $insetBackgroundColor;
+        display: inline-block;
+        line-height: 100%;
+        padding: .25em;
+      }
+    }
+  }
+
+  p.attribution {
+    @include sans-serif-font-stack;
+    font-size: .8em;
+    line-height: 100%;
+    margin: .5em 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/**
  * Lists Directory
  */
 
