@@ -110,7 +110,8 @@ layout: homepage
         <img id="read-recommendation-cover" src="" />
       </a>
       <p>
-        Reviewed in <a id="read-recommendation-list-link" href="#"></a> by <span id="read-recommendation-author">[Author Stub]</span>
+        Reviewed by <span id="read-recommendation-author"></span> in<br />
+        <a id="read-recommendation-list-link" href="#"></a>
       </p>
     </div>
   </div>
@@ -119,11 +120,13 @@ layout: homepage
 <script type="text/javascript">
 $.getJSON('/data-includes/homepage-featured-book-source.json', function(data) {
   var randomBook = data[Math.floor(Math.random() * data.length)];
-  $('#read-recommendation-cover').attr('src','/images/covers/' + randomBook['id'][0] + '/' + randomBook['id'] + '-small.jpg');
-  $('#read-recommendation-title-link').attr('href', randomBook['list_permalink'] + '#' + randomBook['id']);
+  $('#read-recommendation-cover').attr('src','/images/covers/' + randomBook['book_id'][0] + '/' + randomBook['book_id'] + '-small.jpg');
+  $('#read-recommendation-title-link').attr('href', randomBook['list_permalink'] + '#' + randomBook['book_id']);
 
   $('#read-recommendation-list-link').attr('href', randomBook['list_permalink']);
   $('#read-recommendation-list-link').html(randomBook['list_title']);
+
+  $('#read-recommendation-author').html(randomBook['author']);
 
 });
 </script>

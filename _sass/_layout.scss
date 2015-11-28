@@ -486,6 +486,27 @@ body.homepage {
     }
 
     &.recommendation {
+      p {
+        @include sans-serif-font-stack;
+        background-color: $insetBackgroundColor;
+        border: {
+          color: $highlight1Color;
+          style: solid;
+          width: 1px 0 0 0;
+        }
+        font-size: .8em;
+        line-height: 150%;
+        margin: 0;
+        padding: 1em .5em 2em .5em;
+        text-transform: uppercase;
+
+        a {
+          @include special-link-underline;
+          font-size: 1.25em;
+          line-height: 100%;
+          text-transform: none;
+        }
+      }
     }
   }
 }

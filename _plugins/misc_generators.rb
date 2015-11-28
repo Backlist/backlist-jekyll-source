@@ -5,6 +5,34 @@ module Jekyll
     safe true
 
     def generate(site)
+      books = []
+
+      site.posts.docs.each do |post|
+        if post.data['layout'] == 'list'
+          author = Person.new(post.data['author'], site)
+
+          post.data['books'].each do |id|
+            book = Book.new(id, site)
+
+            if book.has_cover_image
+              books << {
+                book_id: id,
+                list_title: post.data['title'],
+                list_permalink: post.data['permalink'],
+                author: author.full_name
+              }
+            end
+          end
+        end
+      end
+
+      f = File.new(File.join(site.source, 'data-includes/homepage-featured-book-source.json'), 'w+')
+      f.write(JSON.generate(books))
+      f.close
+      site.static_files << Jekyll::StaticFile.new(site, site.source, 'data-includes', 'homepage-featured-book-source.json')
+    end
+
+    def generate_old(site)
       lists = []
       books = []
 
