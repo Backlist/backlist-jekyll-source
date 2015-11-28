@@ -102,7 +102,7 @@ module Jekyll
         if not book.reviews.nil?
           book.reviews.each do |review|
             if review[0] == @list_id
-              result += review[1]
+              result += Kramdown::Document.new(review[1]).to_html()
             end
           end
         end

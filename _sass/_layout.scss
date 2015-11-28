@@ -1257,6 +1257,10 @@ ul.bibliography-filters {
       margin: 0 (-$spacingUnit * 2) $spacingUnit $spacingUnit;
       padding: 1.5em;
       width: 33.3333%;
+
+      a {
+        @include special-link-underline;
+      }
     }
   }
 
@@ -1276,6 +1280,11 @@ ul.bibliography-filters {
     }
     margin: ($spacingUnit / 2) auto;
     padding: $spacingUnit * 2;
+
+    p a {
+      @include special-link-underline($insetBackgroundColor, 66.6667%);
+      line-height: 100%;
+    }
   }
 
   .citation {
@@ -1298,10 +1307,6 @@ ul.bibliography-filters {
     margin-left: 1em;
     padding: ($spacingUnit / 2) $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
     height: 240px;
-  }
-
-  p a {
-    @include special-link-underline($background: $insetBackgroundColor, $verticalPosition: 66.66667%);
   }
 
   ul.affiliate-grid {
