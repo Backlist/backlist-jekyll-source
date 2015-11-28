@@ -24,6 +24,16 @@ layout: default
 
   <article class="post-content">
     {{ content }}
+
+    {% strip %}
+    {% for section in page.sections %}
+      {% list_section_header {{ section['id'] }} %}
+
+      {% for book in section['books'] %}
+        {% bookblock {{ book }}, {{ page.id }} %}
+      {% endfor %}
+    {% endfor %}
+    {% endstrip %}
   </article>
 
   <div class="bio-block wrapper">

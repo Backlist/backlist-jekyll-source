@@ -13,7 +13,14 @@ module Jekyll
           content += "\# By #{author.full_name}\n"
           content += "\# Published #{post.data['date'].strftime('%B %d, %Y')}\n"
           content += "\# http://backlist.cc#{post.data['permalink']}\n\n"
-          content += build_bibtex_list(post.data['books'], site)
+
+          book_ids = []
+          post.data['sections'].each do |section|
+            section['books'].each do |book_id|
+              book_ids << book_id
+            end
+          end
+          content += build_bibtex_list(book_ids, site)
           f = File.new(File.join(site.source, post.permalink + '.bib'), 'w+')
           f.write(content)
           f.close()

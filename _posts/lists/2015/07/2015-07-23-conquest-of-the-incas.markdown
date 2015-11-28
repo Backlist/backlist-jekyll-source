@@ -7,16 +7,24 @@ header: "heaney-conquest-of-the-incas.jpg"
 permalink: "/lists/conquest-of-the-incas"
 description: "To explain how the Spanish conquered the Incas, we must credit the alliances made with the many Indian groups discontented with Inca rule, as well as alliances made with Incas themselves, including Atahualpa. Those alliances then became the foundation of an incredible colonial society, surprisingly just, suddenly violent, that lasted for nearly three hundred years—almost twice as long as England’s colonies in North America."
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/TQZ8BGPU
-books:
-    - d821c5a3ef29dec4
-    - f0a1ad725afcde63
-    - 0fc4b3f92c2a6936
-    - 2fc95e2aaa5e0217
-    - 0a26df4b0847a28a
-    - 6d6422c6c18ff0cb
-    - 09a5262dfddf4acc
-    - 53c1c16b2878cbfa
-    - a0a657ee8843a8c2
+sections:
+  - id: 0
+    books:
+      - d821c5a3ef29dec4
+      - f0a1ad725afcde63
+  - id: 1
+    books:
+      - 0fc4b3f92c2a6936
+      - 2fc95e2aaa5e0217
+  - id: 2
+    books:
+      - 0a26df4b0847a28a
+      - 6d6422c6c18ff0cb
+  - id: 3
+    books:
+      - 09a5262dfddf4acc
+      - 53c1c16b2878cbfa
+      - a0a657ee8843a8c2
 categories:
     - latin-america
     - 16th-century
@@ -36,39 +44,3 @@ What emerges is a conquest that took forty years, not one; that killed almost al
 The following books aren’t just about the defeat of the Incas. They are about the creation and survival of Peru.
 {% endintroblock %}
 {::options parse_block_html="false" /}
-
-{% list_section_header 0 %}
-
-<!-- Hemming, Conquest of the Incas -->
-{% bookblock d821c5a3ef29dec4, adece18449a0062b %}
-
-
-<!-- Lamana, Domination with Dominance -->
-{% bookblock f0a1ad725afcde63, adece18449a0062b %}
-
-{% list_section_header 1 %}
-
-<!-- Spalding, Huarochiri -->
-{% bookblock 0fc4b3f92c2a6936, adece18449a0062b %}
-
-<!-- Prescott, History of the Conquest of Peru -->
-{% bookblock 2fc95e2aaa5e0217, adece18449a0062b %}
-
-{% list_section_header 2 %}
-
-<!-- Ramos, Death and Conversion in the Andes -->
-{% bookblock 0a26df4b0847a28a, adece18449a0062b %}
-
-<!-- Mumford, Vertical Empire -->
-{% bookblock 6d6422c6c18ff0cb, adece18449a0062b %}
-
-{% list_section_header 3 %}
-
-<!-- Titu Cusi Yupanqui, How the Spaniards Arrived in Peru -->
-{% bookblock 09a5262dfddf4acc, adece18449a0062b %}
-
-<!-- Garcilaso de la Vega, Royal Commentaries of the Incas -->
-{% bookblock 53c1c16b2878cbfa, adece18449a0062b %}
-
-<!-- Walker, Tupac Amaru Rebellion -->
-{% bookblock a0a657ee8843a8c2, adece18449a0062b %}

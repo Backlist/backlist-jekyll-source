@@ -7,17 +7,25 @@ header: 'keller-us-cuba-relations.jpg'
 permalink: '/lists/history-of-us-cuba-relations'
 description: 'How did the United States and Cuba—two nations separated by a mere 90 miles of water—drift so far apart? Why has a country as small as Cuba played such an outsized role in U.S. foreign and domestic politics? Why do the heroes of the Cuban Revolution, by now either long dead or spending their retirement in tracksuits, still hold such power over the American imagination?'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/2H3CCBC2
-books:
-  - cbe0936f600a1a67
-  - 9a8b106982cccdf5
-  - 32d1f7b9828bdea8
-  - 417c35fadf8165cc
-  - 0dadd2a9063e9630
-  - 3c1cd7bcf72a49c9
-  - 922ca8769ba865b5
-  - 9e574b66f7070937
-  - 3635f5e7c9f3f2c3
-  - d982aeb96ffd583a
+sections:
+  - id: 0
+    books:
+      - cbe0936f600a1a67
+      - 9a8b106982cccdf5
+      - 32d1f7b9828bdea8
+  - id: 1
+    books:
+      - 417c35fadf8165cc
+      - 0dadd2a9063e9630
+      - 3c1cd7bcf72a49c9
+  - id: 2
+    books:
+      - 922ca8769ba865b5
+      - 9e574b66f7070937
+  - id: 3
+    books:
+      - 3635f5e7c9f3f2c3
+      - d982aeb96ffd583a
 categories:
   - latin-america
   - united-states
@@ -38,41 +46,3 @@ Despite these common characteristics, the books on this list approach the subjec
 But if there’s a common motif that emerges, especially in light of the two countries’ rapprochement in 2015, it is that Cuba and the United States can’t quit each other. For better and worse, geography and history have brought the two nations together in numerous ways over the centuries. Taken together, these books reveal that no matter how widely their politics may diverge, the destinies of the United States and Cuba remain intimately linked.
 {% endintroblock %}
 {::options parse_block_html="false" /}
-
-{% list_section_header 0 %}
-
-<!-- Sweig, Cuba: What Everyone Needs to Know -->
-{% bookblock cbe0936f600a1a67, 7052479f9a771ab6 %}
-
-<!-- Pérez, On Becoming Cuban -->
-{% bookblock 9a8b106982cccdf5, 7052479f9a771ab6 %}
-
-<!-- Schoultz, That Infernal Little Cuban Republic -->
-{% bookblock 32d1f7b9828bdea8, 7052479f9a771ab6 %}
-
-{% list_section_header 1 %}
-
-<!-- Ferrer, Insurgent Cuba -->
-{% bookblock 417c35fadf8165cc, 7052479f9a771ab6 %}
-
-<!-- Gosse, Where the Boys Are -->
-{% bookblock 0dadd2a9063e9630, 7052479f9a771ab6 %}
-
-<!-- Eckstein, The Immigrant Divide -->
-{% bookblock 3c1cd7bcf72a49c9, 7052479f9a771ab6 %}
-
-{% list_section_header 2 %}
-
-<!-- Gleijeses, Conflicting Missions -->
-{% bookblock 922ca8769ba865b5, 7052479f9a771ab6 %}
-
-<!-- LeoGrande and Kornbluh, Back Channel to Cuba -->
-{% bookblock 9e574b66f7070937, 7052479f9a771ab6 %}
-
-{% list_section_header 3 %}
-
-<!-- Guevara, Guerrilla Warfare -->
-{% bookblock 3635f5e7c9f3f2c3, 7052479f9a771ab6 %}
-
-<!-- Eire, Waiting for Snow in Havana -->
-{% bookblock d982aeb96ffd583a, 7052479f9a771ab6 %}

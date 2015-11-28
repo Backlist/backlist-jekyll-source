@@ -15,8 +15,8 @@ module Jekyll
   end
 
   class ListSectionHeaderTag < Liquid::Tag
-    def initialize(tag_name, text, tokens)
-      @idx = text.to_i
+    def initialize(tag_name, markup, tokens)
+      @markup = markup
       @labels = [
         ['Places to Start', 'places-to-start'],
         ['Digging In', 'digging-in'],
@@ -26,11 +26,12 @@ module Jekyll
     end
 
     def render(context)
-      if @idx >= 0
+      idx = Liquid::Template.parse(@markup).render(context).to_i
+      if idx >= 0
         result = ''
-        result += "<h2 id=\"#{@labels[@idx][1]}\">"
+        result += "<h2 id=\"#{@labels[idx][1]}\">"
         result += '<div class="wrapper">'
-        result += @labels[@idx][0]
+        result += @labels[idx][0]
         result += '</div>'
         result += '</h2>'
       else
@@ -54,13 +55,17 @@ module Jekyll
   end
 
   class ListBookBlockTag < Liquid::Tag
-    def initialize(tag_name, text, tokens)
-      @book_id = text.split(',').first.strip
-      @list_id = text.split(',').last.strip
+    def initialize(tag_name, markup, tokens)
+      @markup = markup
+      @book_id = ''
+      @list_id = ''
       super
     end
 
     def render(context)
+      text = Liquid::Template.parse(@markup).render(context)
+      @book_id = text.split(',').first.strip
+      @list_id = text.split(',').last.strip
       result = '<div class="book-block wrapper">'
       result += generate_meta(context)
       result += generate_capsule(context)
@@ -139,12 +144,6 @@ module Jekyll
 
   end
 
-  class EndListBookBlockTag < Liquid::Tag
-    def render(context)
-      '</div>'
-    end
-  end
-
 
 end
 
@@ -152,6 +151,5 @@ Liquid::Template.register_filter(Jekyll::ListLinkFilter)
 
 Liquid::Template.register_tag('list_section_header', Jekyll::ListSectionHeaderTag)
 Liquid::Template.register_tag('bookblock', Jekyll::ListBookBlockTag)
-Liquid::Template.register_tag('endbookblock', Jekyll::EndListBookBlockTag)
 Liquid::Template.register_tag('introblock', Jekyll::ListIntroBlockTag)
 Liquid::Template.register_tag('endintroblock', Jekyll::EndListIntroBlockTag)
