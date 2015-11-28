@@ -165,6 +165,20 @@ body {
     color: $backgroundColor;
     text-decoration: none;
 
+    .icon {
+      > svg {
+        path {
+          height: 28px;
+          width: 28px;
+        }
+      }
+    }
+
+    .label {
+      vertical-align: middle;
+    }
+
+
     &:hover {
       color: $highlight1Color;
 
@@ -500,10 +514,17 @@ body.homepage {
 
           .icon {
             > svg {
+              height: 28px;
+              width: 28px;
+
               path {
                 fill: $accentColor;
               }
             }
+          }
+
+          .label {
+            vertical-align: middle;
           }
 
           &:hover {
