@@ -97,11 +97,28 @@ layout: homepage
   </div>
 
   <div class="third-col right">
-    <div class="homepage-bucket">
+    <div class="homepage-bucket follow">
       <h3>Keep in Touch</h3>
-      <p>
-        Stub for following us on social media and newsletter
-      </p>
+      <ul class="contact-list">
+        <li>
+          <a href="http://eepurl.com/bzqp9f" target="_blank">
+          <span class="icon">{% include svg/email.html %}</span>
+          Join Our Newsletter
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="icon">{% include svg/twitter.html %}</span>
+            {{ site.twitter_username }}
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="icon">{% include svg/github.html %}</span>
+            {{ site.github_username }}
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="homepage-bucket recommendation">

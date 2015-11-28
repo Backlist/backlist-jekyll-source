@@ -287,7 +287,6 @@ body.homepage {
 
     &.categories-row {
       padding-top: $spacingUnit;
-      padding-bottom: $spacingUnit;
     }
   }
 
@@ -448,7 +447,7 @@ body.homepage {
       style: solid;
       width: 0 0 1px 0;
     }
-    margin-bottom: $spacingUnit;
+    margin-bottom: $spacingUnit * 2;
 
     h3 {
       @include sans-serif-font-stack;
@@ -481,6 +480,43 @@ body.homepage {
 
           color: $accentColor;
           text-decoration: none;
+        }
+      }
+    }
+
+    &.follow {
+      ul.contact-list {
+        @include sans-serif-font-stack;
+        line-height: 100%;
+        margin: .5em;
+
+        li {
+          margin-bottom: .25em;
+        }
+
+        a {
+          color: $accentColor;
+          text-decoration: none;
+
+          .icon {
+            > svg {
+              path {
+                fill: $accentColor;
+              }
+            }
+          }
+
+          &:hover {
+            color: $highlight2Color;
+
+            .icon {
+              > svg {
+                path {
+                  fill: $highlight2Color;
+                }
+              }
+            }
+          }
         }
       }
     }

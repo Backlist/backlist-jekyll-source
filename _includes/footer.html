@@ -13,33 +13,30 @@
       </p>
 
       <p class="credit">
-        Made by Advanced Clionautics LLC
+        Made by Advanced Clionautics LLC • <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </p>
     </div>
 
     <div class="third-col right">
       <ul class="contact-list">
-        <li><a href="http://eepurl.com/bzqp9f" target="_blank">Join Our Newsletter</a></li>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        {% if site.twitter_username %}
+        <li>
+          <a href="http://eepurl.com/bzqp9f" target="_blank">
+          <span class="icon">{% include svg/email.html %}</span>
+          Join Our Newsletter
+          </a>
+        </li>
         <li>
           <a href="https://twitter.com/{{ site.twitter_username }}">
-            <span class="icon  icon--twitter">{% include svg/twitter.html %}</span>
-
-            <span class="username">{{ site.twitter_username }}</span>
+            <span class="icon">{% include svg/twitter.html %}</span>
+            {{ site.twitter_username }}
           </a>
         </li>
-        {% endif %}
-
-        {% if site.github_username %}
         <li>
           <a href="https://github.com/{{ site.github_username }}">
-            <span class="icon  icon--github">{% include svg/github.html %}</span>
-
-            <span class="username">{{ site.github_username }}</span>
+            <span class="icon">{% include svg/github.html %}</span>
+            {{ site.github_username }}
           </a>
         </li>
-        {% endif %}
       </ul>
     </div>
   </div>
