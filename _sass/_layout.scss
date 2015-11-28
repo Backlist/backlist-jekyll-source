@@ -921,6 +921,8 @@ p.page-number {
 }
 
 ul.pagination {
+  @include sans-serif-font-stack;
+  
   list-style-type: none;
   margin: $spacingUnit auto 0 auto;
   padding: 0;
@@ -1143,6 +1145,8 @@ ul.bibliography-filters {
 }
 
 .page-title {
+  @include sans-serif-font-stack;
+
   font: {
     size: 2.5em;
   }
