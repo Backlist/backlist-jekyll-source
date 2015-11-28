@@ -1225,10 +1225,16 @@ ul.bibliography-filters {
   }
 
   .intro-block {
-    background-color: $insetBackgroundColor;
+    background: {
+      color: $insetBackgroundColor;
+      image: url('/images/interface/small-1-color-logomark.png');
+      position: 50% calc(100% - 2.5em);
+      repeat: no-repeat;
+      size: 24px 23px;
+    }
     line-height: 166.66666667%;
     margin: 0 auto;
-    padding: $spacingUnit * 2;
+    padding: ($spacingUnit * 2) ($spacingUnit * 2) ($spacingUnit * 3) ($spacingUnit * 2);
 
     p:first-child {
       margin-top: 0;
@@ -1267,10 +1273,6 @@ ul.bibliography-filters {
   .book-block {
     background: {
       color: $insetBackgroundColor;
-      image: url('/images/interface/small-1-color-logomark.png');
-      position: 50% calc(100% - 1em);
-      repeat: no-repeat;
-      size: 12px 12px;
     }
     border: {
       color: $highlight1Color;
