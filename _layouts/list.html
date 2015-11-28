@@ -24,6 +24,9 @@ layout: default
 
   <article class="post-content">
     <div class="intro-block wrapper">
+      <div class="author-profile">
+        {{ page.author | author_bio }}
+      </div>
       {{ content }}
     </div>
 
@@ -38,9 +41,6 @@ layout: default
     {% endstrip %}
   </article>
 
-  <div class="bio-block wrapper">
-    {{ page.author | author_bio }}
-  </div>
   <div class="biblio-block wrapper">
     <ul class="citation-sources">
       <li class="label">Cited Works:</li><!--
