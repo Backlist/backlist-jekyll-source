@@ -1329,7 +1329,7 @@ ul.bibliography-filters {
     }
   }
 
-  .cover {
+  .sidebar {
     background-color: $highlight1Color;
     background-color: rgba($highlight1Color,.2);
     float: right;
@@ -1338,16 +1338,14 @@ ul.bibliography-filters {
     width: 25%;
   }
 
+  .cover {
+    margin-bottom: $spacingUnit / 2;
+  }
+
   ul.affiliate-grid {
     @include sans-serif-font-stack;
-
-    background-color: $highlight1Color;
-    background-color: rgba($highlight1Color, .2);
-    clear: right;
-    float: right;
-    margin: 0 (-$spacingUnit * 2) 0 $spacingUnit;
-    padding: 0 $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
-    width: 25%;
+    margin: 0;
+    padding: 0;
 
     li {
       font-size: .875em; // 14px

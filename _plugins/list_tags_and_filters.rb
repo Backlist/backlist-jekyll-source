@@ -54,10 +54,12 @@ module Jekyll
       text = Liquid::Template.parse(@markup).render(context)
       @book_id = text.split(',').first.strip
       @list_id = text.split(',').last.strip
+
+      book = Book.new(@book_id, context.registers[:site])
+
       result = '<div class="book-block wrapper">'
-      result += generate_meta(context)
-      result += generate_links(context)
-      result += generate_capsule(context)
+      result += generate_meta(book, context)
+      result += generate_capsule(book, context)
       result += '</div>'
 
       result
@@ -65,44 +67,27 @@ module Jekyll
 
     private
 
-      def generate_meta(context)
-        if @book_id
-          book = Book.new(@book_id,context.registers[:site])
-
-          if book
-            result = ''
-            result += "<div class=\"book-meta-block\" id=\"#{@book_id}\">"
-
-            if book.has_cover_image
-              result += "<img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\">"
-            end
-
-            result += '<div class="citation"><h3>'
-            result += Kramdown::Document.new(
-                          "#{book.casual_citation}",
-                          auto_ids: false
-                          ).to_html()[3..-6]
-            book_link = "#{context.registers[:page]['permalink']}##{book.id}"
-            result += "<a href='#{book_link}'><span class='icon'>"
-            result +=
-              Liquid::Template.parse('{% include svg/hyperlink.html %}').render(context)
-            result += '</span></a>'
-            result += '</div>'
-
-
-            result += '</div>'
-          else
-            result = "ERROR: No book for the specified id '#{@book_id}'."
-          end
-        else
-          result = "ERROR: An id was not specified for this book."
-        end
+      def generate_meta(book, context)
+        result = ''
+        result += '<div class="book-meta-block">'
+        result += generate_sidebar(book, context)
+        result += '<div class="citation"><h3>'
+        result += Kramdown::Document.new(
+                      "#{book.casual_citation}",
+                      auto_ids: false
+                      ).to_html()[3..-6]
+        book_link = "#{context.registers[:page]['permalink']}##{book.id}"
+        result += "<a href='#{book_link}'><span class='icon'>"
+        result +=
+          Liquid::Template.parse('{% include svg/hyperlink.html %}').render(context)
+        result += '</span></a>'
+        result += '</div>'
+        result += '</div>'
 
         result
       end
 
-      def generate_capsule(context)
-        book = Book.new(@book_id, context.registers[:site])
+      def generate_capsule(book, context)
         result = "<div markdown=\"1\">\n"
         if not book.reviews.nil?
           book.reviews.each do |review|
@@ -114,23 +99,25 @@ module Jekyll
         result += "</div>\n"
       end
 
-      def generate_links(context)
-        if @book_id
-          book = Book.new(@book_id,context.registers[:site])
-
-          if book
-            result = ''
-            result += '<ul class="affiliate-grid">'
-            [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
-              result += "<li>#{book.build_link_for(slug)}</li>" if book.has_link_for?(slug)
-            end
-            result += '</ul>'
-          else
-            result = "ERROR: No book for the specified id '#{@book_id}."
-          end
-        else
-          result = "ERROR: an id was not specified for this book."
+      def generate_sidebar(book, context)
+        result = ''
+        result += '<div class="sidebar">'
+        if book.has_cover_image
+          result += "<img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\">"
         end
+        result += generate_links(book, context)
+        result += '</div>'
+
+        result
+      end
+
+      def generate_links(book, context)
+        result = ''
+        result += '<ul class="affiliate-grid">'
+        [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
+          result += "<li>#{book.build_link_for(slug)}</li>" if book.has_link_for?(slug)
+        end
+        result += '</ul>'
 
         result
       end
