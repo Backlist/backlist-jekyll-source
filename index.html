@@ -104,11 +104,26 @@ layout: homepage
       </p>
     </div>
 
-    <div class="homepage-bucket">
+    <div class="homepage-bucket recommendation">
       <h3>Read a Book</h3>
+      <a class="book" id="read-recommendation-title-link" href="#">
+        <img id="read-recommendation-cover" src="" />
+      </a>
       <p>
-        Stub for random book recommendation
+        Reviewed in <a id="read-recommendation-list-link" href="#"></a> by <span id="read-recommendation-author">[Author Stub]</span>
       </p>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+$.getJSON('/data-includes/homepage-featured-book-source.json', function(data) {
+  var randomBook = data[Math.floor(Math.random() * data.length)];
+  $('#read-recommendation-cover').attr('src','/images/covers/' + randomBook['id'][0] + '/' + randomBook['id'] + '-small.jpg');
+  $('#read-recommendation-title-link').attr('href', randomBook['list_permalink'] + '#' + randomBook['id']);
+
+  $('#read-recommendation-list-link').attr('href', randomBook['list_permalink']);
+  $('#read-recommendation-list-link').html(randomBook['list_title']);
+
+});
+</script>
