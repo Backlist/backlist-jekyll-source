@@ -102,7 +102,7 @@ module Jekyll
       when :oclc
         if @tokens[:oclc]
           url = "http://worldcat.org/oclc/#{@tokens[:oclc]}"
-          label = 'Find at your library'
+          label = 'Find at Your Library'
           affiliate = false
         end
       else
