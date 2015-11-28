@@ -78,7 +78,7 @@ module Jekyll
         end
       when :indiebound
         if @tokens[:indiebound]
-          url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=clionautcs"
+          url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=clionautics"
           label = 'Buy from Indiebound'
           affiliate = true
         end
