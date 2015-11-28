@@ -40,71 +40,35 @@ The following books aren’t just about the defeat of the Incas. They are about 
 {% list_section_header 0 %}
 
 <!-- Hemming, Conquest of the Incas -->
-{% bookblock %}
-{% book_meta    d821c5a3ef29dec4 %}
-{% book_capsule d821c5a3ef29dec4, adece18449a0062b %}
-{% book_links   d821c5a3ef29dec4  %}
-{% endbookblock %}
+{% bookblock d821c5a3ef29dec4, adece18449a0062b %}
 
 
 <!-- Lamana, Domination with Dominance -->
-{% bookblock %}
-{% book_meta    f0a1ad725afcde63 %}
-{% book_capsule f0a1ad725afcde63, adece18449a0062b %}
-{% book_links   f0a1ad725afcde63 %}
-{% endbookblock %}
+{% bookblock f0a1ad725afcde63, adece18449a0062b %}
 
 {% list_section_header 1 %}
 
 <!-- Spalding, Huarochiri -->
-{% bookblock %}
-{% book_meta    0fc4b3f92c2a6936 %}
-{% book_capsule 0fc4b3f92c2a6936, adece18449a0062b %}
-{% book_links   0fc4b3f92c2a6936 %}
-{% endbookblock %}
+{% bookblock 0fc4b3f92c2a6936, adece18449a0062b %}
 
 <!-- Prescott, History of the Conquest of Peru -->
-{% bookblock %}
-{% book_meta    2fc95e2aaa5e0217 %}
-{% book_capsule 2fc95e2aaa5e0217, adece18449a0062b %}
-{% book_links   2fc95e2aaa5e0217 %}
-{% endbookblock %}
+{% bookblock 2fc95e2aaa5e0217, adece18449a0062b %}
 
 {% list_section_header 2 %}
 
 <!-- Ramos, Death and Conversion in the Andes -->
-{% bookblock %}
-{% book_meta    0a26df4b0847a28a %}
-{% book_capsule 0a26df4b0847a28a, adece18449a0062b %}
-{% book_links   0a26df4b0847a28a %}
-{% endbookblock %}
+{% bookblock 0a26df4b0847a28a, adece18449a0062b %}
 
 <!-- Mumford, Vertical Empire -->
-{% bookblock %}
-{% book_meta    6d6422c6c18ff0cb %}
-{% book_capsule 6d6422c6c18ff0cb, adece18449a0062b %}
-{% book_links   6d6422c6c18ff0cb %}
-{% endbookblock %}
+{% bookblock 6d6422c6c18ff0cb, adece18449a0062b %}
 
 {% list_section_header 3 %}
 
 <!-- Titu Cusi Yupanqui, How the Spaniards Arrived in Peru -->
-{% bookblock %}
-{% book_meta    09a5262dfddf4acc %}
-{% book_capsule 09a5262dfddf4acc, adece18449a0062b %}
-{% book_links   09a5262dfddf4acc %}
-{% endbookblock %}
+{% bookblock 09a5262dfddf4acc, adece18449a0062b %}
 
 <!-- Garcilaso de la Vega, Royal Commentaries of the Incas -->
-{% bookblock %}
-{% book_meta    53c1c16b2878cbfa %}
-{% book_capsule 53c1c16b2878cbfa, adece18449a0062b %}
-{% book_links    53c1c16b2878cbfa %}
-{% endbookblock %}
+{% bookblock 53c1c16b2878cbfa, adece18449a0062b %}
 
 <!-- Walker, Tupac Amaru Rebellion -->
-{% bookblock %}
-{% book_meta a0a657ee8843a8c2 %}
-{% book_capsule a0a657ee8843a8c2, adece18449a0062b %}
-{% book_links a0a657ee8843a8c2 %}
-{% endbookblock %}
+{% bookblock a0a657ee8843a8c2, adece18449a0062b %}

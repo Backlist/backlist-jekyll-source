@@ -54,9 +54,89 @@ module Jekyll
   end
 
   class ListBookBlockTag < Liquid::Tag
-    def render(context)
-      '<div class="book-block wrapper">'
+    def initialize(tag_name, text, tokens)
+      @book_id = text.split(',').first.strip
+      @list_id = text.split(',').last.strip
+      super
     end
+
+    def render(context)
+      result = '<div class="book-block wrapper">'
+      result += generate_meta(context)
+      result += generate_capsule(context)
+      result += generate_links(context)
+      result += '</div>'
+
+      result
+    end
+
+    private
+
+      def generate_meta(context)
+        if @book_id
+          book = Book.new(@book_id,context.registers[:site])
+
+          if book
+            result = ''
+            result += "<div class=\"book-meta-block\" id=\"#{@book_id}\">"
+
+            if book.has_cover_image
+              result += "<img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\">"
+            end
+
+            result += '<div class="citation">'
+            result += Kramdown::Document.new(
+                          "### #{book.casual_citation}",
+                          auto_ids: false
+                          ).to_html()
+            result += '</div>'
+
+
+            result += '</div>'
+          else
+            result = "ERROR: No book for the specified id '#{@book_id}'."
+          end
+        else
+          result = "ERROR: An id was not specified for this book."
+        end
+
+        result
+      end
+
+      def generate_capsule(context)
+        book = Book.new(@book_id, context.registers[:site])
+        result = "<div markdown=\"1\">\n"
+        if not book.reviews.nil?
+          book.reviews.each do |review|
+            if review[0] == @list_id
+              result += review[1]
+            end
+          end
+        end
+        result += "</div>\n"
+      end
+
+      def generate_links(context)
+        if @book_id
+          book = Book.new(@book_id,context.registers[:site])
+
+          if book
+            result = ''
+            result += '<ul class="affiliate-grid">'
+            [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
+              result += "<li>#{book.build_link_for(slug)}</li>" if book.has_link_for?(slug)
+            end
+            result += '</ul>'
+          else
+            result = "ERROR: No book for the specified id '#{@book_id}."
+          end
+        else
+          result = "ERROR: an id was not specified for this book."
+        end
+
+        result
+      end
+
   end
 
   class EndListBookBlockTag < Liquid::Tag

@@ -42,77 +42,37 @@ But if there’s a common motif that emerges, especially in light of the two cou
 {% list_section_header 0 %}
 
 <!-- Sweig, Cuba: What Everyone Needs to Know -->
-{% bookblock %}
-{% book_meta cbe0936f600a1a67 %}
-{% book_capsule cbe0936f600a1a67, 7052479f9a771ab6 %}
-{% book_links cbe0936f600a1a67 %}
-{% endbookblock %}
+{% bookblock cbe0936f600a1a67, 7052479f9a771ab6 %}
 
 <!-- Pérez, On Becoming Cuban -->
-{% bookblock %}
-{% book_meta    9a8b106982cccdf5 %}
-{% book_capsule 9a8b106982cccdf5, 7052479f9a771ab6 %}
-{% book_links   9a8b106982cccdf5 %}
-{% endbookblock %}
+{% bookblock 9a8b106982cccdf5, 7052479f9a771ab6 %}
 
 <!-- Schoultz, That Infernal Little Cuban Republic -->
-{% bookblock %}
-{% book_meta    32d1f7b9828bdea8 %}
-{% book_capsule 32d1f7b9828bdea8, 7052479f9a771ab6 %}
-{% book_links   32d1f7b9828bdea8 %}
-{% endbookblock %}
+{% bookblock 32d1f7b9828bdea8, 7052479f9a771ab6 %}
 
 {% list_section_header 1 %}
 
 <!-- Ferrer, Insurgent Cuba -->
-{% bookblock %}
-{% book_meta    417c35fadf8165cc %}
-{% book_capsule 417c35fadf8165cc, 7052479f9a771ab6 %}
-{% book_links   417c35fadf8165cc %}
-{% endbookblock %}
+{% bookblock 417c35fadf8165cc, 7052479f9a771ab6 %}
 
 <!-- Gosse, Where the Boys Are -->
-{% bookblock %}
-{% book_meta    0dadd2a9063e9630 %}
-{% book_capsule 0dadd2a9063e9630, 7052479f9a771ab6 %}
-{% book_links   0dadd2a9063e9630 %}
-{% endbookblock %}
+{% bookblock 0dadd2a9063e9630, 7052479f9a771ab6 %}
 
 <!-- Eckstein, The Immigrant Divide -->
-{% bookblock %}
-{% book_meta    3c1cd7bcf72a49c9 %}
-{% book_capsule 3c1cd7bcf72a49c9, 7052479f9a771ab6 %}
-{% book_links   3c1cd7bcf72a49c9 %}
-{% endbookblock %}
+{% bookblock 3c1cd7bcf72a49c9, 7052479f9a771ab6 %}
 
 {% list_section_header 2 %}
 
 <!-- Gleijeses, Conflicting Missions -->
-{% bookblock %}
-{% book_meta    922ca8769ba865b5 %}
-{% book_capsule 922ca8769ba865b5, 7052479f9a771ab6 %}
-{% book_links   922ca8769ba865b5 %}
-{% endbookblock %}
+{% bookblock 922ca8769ba865b5, 7052479f9a771ab6 %}
 
 <!-- LeoGrande and Kornbluh, Back Channel to Cuba -->
-{% bookblock %}
-{% book_meta    9e574b66f7070937 %}
-{% book_capsule 9e574b66f7070937, 7052479f9a771ab6 %}
-{% book_links   9e574b66f7070937 %}
-{% endbookblock %}
+{% bookblock 9e574b66f7070937, 7052479f9a771ab6 %}
 
 {% list_section_header 3 %}
 
 <!-- Guevara, Guerrilla Warfare -->
-{% bookblock %}
-{% book_meta    3635f5e7c9f3f2c3 %}
-{% book_capsule 3635f5e7c9f3f2c3, 7052479f9a771ab6 %}
-{% book_links   3635f5e7c9f3f2c3 %}
-{% endbookblock %}
+{% bookblock 3635f5e7c9f3f2c3, 7052479f9a771ab6 %}
 
 <!-- Eire, Waiting for Snow in Havana -->
-{% bookblock %}
-{% book_meta    d982aeb96ffd583a %}
-{% book_capsule d982aeb96ffd583a, 7052479f9a771ab6 %}
-{% book_links   d982aeb96ffd583a %}
-{% endbookblock %}
+{% bookblock d982aeb96ffd583a, 7052479f9a771ab6 %}
