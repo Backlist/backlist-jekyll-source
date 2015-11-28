@@ -687,7 +687,9 @@ body.homepage {
 .two-thirds-col {
   float: left;
   margin-right: $spacingUnit;
-  width: $spacingUnit + (2 * (.33333333333 * ($contentWidth - ($spacingUnit * 2))));
+  width: -moz-calc(#{$spacingUnit} + (2 * (.33333333333 * (100% - (#{$spacingUnit} * 2)))));
+  width: -webkit-calc(#{$spacingUnit} + (2 * (.33333333333 * (100% - (#{$spacingUnit} * 2)))));
+  width: calc(#{$spacingUnit} + (2 * (.33333333333 * (100% - (#{$spacingUnit} * 2)))));
 
   &.right {
     margin-right: 0;
@@ -697,7 +699,9 @@ body.homepage {
 .third-col {
   float: left;
   margin-right: $spacingUnit;
-  width: (.3333333333 * ($contentWidth - ($spacingUnit * 2)));
+  width: -moz-calc(.3333333333 * (100% - (#{$spacingUnit} * 2)));
+  width: -webkit-calc(.3333333333 * (100% - (#{$spacingUnit} * 2)));
+  width: calc(.3333333333 * (100% - (#{$spacingUnit} * 2)));
 
   &.right {
     margin-right: 0;
