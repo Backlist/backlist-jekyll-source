@@ -5,9 +5,11 @@ layout: default
 
   <header class="post-header" style="background-image: url({{ siteUrl }}/images/list-headers/{{ page.header }})"><div class="header-inset"><div class="wrapper">
     <div class="title-card">
-      <h1 class="post-title">{{ page.title }}</h1>
+      <h1 class="post-title">
+        {{ page.title }}
+        <span class="byline">By {{ page.author | person_full_name }}</span>
+      </h1>
       <div class="post-meta">
-        {{ page.author | person_full_name }} • 
         {{ page.date | date: "%B %-d, %Y" }} •
         <ul class="categories"><!--
           {% for page_category in page.categories %}{% for category in site.data['categories'] %}{% if page_category == category.id %}

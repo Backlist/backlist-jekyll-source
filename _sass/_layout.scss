@@ -391,6 +391,14 @@ body.homepage {
       size: auto 240px;
     }
 
+    .read-more {
+      color: $highlight1Color;
+
+      &:hover {
+        color: $highlight2Color;
+      }
+    }
+
     .featured-list {
       background: -moz-linear-gradient(top,  rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // FF3.6+
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba($backgroundColor, .4)), color-stop(100%, $backgroundColor)); // Chrome,Safari4+
@@ -414,6 +422,8 @@ body.homepage {
         margin: 0 $spacingUnit;
 
         h3 {
+          @include display-font-stack;
+
           font: {
             size: 2em;
             weight: 700;
@@ -435,10 +445,11 @@ body.homepage {
             }
           }
 
-          .metadata {
+          .attribution {
+            @include sans-serif-font-stack;
             display: block;
             font: {
-              size: .5em;
+              size: .6666667em;
               weight: 400;
             }
             padding: 0 .1em;
@@ -1140,9 +1151,20 @@ ul.bibliography-filters {
 }
 
 .post-title {
-  font-size: 42px; // TODO: Proportional
+  @include display-font-stack;
+
+  font-size: 3em;
+  font-weight: 400;
   letter-spacing: -1px;
   line-height: 1;
+
+  span.byline {
+    @include sans-serif-font-stack;
+
+    display: block;
+    font-size: .5em;
+    margin-top: .25em;
+  }
 
   @include media-query($onLaptop) {
     font-size: 36px; // TODO: Proportional

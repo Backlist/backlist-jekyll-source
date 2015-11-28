@@ -26,13 +26,18 @@ $onPalm:          600px;
 $onLaptop:        800px;
 
 // Mixins
+@mixin display-font-stack {
+  font-family: "aller-display", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
 @mixin serif-font-stack {
   font-family: "cordale", Georgia, serif;
   font-weight: 400;
 }
 
 @mixin sans-serif-font-stack {
-  font-family: "aller", sans-serif;
+  font-family: "aller", Helvetica, sans-serif;
   font-weight: 400;
 }
 
