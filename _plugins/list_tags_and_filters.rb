@@ -42,18 +42,6 @@ module Jekyll
     end
   end
 
-  class ListIntroBlockTag < Liquid::Tag
-    def render(context)
-      '<div class="intro-block wrapper">'
-    end
-  end
-
-  class EndListIntroBlockTag < Liquid::Tag
-    def render(context)
-      '</div>'
-    end
-  end
-
   class ListBookBlockTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
       @markup = markup
@@ -151,5 +139,3 @@ Liquid::Template.register_filter(Jekyll::ListLinkFilter)
 
 Liquid::Template.register_tag('list_section_header', Jekyll::ListSectionHeaderTag)
 Liquid::Template.register_tag('bookblock', Jekyll::ListBookBlockTag)
-Liquid::Template.register_tag('introblock', Jekyll::ListIntroBlockTag)
-Liquid::Template.register_tag('endintroblock', Jekyll::EndListIntroBlockTag)

@@ -23,7 +23,9 @@ layout: default
   <div class="header-drawer"></div></header>
 
   <article class="post-content">
-    {{ content }}
+    <div class="intro-block wrapper">
+      {{ content }}
+    </div>
 
     {% strip %}
     {% for section in page.sections %}
