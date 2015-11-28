@@ -98,50 +98,6 @@ body {
       margin-left: $spacingUnit;
     }
   }
-
-  @include media-query($onPalm) {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    background-color: $backgroundColor;
-    border: 1px solid $lightInterfaceStroke;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        width: 18px;
-        height: 15px;
-
-        path {
-          fill: $darkInterfaceStroke;
-        }
-      }
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-    }
-  }
 }
 
 
@@ -247,40 +203,6 @@ body {
 .footer-col-3 {
     width: -webkit-calc(20% - (#{$spacingUnit} / 2));
     width:         calc(20% - (#{$spacingUnit} / 2));
-}
-
-@include media-query($onLaptop) {
-    .footer-col-1 {
-      width: -webkit-calc(67% - (#{$spacingUnit} / 2));
-      width:         calc(67% - (#{$spacingUnit} / 2));
-    }
-
-    .footer-col-2 {
-      width: -webkit-calc(33% - (#{$spacingUnit} / 2));
-      width:         calc(33% - (#{$spacingUnit} / 2));
-    }
-
-    .footer-col-3 {
-      width: -webkit-calc(100% - (#{$spacingUnit} / 2));
-      width:         calc(100% - (#{$spacingUnit} / 2));
-
-      .contact-list {
-        margin-left: $spacingUnit;
-      }
-    }
-}
-
-@include media-query($onPalm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacingUnit} / 2));
-    width:         calc(100% - (#{$spacingUnit} / 2));
-
-    .contact-list,
-    .page-list {
-      margin-left: $spacingUnit;
-    }
-  }
 }
 
 
@@ -1163,10 +1085,6 @@ ul.bibliography-filters {
     font-size: .5em;
     margin-top: .25em;
   }
-
-  @include media-query($onLaptop) {
-    font-size: 36px; // TODO: Proportional
-  }
 }
 
 .post-content {
@@ -1190,10 +1108,6 @@ ul.bibliography-filters {
     padding: ($spacingUnit / 3) 0 ($spacingUnit / 2) 0;
     text-transform: uppercase;
 
-    @include media-query($onLaptop) {
-      font-size: 28px; // TODO: Proportional
-    }
-
     .wrapper {
       padding: 0 ($spacingUnit * 2)
     }
@@ -1203,18 +1117,10 @@ ul.bibliography-filters {
     font: {
       size: 1.25em; // 20px
     }
-
-    @include media-query($onLaptop) {
-      font-size: 22px; // TODO: Proportional
-    }
   }
 
   h4 {
     font-size: 20px; // TODO: Proportional
-
-    @include media-query($onLaptop) {
-      font-size: 18px; // TODO: Proportional
-    }
   }
 
   hr {

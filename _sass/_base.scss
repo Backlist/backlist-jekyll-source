@@ -98,12 +98,6 @@ a {
   width: -webkit-calc(100% - (#{$spacingUnit} * 2));
   width: -moz-calc(100% - (#{$spacingUnit} * 2));
   width:         calc(100% - (#{$spacingUnit} * 2));
-
-  @include media-query($onLaptop) {
-    max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit}));
-    max-width: -moz-calc(#{$contentWidth} - (#{$spacingUnit} * 2));
-    max-width:         calc(#{$contentWidth} - (#{$spacingUnit}));
-  }
 }
 
 /**
