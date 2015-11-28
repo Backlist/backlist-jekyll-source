@@ -1281,7 +1281,7 @@ ul.bibliography-filters {
       width: 1px 0 0 0;
     }
     margin: ($spacingUnit / 2) auto;
-    padding: $spacingUnit * 2;
+    padding: $spacingUnit ($spacingUnit * 2);
 
     p a {
       @include special-link-underline($insetBackgroundColor, 66.6667%);
@@ -1294,6 +1294,7 @@ ul.bibliography-filters {
       font-weight: 700;
       letter-spacing: .01em;
       margin-bottom: 1.25em;
+      padding-top: $spacingUnit;
       padding-left: 1.5em;
       text-indent: -1.5em;
     }
@@ -1303,58 +1304,30 @@ ul.bibliography-filters {
     background-color: $highlight1Color;
     background-color: rgba($highlight1Color,.2);
     float: right;
-    margin: ($spacingUnit * 1.5) -($spacingUnit * 2) 1em 1em;
-    margin-right: -($spacingUnit * 2);
-    margin-bottom: 1em;
-    margin-left: 1em;
+    margin: 0 (-$spacingUnit * 2) 0 $spacingUnit;
     padding: ($spacingUnit / 2) $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
-    height: 240px;
+    width: 25%;
   }
 
   ul.affiliate-grid {
     @include sans-serif-font-stack;
 
-    clear: both;
-    margin: ($spacingUnit * 2) 0 0 0;
-    padding: 0;
-    // text-align: center;
+    background-color: $highlight1Color;
+    background-color: rgba($highlight1Color, .2);
+    clear: right;
+    float: right;
+    margin: 0 (-$spacingUnit * 2) 0 $spacingUnit;
+    padding: 0 $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
+    width: 25%;
 
     li {
       font-size: .875em; // 14px
-      display: inline-block;
-      margin-right: .6666667em;
-      margin-bottom: .6666667em;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
 
       a {
         @include transition-stack;
-
-        border: 1px solid $highlight1Color;
-        border-radius: 1em;
-        color: $highlight2Color;
-        display: inline-block;
-        padding: .25em 1em;
-        text-decoration: none;
-
-        &:hover {
-          background-color: $highlight1Color;
-          border-color: $highlight2Color;
-          color: $insetBackgroundColor;
-
-          &.affiliate span {
-            color: $insetBackgroundColor;
-          }
-        }
-
-        &.affiliate {
-          span {
-            color: $highlight1Color;
-            font-weight: 700;
-            margin-left: .75em;
-          }
-          span:after {
-            content: "$";
-          }
-        }
       }
     }
   }

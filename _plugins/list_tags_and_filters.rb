@@ -56,8 +56,8 @@ module Jekyll
       @list_id = text.split(',').last.strip
       result = '<div class="book-block wrapper">'
       result += generate_meta(context)
-      result += generate_capsule(context)
       result += generate_links(context)
+      result += generate_capsule(context)
       result += '</div>'
 
       result
