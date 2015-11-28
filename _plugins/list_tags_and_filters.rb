@@ -77,11 +77,16 @@ module Jekyll
               result += "<img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\">"
             end
 
-            result += '<div class="citation">'
+            result += '<div class="citation"><h3>'
             result += Kramdown::Document.new(
-                          "### #{book.casual_citation}",
+                          "#{book.casual_citation}",
                           auto_ids: false
-                          ).to_html()
+                          ).to_html()[3..-6]
+            book_link = "#{context.registers[:page]['permalink']}##{book.id}"
+            result += "<a href='#{book_link}'><span class='icon'>"
+            result +=
+              Liquid::Template.parse('{% include svg/hyperlink.html %}').render(context)
+            result += '</span></a>'
             result += '</div>'
 
 

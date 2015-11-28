@@ -1297,6 +1297,35 @@ ul.bibliography-filters {
       padding-top: $spacingUnit;
       padding-left: 1.5em;
       text-indent: -1.5em;
+      vertical-align: middle;
+
+      a {
+        line-height: 100%;
+        margin-left: .5em;
+        vertical-align: middle;
+
+        span.icon {
+          svg {
+            height: 28px;
+            width: 28px;
+
+            path {
+              fill: $highlight1Color;
+            }
+          }
+          vertical-align: middle;
+        }
+
+        &:hover {
+          span.icon {
+            svg {
+              path {
+                fill: $highlight2Color;
+              }
+            }
+          }
+        }
+      }
     }
   }
 

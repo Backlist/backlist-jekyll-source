@@ -1,5 +1,7 @@
 module Jekyll
   class Book
+    attr_reader :id
+    
     attr_reader :full_citation
     attr_reader :casual_citation
     attr_reader :title
