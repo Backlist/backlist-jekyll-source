@@ -1,4 +1,75 @@
 @media screen and (max-width: 600px) {
+  body.homepage {
+    .home.top-row {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      img {
+        width: 75%;
+      }
+    }
+
+    .home-left-col, .home-left-col.inverse {
+      float: none;
+      margin: 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .home-right-col, .home-right-col.inverse {
+      float: none;
+      margin: 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .tagline-callout {
+      height: auto;
+      margin: 1em 0;
+      padding: 0;
+      position: relative;
+        top: auto;
+    }
+
+    .featured-list-wrapper .featured-list .details-card h3 {
+      font-size: 1.5em;
+    }
+
+    .homepage-bucket {
+      margin-bottom: $spacingUnit;
+
+      &.follow {
+        ul.contact-list {
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+      }
+
+      &.recommendation {
+        text-align: center;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .recent-lists-wrapper {
+      margin-bottom: $spacingUnit * 1.5;
+    }
+  }
+
+  .third-col {
+    width: 100%;
+  }
+
+  .two-thirds-col {
+    width: 100%;
+  }
+
   .post-title {
     font-size: 1.75em;
   }
@@ -108,6 +179,10 @@
     }
   }
 
+  .post-content .book-block {
+    margin-top: $spacingUnit;
+  }
+
   .biblio-block {
     padding-left: $spacingUnit / 2;
     padding-right: $spacingUnit / 2;
@@ -122,6 +197,9 @@
       font-size: .8em;
 
       li {
+        display: inline-block;
+        margin-top: .5em;
+        margin-right: 1em;
         margin-bottom: .5em;
       }
     }
