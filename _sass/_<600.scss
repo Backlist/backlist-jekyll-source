@@ -1,0 +1,133 @@
+@media screen and (max-width: 600px) {
+  .post-title {
+    font-size: 1.75em;
+  }
+
+  .post-meta {
+    font-size: .75em;
+  }
+
+  .site-nav .page-link {
+    font-size: 1em;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: $spacingUnit / 2;
+    }
+  }
+
+  .post-header {
+    height: 200px;
+
+    .title-card {
+      padding-right: $spacingUnit / 2;
+      padding-left: $spacingUnit / 2;
+    }
+
+    .header-drawer {
+      display: none;
+    }
+  }
+
+  .post-content .intro-block {
+    background: {
+      color: $insetBackgroundColor;
+      image: url('/images/interface/small-1-color-logomark.png');
+      position: 50% calc(100% - 1.5em);
+      repeat: no-repeat;
+      size: 18px 18px;
+    }
+    margin-top: 0;
+    padding-top: $spacingUnit / 2;
+    padding-left: $spacingUnit / 2;
+    padding-right: $spacingUnit / 2;
+    padding-bottom: $spacingUnit * 2;
+
+    div.author-profile {
+      float: none;
+      font-size: .8em;
+      margin: (-$spacingUnit / 2) (-$spacingUnit / 2) $spacingUnit (-$spacingUnit / 2);
+      padding: $spacingUnit / 2;
+      width: auto;
+    }
+  }
+
+  .page-content p {
+    font-size: 1em;
+  }
+
+  .post-content h2 .wrapper {
+    padding: 0 ($spacingUnit / 2);
+  }
+
+  .post-content .book-block {
+    padding: $spacingUnit / 2;
+  }
+
+  .post-content .sidebar {
+    float: none;
+    margin: (-$spacingUnit / 2) (-$spacingUnit / 2) $spacingUnit (-$spacingUnit / 2);
+    width: auto;
+
+    .cover {
+      float: left;
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    &.before {
+      display: none;
+    }
+    &.after {
+      display: block;
+    }
+  }
+
+  .post-content .citation h3 {
+    font-size: 1.1em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .post-content ul.affiliate-grid {
+    float: right;
+    padding-top: $spacingUnit;
+    padding-left: $spacingUnit;
+    width: 50%;
+
+    &.no-cover {
+      float: none;
+      padding: 0;
+      text-align: center;
+      width: auto;
+
+      li {
+        display: inline-block;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .biblio-block {
+    padding-left: $spacingUnit / 2;
+    padding-right: $spacingUnit / 2;
+  }
+
+  .site-footer {
+    ul.page-list {
+      font-size: 1em;
+    }
+
+    ul.contact-list {
+      font-size: .8em;
+
+      li {
+        margin-bottom: .5em;
+      }
+    }
+
+    p.credit {
+      font-size: .8em;
+    }
+  }
+}
