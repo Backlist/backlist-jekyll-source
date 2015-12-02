@@ -6,6 +6,10 @@
   display_name: '20th Century'
   group: chrono
 
+- id: china
+  display_name: China
+  group: geo
+  
 - id: latin-america
   display_name: 'Latin America'
   group: geo
