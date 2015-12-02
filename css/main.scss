@@ -22,9 +22,6 @@ $darkInterfaceStroke:  #f00;
 // Width of the content area
 $contentWidth:    900px;
 
-$onPalm:          600px;
-$onLaptop:        800px;
-
 // Mixins
 @mixin display-font-stack {
   font-family: "aller-display", Helvetica, sans-serif;
@@ -89,5 +86,8 @@ $onLaptop:        800px;
 @import
         "base",
         "layout",
+        "<900",
+        "<600",
+        "<420",
         "syntax-highlighting"
 ;

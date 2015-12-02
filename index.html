@@ -73,16 +73,25 @@ layout: homepage
   </div>
 
   <script type="text/javascript">
-    $(document).on('ready', function() {
+    function strechColumns(columnString) {
       var maxHeight = 0;
 
-      $('.categories-row .third-col .homepage-bucket').each(function() {
+      $(columnString).height('auto');
+      
+      $(columnString).each(function() {
         if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();
         }
       });
 
-      $('.categories-row .third-col .homepage-bucket').height(maxHeight);
+      $(columnString).height(maxHeight);
+    }
+
+    $(document).on('ready', function() {
+      strechColumns('.categories-row .third-col .homepage-bucket');
+    });
+    $(window).on('resize', function() {
+      strechColumns('.categories-row .third-col .homepage-bucket');
     });
   </script>
 </div>
