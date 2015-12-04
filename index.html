@@ -20,7 +20,7 @@ layout: homepage
   {% for post in site.posts %}{% if post.layout == 'list' %}{% if grabbed_post != true %}
     {% assign grabbed_post = true %}
     <h2 class="featured-banner">New List</h2>
-    <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.header }});"><div class="featured-list">
+    <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.image_id }});"><div class="featured-list">
       <div class="details-card">
         <h3>
           <a href="{{ post.url }}">
@@ -73,16 +73,25 @@ layout: homepage
   </div>
 
   <script type="text/javascript">
-    $(document).on('ready', function() {
+    function strechColumns(columnString) {
       var maxHeight = 0;
 
-      $('.categories-row .third-col .homepage-bucket').each(function() {
+      $(columnString).height('auto');
+
+      $(columnString).each(function() {
         if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();
         }
       });
 
-      $('.categories-row .third-col .homepage-bucket').height(maxHeight);
+      $(columnString).height(maxHeight);
+    }
+
+    $(document).on('ready', function() {
+      strechColumns('.categories-row .third-col .homepage-bucket');
+    });
+    $(window).on('resize', function() {
+      strechColumns('.categories-row .third-col .homepage-bucket');
     });
   </script>
 </div>

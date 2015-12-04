@@ -2,8 +2,8 @@
 id: 7052479f9a771ab6
 layout: list
 title: "The History of U.S.-Cuban Relations"
-date: 2015-11-17 17:38:00
-header: 'keller-us-cuba-relations.jpg'
+date: 2015-12-09 06:00:00
+image_id: 'keller-us-cuba-relations.jpg'
 permalink: '/lists/history-of-us-cuba-relations'
 description: 'How did the United States and Cuba—two nations separated by a mere 90 miles of water—drift so far apart? Why has a country as small as Cuba played such an outsized role in U.S. foreign and domestic politics? Why do the heroes of the Cuban Revolution, by now either long dead or spending their retirement in tracksuits, still hold such power over the American imagination?'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/2H3CCBC2
@@ -41,4 +41,4 @@ The books that did make it on to the list share a number of traits. With the exc
 
 Despite these common characteristics, the books on this list approach the subject of U.S.-Cuban relations in vastly different ways. Some focus more on Cuba, others focus more on the United States. Some concern themselves more with international relations, others with the domestic implications of U.S.-Cuban ties. Some look at national leaders, others look at everyday individuals. Some emphasize the ties that connect the two countries, others emphasize the conflicts that divide them.
 
-But if there’s a common motif that emerges, especially in light of the two countries’ rapprochement in 2015, it is that Cuba and the United States can’t quit each other. For better and worse, geography and history have brought the two nations together in numerous ways over the centuries. Taken together, these books reveal that no matter how widely their politics may diverge, the destinies of the United States and Cuba remain intimately linked.
+But if there’s a common motif that emerges, especially in light of the two countries’ rapprochement in 2015, it is that Cuba and the United States can’t quit each other. For better _and_ worse, geography and history have brought the two nations together in numerous ways over the centuries. Taken together, these books reveal that no matter how widely their politics may diverge, the destinies of the United States and Cuba remain intimately linked.

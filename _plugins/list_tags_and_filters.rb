@@ -60,6 +60,7 @@ module Jekyll
       result = '<div class="book-block wrapper">'
       result += generate_meta(book, context)
       result += generate_capsule(book, context)
+      result += generate_sidebar(book, :after, context)
       result += '</div>'
 
       result
@@ -70,7 +71,7 @@ module Jekyll
       def generate_meta(book, context)
         result = ''
         result += '<div class="book-meta-block">'
-        result += generate_sidebar(book, context)
+        result += generate_sidebar(book, :before, context)
         result += '<div class="citation"><h3>'
         result += Kramdown::Document.new(
                       "#{book.casual_citation}",
@@ -88,7 +89,7 @@ module Jekyll
       end
 
       def generate_capsule(book, context)
-        result = "<div markdown=\"1\">\n"
+        result = "<div class=\"capsule\">\n"
         if not book.reviews.nil?
           book.reviews.each do |review|
             if review[0] == @list_id
@@ -99,13 +100,20 @@ module Jekyll
         result += "</div>\n"
       end
 
-      def generate_sidebar(book, context)
+      def generate_sidebar(book, position, context)
         result = ''
-        result += '<div class="sidebar">'
+        if position == :before
+          result += '<div class="sidebar before">'
+        elsif position == :after
+          result += '<div class="sidebar after">'
+        else
+          result += '<div class="sidebar">'
+        end
         if book.has_cover_image
           result += "<img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\">"
         end
         result += generate_links(book, context)
+        result += '<div class="clear-block"></div>'
         result += '</div>'
 
         result
@@ -113,7 +121,13 @@ module Jekyll
 
       def generate_links(book, context)
         result = ''
-        result += '<ul class="affiliate-grid">'
+
+        if book.has_cover_image
+          result += '<ul class="affiliate-grid">'
+        else
+          result += '<ul class="affiliate-grid no-cover">'
+        end
+
         [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
           result += "<li>#{book.build_link_for(slug)}</li>" if book.has_link_for?(slug)
         end
