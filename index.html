@@ -20,7 +20,7 @@ layout: homepage
   {% for post in site.posts %}{% if post.layout == 'list' %}{% if grabbed_post != true %}
     {% assign grabbed_post = true %}
     <h2 class="featured-banner">New List</h2>
-    <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.header }});"><div class="featured-list">
+    <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.image_id }});"><div class="featured-list">
       <div class="details-card">
         <h3>
           <a href="{{ post.url }}">
@@ -77,7 +77,7 @@ layout: homepage
       var maxHeight = 0;
 
       $(columnString).height('auto');
-      
+
       $(columnString).each(function() {
         if ($(this).height() > maxHeight) {
           maxHeight = $(this).height();

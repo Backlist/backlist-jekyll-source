@@ -3,7 +3,7 @@ id: adece18449a0062b
 layout: list
 title: "The Conquest of the Incas"
 date: 2015-07-23 17:38:00
-header: "heaney-conquest-of-the-incas.jpg"
+image_id: "heaney-conquest-of-the-incas.jpg"
 permalink: "/lists/conquest-of-the-incas"
 description: "To explain how the Spanish conquered the Incas, we must credit the alliances made with the many Indian groups discontented with Inca rule, as well as alliances made with Incas themselves, including Atahualpa. Those alliances then became the foundation of an incredible colonial society, surprisingly just, suddenly violent, that lasted for nearly three hundred years—almost twice as long as England’s colonies in North America."
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/TQZ8BGPU
