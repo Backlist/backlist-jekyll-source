@@ -2,7 +2,7 @@
 id: 7052479f9a771ab6
 layout: list
 title: "The History of U.S.-Cuban Relations"
-date: 2015-11-17 17:38:00
+date: 2015-12-09 06:00:00
 image_id: 'keller-us-cuba-relations.jpg'
 permalink: '/lists/history-of-us-cuba-relations'
 description: 'How did the United States and Cuba—two nations separated by a mere 90 miles of water—drift so far apart? Why has a country as small as Cuba played such an outsized role in U.S. foreign and domestic politics? Why do the heroes of the Cuban Revolution, by now either long dead or spending their retirement in tracksuits, still hold such power over the American imagination?'
