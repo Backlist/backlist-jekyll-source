@@ -3,7 +3,7 @@ id: 82676761d7f99055
 layout: list
 title: "The History of Modern China"
 date: 2015-12-02 09:00:00
-header: "wasserstrom-modern-china.jpg"
+image_id: "wasserstrom-modern-china.jpg"
 permalink: "/lists/the-history-of-modern-china"
 description: "China’s current rulers, like some past ones, are fond of saying there is a single unified “Chinese tradition” of reverence for hierarchy and tradition. How is it, then, that history reveals a culture with multiple strands, including ones that extol questioning received wisdoms and turning the world upside down?"
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/UIJ9U5CG

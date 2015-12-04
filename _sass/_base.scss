@@ -85,27 +85,20 @@ a {
 /**
  * Wrapper
  */
- // TODO: Revisit this for removal
 .wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   max-width: $contentWidth;
-  // max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit} * 2));
-  // max-width:         calc(#{$contentWidth} - (#{$spacingUnit} * 2));
   margin-right: auto;
   margin-left: auto;
   position: relative;
   @extend %clearfix;
-
-  @include media-query($onLaptop) {
-    max-width: -webkit-calc(#{$contentWidth} - (#{$spacingUnit}));
-    max-width:         calc(#{$contentWidth} - (#{$spacingUnit}));
-  }
+  width: -webkit-calc(100% - (#{$spacingUnit} * 2));
+  width: -moz-calc(100% - (#{$spacingUnit} * 2));
+  width:         calc(100% - (#{$spacingUnit} * 2));
 }
-
-
 
 /**
  * Clearfix

@@ -20,4 +20,13 @@
   <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  {% if page.layout == 'list' %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bcklst">
+    <meta name="twitter:creator" content="@jonesbp">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="http://backlist.cc/images/social-media-cards/{{ page.image_id }}">
+  {% endif %}
 </head>
