@@ -6,7 +6,7 @@ date: 2015-12-09 06:00:00
 image_id: "kelman-graphic-histories.jpg"
 permalink: "/lists/graphic-histories-and-memoirs"
 description: "tk"
-zotero: tk
+zotero: https://www.zotero.org/groups/backlist/items/collectionKey/MGK4HNZ8
 sections:
   - id: 0
     books:
