@@ -1169,6 +1169,11 @@ ul.bibliography-filters {
       }
     }
 
+    p a {
+      @include special-link-underline($insetBackgroundColor, 66.6667%);
+      line-height: 100%;
+    }
+
     div.author-profile {
       @include sans-serif-font-stack;
 
