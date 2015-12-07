@@ -14,6 +14,10 @@
   display_name: 'Latin America'
   group: geo
 
+- id: south-asia
+  display_name: 'South Asia'
+  group: geo
+  
 - id: united-states
   display_name: 'United States'
   group: geo
