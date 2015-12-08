@@ -315,10 +315,12 @@ body.homepage {
 
   .featured-list-wrapper {
     background: {
+      color: $insetBackgroundColor;
       position: 50% 0;
       repeat: repeat-x;
       size: auto 240px;
     }
+    padding-bottom: $spacingUnit;
 
     .read-more {
       color: $highlight1Color;
@@ -329,12 +331,12 @@ body.homepage {
     }
 
     .featured-list {
-      background: -moz-linear-gradient(top,  rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // FF3.6+
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba($backgroundColor, .4)), color-stop(100%, $backgroundColor)); // Chrome,Safari4+
-      background: -webkit-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // Chrome10+,Safari5.1+
-      background: -o-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // Opera 11.10+
-      background: -ms-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // IE10+
-      background: linear-gradient(to bottom, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // W3C
+      background: -moz-linear-gradient(top,  rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // FF3.6+
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba($insetBackgroundColor, .4)), color-stop(100%, $insetBackgroundColor)); // Chrome,Safari4+
+      background: -webkit-linear-gradient(top, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // Chrome10+,Safari5.1+
+      background: -o-linear-gradient(top, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // Opera 11.10+
+      background: -ms-linear-gradient(top, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // IE10+
+      background: linear-gradient(to bottom, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // W3C
       background: {
         position: 50% 0;
         size: auto 240px;
@@ -342,7 +344,7 @@ body.homepage {
       padding-top: $spacingUnit * 4;
 
       .details-card {
-        background-color: $backgroundColor;
+        background-color: $insetBackgroundColor;
         border: {
           color: $highlight1Color;
           style: solid;
