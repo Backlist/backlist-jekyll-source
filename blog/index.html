@@ -4,7 +4,7 @@ header: Blog
 layout: page
 ---
 
-<ul class="list-of-posts">
+<ul class="list-of-posts landing">
   {% for post in site.posts %}{% if post.layout == 'post' %}
     {% include blog/list_line_item.html %}
   {% endif %}{% endfor %}

@@ -98,7 +98,7 @@ layout: homepage
 
 <div class="home wrapper">
   <div class="two-thirds-col">
-    <div class="recent-lists-wrapper">
+    <div class="recent-wrapper">
       <h2 class="featured-banner">Recent Lists</h2>
       <ul class="list-of-lists">
         {% for post in site.posts %}{% if post.layout == 'list' %}{% if forloop.index > 1 %}{% if forloop.index < 6 %}
@@ -109,13 +109,15 @@ layout: homepage
       <a class="bottom-link" href="{{ site.baseurl }}lists">Browse All Lists…</a>
     </div>
 
-    <div class="recent-blog-wrapper">
+    <div class="recent-wrapper">
       <h2 class="featured-banner">From the Blog</h2>
       <ul class="list-of-posts">
-
+        {% assign grabbed_post = false %}
+        {% for post in site.posts %}{% if post.layout == 'post' %}{% if grabbed_post != true %}
+          {% assign grabbed_post = true %}
+          {% include blog/list_line_item.html %}
+        {% endif %}{% endif %}{% endfor %}
       </ul>
-
-      <a class="bottom-link" href="{{ site.baseurl }}blog">More on the Blog…</a>
     </div>
   </div>
 
