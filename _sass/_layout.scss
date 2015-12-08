@@ -964,9 +964,15 @@ ul.list-of-lists {
   }
 }
 
+.bibliography-content {
+  background-color: $insetBackgroundColor;
+  margin: $spacingUnit 0;
+  padding: $spacingUnit ($spacingUnit * 2);
+}
+
 ul.list-of-citations {
   list-style-type: none;
-  margin: $spacingUnit 0;
+  margin: 0;
   padding: 0;
 
   li {
