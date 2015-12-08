@@ -57,7 +57,7 @@ module Jekyll
 
       book = Book.new(@book_id, context.registers[:site])
 
-      result = '<div class="book-block wrapper">'
+      result = "<div id=\"#{@book_id}\" class=\"book-block wrapper\">"
       result += generate_meta(book, context)
       result += generate_capsule(book, context)
       result += generate_sidebar(book, :after, context)
