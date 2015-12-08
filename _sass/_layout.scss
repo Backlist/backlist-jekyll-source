@@ -511,6 +511,11 @@ body.homepage {
 .page {
   padding-top: $spacingUnit * 2;
   padding-bottom: $spacingUnit * 2;
+
+  p a {
+    @include special-link-underline($verticalPosition: 66.6667%);
+    line-height: 1;
+  }
 }
 
 /**
