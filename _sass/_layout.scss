@@ -879,6 +879,42 @@ ul.pagination {
   }
 }
 
+ul.list-of-posts {
+  list-style-type: none;
+  margin: $spacingUnit 0;
+  padding: 0;
+
+  li {
+    background-color: $insetBackgroundColor;
+    border: {
+      color: $highlight1Color;
+      color: rgba($highlight1Color, .4);
+      style: solid;
+      width: 1px 0 0 0;
+    }
+    margin-bottom: $spacingUnit / 2;
+    padding: $spacingUnit ($spacingUnit * 2);
+
+    h3 {
+      font: {
+        size: 1.5em;
+        weight: 700;
+      }
+      margin-bottom: 0;
+
+      a {
+        @include special-link-underline;
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+
+    p.metadata {
+      margin: 0;
+    }
+  }
+}
+
 ul.list-of-lists {
   list-style-type: none;
   margin: $spacingUnit 0;
