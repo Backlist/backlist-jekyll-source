@@ -434,6 +434,10 @@ body.homepage {
 
           color: $accentColor;
           text-decoration: none;
+
+          &:hover {
+            color: $highlight2Color;
+          }
         }
       }
     }
