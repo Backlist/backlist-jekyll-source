@@ -421,6 +421,32 @@ body.homepage {
       }
     }
 
+    ul.social-actions {
+      list-style-type: none;
+      margin: ($spacingUnit / 2) $spacingUnit;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        width: 64px;
+
+        svg {
+          height: 48px;
+          width: 48px;
+
+          path {
+            fill: $accentColor;
+          }
+
+          &:hover path {
+            fill: $highlight2Color;
+          }
+        }
+
+      }
+    }
+
     ul.categories {
       list-style-type: none;
       margin: 0;
@@ -442,6 +468,10 @@ body.homepage {
           }
         }
       }
+    }
+
+    &.social-actions {
+      margin-top: $spacingUnit * 2;
     }
 
     &.follow {

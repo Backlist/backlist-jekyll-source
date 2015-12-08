@@ -28,5 +28,27 @@
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="http://backlist.cc/images/social-media-cards/{{ page.image_id }}">
+
+    <meta property="og:url" content="http://backlist.cc{{ page.permalink }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="http://backlist.cc/images/social-media-cards/{{ page.image_id }}" />
+  {% elsif page.layout == 'post' %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@bcklst">
+    <meta name="twitter:creator" content="@jonesbp">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+
+    <meta property="og:url" content="http://backlist.cc{{ page.permalink }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+  {% elsif page.layout == 'homepage' %}
+    <meta property="og:url" content="http://backlist.cc" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Backlist" />
+    <meta property="og:description" content="Historians recommend the books they love" />
   {% endif %}
 </head>
