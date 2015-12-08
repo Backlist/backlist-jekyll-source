@@ -950,6 +950,18 @@ ul.list-of-lists {
       margin: 0;
     }
   }
+
+  &.landing li {
+    background-color: $insetBackgroundColor;
+    border: {
+      color: $highlight1Color;
+      color: rgba($highlight1Color, .4);
+      style: solid;
+      width: 1px 0 0 0;
+    }
+    margin-bottom: $spacingUnit / 2;
+    padding: $spacingUnit ($spacingUnit * 2);
+  }
 }
 
 ul.list-of-citations {

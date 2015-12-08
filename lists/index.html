@@ -4,13 +4,11 @@ header: Browse All Lists
 layout: page
 ---
 
-<div class="wrapper">
-  <ul class="list-of-lists">
-    {% for post in site.posts %}{% if post.layout == 'list' %}
-      {% include categories/list_line_item.html %}
-    {% endif %}{% endfor %}
-  </ul>
-</div>
+<ul class="list-of-lists landing">
+  {% for post in site.posts %}{% if post.layout == 'list' %}
+    {% include categories/list_line_item.html %}
+  {% endif %}{% endfor %}
+</ul>
 
 {% include categories/table.html prefix='bottom' %}
 
