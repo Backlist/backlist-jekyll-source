@@ -1009,61 +1009,145 @@ ul.bibliography-filters {
 /**
  * Posts
  */
-.post-header {
-  @include header-gradient;
+.list {
+  .post-header {
+    @include header-gradient;
 
-  background: {
-    position: top;
-    repeat: repeat-x;
-    size: auto 200px;
+    background: {
+      position: top;
+      repeat: repeat-x;
+      size: auto 200px;
+    }
+    height: 260px;
+    position: relative;
+
+    .header-inset {
+      background: $accentColor;
+      background: -moz-linear-gradient(top,  $accentColor 0%, rgba($accentColor, .4) 100%); // FF3.6+
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $accentColor), color-stop(100%, rgba($accentColor, .4))); // Chrome,Safari4+
+      background: -webkit-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Chrome10+,Safari5.1+
+      background: -o-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Opera 11.10+
+      background: -ms-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // IE10+
+      background: linear-gradient(to bottom, $accentColor 0%, rgba($accentColor, .4) 100%); // W3C
+
+      height: 200px;
+      position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .header-drawer {
+      position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .wrapper {
+      height: 200px;
+    }
+
+    .title-card {
+      background-color: $accentColor;
+      background-color: rgba($accentColor, .8);
+      color: $backgroundColor;
+      padding: ($spacingUnit / 2) $spacingUnit;
+      position: absolute;
+        left: 0;
+        bottom: 0;
+    }
   }
-  height: 260px;
+}
+
+
+.post, .page {
   position: relative;
 
-  .header-inset {
-    background: $accentColor;
-    background: -moz-linear-gradient(top,  $accentColor 0%, rgba($accentColor, .4) 100%); // FF3.6+
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $accentColor), color-stop(100%, rgba($accentColor, .4))); // Chrome,Safari4+
-    background: -webkit-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Chrome10+,Safari5.1+
-    background: -o-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Opera 11.10+
-    background: -ms-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // IE10+
-    background: linear-gradient(to bottom, $accentColor 0%, rgba($accentColor, .4) 100%); // W3C
-
-    height: 200px;
+  .header-drawer {
     position: absolute;
       top: 0;
       right: 0;
       left: 0;
   }
+}
 
-  .header-drawer {
-    @include header-gradient;
+.post {
+  position: relative;
 
+  .post-header {
+    background-color: $insetBackgroundColor;
     border: {
-      color: rgba($highlight1Color, .5);
+      color: $highlight1Color;
+      color: rgba($highlight1Color, .4);
       style: solid;
       width: 1px 0 0 0;
     }
-    height: 60px;
-    position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    margin-bottom: $spacingUnit * 2.5;
+    padding: $spacingUnit ($spacingUnit * 2);
+    position: relative;
+      top: $spacingUnit * 2;
+
+    .post-title {
+      @include sans-serif-font-stack;
+
+      font: {
+        size: 2.5em;
+      }
+      letter-spacing: -1px;
+      margin-bottom: 0;
+    }
+
+    .post-meta {
+      color: $textColor;
+      font: {
+        size: .875em;
+      }
+      margin: 1em 0 0 0;
+    }
   }
 
-  .wrapper {
-    height: 200px;
-  }
+  .post-content {
+    background: {
+      color: $insetBackgroundColor;
+      image: url('/images/interface/small-1-color-logomark.png');
+      position: 50% calc(100% - 2.5em);
+      repeat: no-repeat;
+      size: 24px 23px;
+    }
+    line-height: 166.66666667%;
+    margin: 0 auto;
+    padding: ($spacingUnit * 2) ($spacingUnit * 2) ($spacingUnit * 4) ($spacingUnit * 2);
 
-  .title-card {
-    background-color: $accentColor;
-    background-color: rgba($accentColor, .8);
-    color: $backgroundColor;
-    padding: ($spacingUnit / 2) $spacingUnit;
-    position: absolute;
-      left: 0;
-      bottom: 0;
+    p:first-child {
+      margin-top: 0;
+
+      &:first-line {
+        font-weight: 700;
+        letter-spacing: .025em;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    p a {
+      @include special-link-underline($insetBackgroundColor, 66.6667%);
+      line-height: 100%;
+    }
   }
+}
+
+.header-drawer {
+  @include header-gradient;
+
+  border: {
+    color: rgba($highlight1Color, .5);
+    style: solid;
+    width: 1px 0 0 0;
+  }
+  height: 60px;
 }
 
 .page-title {
