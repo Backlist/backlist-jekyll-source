@@ -23,7 +23,7 @@ module Jekyll
         if filter.to_s == page['filter']
           result += "<li><span class=\"here\">#{filter.to_s.upcase}</span></li>"
         else
-          result += "<li><a href=\"/books/#{filter}\">#{filter.to_s.upcase}</a></li>"
+          result += "<li><a href=\"/books/#{filter.to_s.upcase}\">#{filter.to_s.upcase}</a></li>"
         end
       end
       result += '</ul>'
