@@ -34,6 +34,8 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:image" content="http://backlist.cc/images/social-media-cards/{{ page.image_id }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
   {% elsif page.layout == 'post' %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@bcklst">
@@ -46,11 +48,16 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
     <meta property="og:image" content="http://backlist.cc/images/social-media-cards/backlist-logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
   {% elsif page.layout == 'homepage' %}
     <meta property="og:url" content="http://backlist.cc" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Backlist" />
     <meta property="og:description" content="Historians recommend the books they love" />
     <meta property="og:image" content="http://backlist.cc/images/social-media-cards/backlist-logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
   {% endif %}
+  <meta property="fb:app_id" content="1527664130886668" />
 </head>
