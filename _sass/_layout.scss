@@ -1357,20 +1357,50 @@ ul.bibliography-filters {
       line-height: 100%;
     }
 
+    div.intro-sidebar {
+      float: right;
+      margin: 0 (-$spacingUnit * 2) $spacingUnit $spacingUnit;
+      width: 33.3333%;
+    }
+
+    ul.social-actions {
+      list-style-type: none;
+      margin: ($spacingUnit / 2) 0 0 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        height: 36px;
+        line-height: 1;
+      }
+
+      svg {
+        width: 36px;
+        height: 36px;
+
+        path {
+          fill: $accentColor;
+        }
+
+        &:hover path {
+          fill: $highlight2Color;
+        }
+      }
+    }
+
     div.author-profile {
       @include sans-serif-font-stack;
 
       background-color: $highlight1Color;
       background-color: rgba($highlight1Color,.2);
-      float: right;
       font-size: .8em;
-      margin: 0 (-$spacingUnit * 2) $spacingUnit $spacingUnit;
       padding: 1.5em;
-      width: 33.3333%;
 
-      a {
+      p a {
         @include special-link-underline;
       }
+
     }
   }
 
