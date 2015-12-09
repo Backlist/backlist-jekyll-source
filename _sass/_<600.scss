@@ -57,7 +57,7 @@
       }
     }
 
-    .recent-lists-wrapper {
+    .recent-wrapper {
       margin-bottom: $spacingUnit * 1.5;
     }
   }
@@ -87,16 +87,26 @@
     }
   }
 
-  .post-header {
-    height: 200px;
+  .page-header {
+    margin-top: -$spacingUnit;
 
-    .title-card {
-      padding-right: $spacingUnit / 2;
-      padding-left: $spacingUnit / 2;
+    h1 {
+      font-size: 2em;
     }
+  }
 
-    .header-drawer {
-      display: none;
+  .list {
+    .post-header {
+      height: 200px;
+
+      .title-card {
+        padding-right: $spacingUnit / 2;
+        padding-left: $spacingUnit / 2;
+      }
+
+      .header-drawer {
+        display: none;
+      }
     }
   }
 
@@ -143,6 +153,30 @@
 
   .page-content p {
     font-size: 1em;
+
+    &.page-number {
+      font-size: .875em;
+    }
+  }
+
+  .post {
+    .post-header {
+      top: $spacingUnit;
+      margin-bottom: $spacingUnit * 1.5;
+      padding: $spacingUnit / 2;
+
+      h1 {
+        font-size: 1.75em;
+      }
+    }
+
+    .post-content {
+      padding: ($spacingUnit / 2) ($spacingUnit / 2) ($spacingUnit * 3) ($spacingUnit / 2);
+    }
+
+    .post-content p {
+      font-size: 1em;
+    }
   }
 
   .post-content h2 .wrapper {
@@ -199,6 +233,41 @@
 
   .post-content .book-block {
     margin-top: $spacingUnit;
+  }
+
+  .bibliography-filters {
+    font-size: .875em;
+  }
+
+  .bibliography-content {
+    padding: $spacingUnit / 2;
+
+    h3 {
+      font-size: 1em;
+    }
+
+    ul {
+      font-size: .875em;
+    }
+  }
+
+
+  .display-table .table-panel ul.categories li {
+    font-size: 1em;
+  }
+
+  ul.list-of-lists.landing, ul.list-of-posts.landing {
+    li {
+      padding: $spacingUnit / 2;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
   }
 
   .biblio-block {

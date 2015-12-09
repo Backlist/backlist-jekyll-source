@@ -767,6 +767,7 @@ body.homepage {
 
 .display-table {
   background-color: $insetBackgroundColor;
+  width: 100%;
 
   .table-tab-bar {
     ul {
@@ -936,8 +937,7 @@ ul.list-of-posts {
       margin-bottom: 0;
 
       a {
-        @include special-link-underline;
-        display: inline-block;
+        @include special-link-underline($verticalPosition: 66.66667%);
         line-height: 1;
       }
     }
@@ -976,8 +976,7 @@ ul.list-of-lists {
       margin-bottom: 0;
 
       a {
-        @include special-link-underline;
-        display: inline-block;
+        @include special-link-underline($verticalPosition: 66.66667%);
         line-height: 1;
       }
     }

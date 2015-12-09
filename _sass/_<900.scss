@@ -19,8 +19,18 @@
     font-size: .7em;
   }
 
-  body.homepage .recent-lists-wrapper {
+  body.homepage .recent-wrapper {
     ul.list-of-lists {
+      h3 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    ul.list-of-posts {
       h3 {
         font-size: 1.2em;
       }
