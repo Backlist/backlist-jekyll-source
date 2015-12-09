@@ -1204,6 +1204,26 @@ ul.bibliography-filters {
       }
       margin: 1em 0 0 0;
     }
+
+    a.social-link {
+      vertical-align: middle;
+
+      svg {
+        height: 18px;
+        width: 18px;
+        vertical-align: top;
+
+        path {
+          fill: $accentColor;
+        }
+      }
+
+      &:hover {
+        svg path {
+          fill: $highlight2Color;
+        }
+      }
+    }
   }
 
   .post-content {
