@@ -4,6 +4,7 @@ body {
     style: solid;
     width: 2px 0 0 0;
   }
+  min-width: 380px;
 
   &.homepage {
     border: {
@@ -18,6 +19,11 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.clear-block {
+  clear: both;
+  height: 0;
 }
 
 /**
@@ -96,50 +102,6 @@ body {
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
       margin-left: $spacingUnit;
-    }
-  }
-
-  @include media-query($onPalm) {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    background-color: $backgroundColor;
-    border: 1px solid $lightInterfaceStroke;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        width: 18px;
-        height: 15px;
-
-        path {
-          fill: $darkInterfaceStroke;
-        }
-      }
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
     }
   }
 }
@@ -249,40 +211,6 @@ body {
     width:         calc(20% - (#{$spacingUnit} / 2));
 }
 
-@include media-query($onLaptop) {
-    .footer-col-1 {
-      width: -webkit-calc(67% - (#{$spacingUnit} / 2));
-      width:         calc(67% - (#{$spacingUnit} / 2));
-    }
-
-    .footer-col-2 {
-      width: -webkit-calc(33% - (#{$spacingUnit} / 2));
-      width:         calc(33% - (#{$spacingUnit} / 2));
-    }
-
-    .footer-col-3 {
-      width: -webkit-calc(100% - (#{$spacingUnit} / 2));
-      width:         calc(100% - (#{$spacingUnit} / 2));
-
-      .contact-list {
-        margin-left: $spacingUnit;
-      }
-    }
-}
-
-@include media-query($onPalm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacingUnit} / 2));
-    width:         calc(100% - (#{$spacingUnit} / 2));
-
-    .contact-list,
-    .page-list {
-      margin-left: $spacingUnit;
-    }
-  }
-}
-
 
 // ***
 //  Homepage
@@ -334,7 +262,7 @@ body.homepage {
       size: 1.6em;
     }
     line-height: 1;
-    margin-top: -1.2em;
+    margin-top: -.6em;
     position: absolute;
       top: 50%;
   }
@@ -357,8 +285,9 @@ body.homepage {
     }
   }
 
-  .recent-lists-wrapper {
+  .recent-wrapper {
     background-color: $insetBackgroundColor;
+    margin-bottom: $spacingUnit;
     padding: $spacingUnit / 2;
 
     h2 {
@@ -386,10 +315,12 @@ body.homepage {
 
   .featured-list-wrapper {
     background: {
+      color: $insetBackgroundColor;
       position: 50% 0;
       repeat: repeat-x;
       size: auto 240px;
     }
+    padding-bottom: $spacingUnit;
 
     .read-more {
       color: $highlight1Color;
@@ -400,12 +331,12 @@ body.homepage {
     }
 
     .featured-list {
-      background: -moz-linear-gradient(top,  rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // FF3.6+
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba($backgroundColor, .4)), color-stop(100%, $backgroundColor)); // Chrome,Safari4+
-      background: -webkit-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // Chrome10+,Safari5.1+
-      background: -o-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // Opera 11.10+
-      background: -ms-linear-gradient(top, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // IE10+
-      background: linear-gradient(to bottom, rgba($backgroundColor, .4) 0%, $backgroundColor 100%); // W3C
+      background: -moz-linear-gradient(top,  rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // FF3.6+
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba($insetBackgroundColor, .4)), color-stop(100%, $insetBackgroundColor)); // Chrome,Safari4+
+      background: -webkit-linear-gradient(top, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // Chrome10+,Safari5.1+
+      background: -o-linear-gradient(top, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // Opera 11.10+
+      background: -ms-linear-gradient(top, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // IE10+
+      background: linear-gradient(to bottom, rgba($insetBackgroundColor, .4) 0%, $insetBackgroundColor 100%); // W3C
       background: {
         position: 50% 0;
         size: auto 240px;
@@ -413,7 +344,7 @@ body.homepage {
       padding-top: $spacingUnit * 4;
 
       .details-card {
-        background-color: $backgroundColor;
+        background-color: $insetBackgroundColor;
         border: {
           color: $highlight1Color;
           style: solid;
@@ -490,6 +421,32 @@ body.homepage {
       }
     }
 
+    ul.social-actions {
+      list-style-type: none;
+      margin: ($spacingUnit / 2) $spacingUnit;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        width: 64px;
+
+        svg {
+          height: 48px;
+          width: 48px;
+
+          path {
+            fill: $accentColor;
+          }
+
+          &:hover path {
+            fill: $highlight2Color;
+          }
+        }
+
+      }
+    }
+
     ul.categories {
       list-style-type: none;
       margin: 0;
@@ -505,8 +462,16 @@ body.homepage {
 
           color: $accentColor;
           text-decoration: none;
+
+          &:hover {
+            color: $highlight2Color;
+          }
         }
       }
+    }
+
+    &.social-actions {
+      margin-top: $spacingUnit * 2;
     }
 
     &.follow {
@@ -582,6 +547,11 @@ body.homepage {
 .page {
   padding-top: $spacingUnit * 2;
   padding-bottom: $spacingUnit * 2;
+
+  p a {
+    @include special-link-underline($verticalPosition: 66.6667%);
+    line-height: 1;
+  }
 }
 
 /**
@@ -687,7 +657,9 @@ body.homepage {
 .two-thirds-col {
   float: left;
   margin-right: $spacingUnit;
-  width: $spacingUnit + (2 * (.33333333333 * ($contentWidth - ($spacingUnit * 2))));
+  width: -moz-calc(#{$spacingUnit} + (2 * (.33333333333 * (100% - (#{$spacingUnit} * 2)))));
+  width: -webkit-calc(#{$spacingUnit} + (2 * (.33333333333 * (100% - (#{$spacingUnit} * 2)))));
+  width: calc(#{$spacingUnit} + (2 * (.33333333333 * (100% - (#{$spacingUnit} * 2)))));
 
   &.right {
     margin-right: 0;
@@ -697,7 +669,9 @@ body.homepage {
 .third-col {
   float: left;
   margin-right: $spacingUnit;
-  width: (.3333333333 * ($contentWidth - ($spacingUnit * 2)));
+  width: -moz-calc(.3333333333 * (100% - (#{$spacingUnit} * 2)));
+  width: -webkit-calc(.3333333333 * (100% - (#{$spacingUnit} * 2)));
+  width: calc(.3333333333 * (100% - (#{$spacingUnit} * 2)));
 
   &.right {
     margin-right: 0;
@@ -793,6 +767,7 @@ body.homepage {
 
 .display-table {
   background-color: $insetBackgroundColor;
+  width: 100%;
 
   .table-tab-bar {
     ul {
@@ -947,6 +922,44 @@ ul.pagination {
   }
 }
 
+ul.list-of-posts {
+  list-style-type: none;
+  margin: $spacingUnit 0;
+  padding: 0;
+
+  li {
+
+    h3 {
+      font: {
+        size: 1.5em;
+        weight: 700;
+      }
+      margin-bottom: 0;
+
+      a {
+        @include special-link-underline($verticalPosition: 66.66667%);
+        line-height: 1;
+      }
+    }
+
+    p.metadata {
+      margin: 0;
+    }
+  }
+
+  &.landing li {
+    background-color: $insetBackgroundColor;
+    border: {
+      color: $highlight1Color;
+      color: rgba($highlight1Color, .4);
+      style: solid;
+      width: 1px 0 0 0;
+    }
+    margin-bottom: $spacingUnit / 2;
+    padding: $spacingUnit ($spacingUnit * 2);
+  }
+}
+
 ul.list-of-lists {
   list-style-type: none;
   margin: $spacingUnit 0;
@@ -963,8 +976,7 @@ ul.list-of-lists {
       margin-bottom: 0;
 
       a {
-        @include special-link-underline;
-        display: inline-block;
+        @include special-link-underline($verticalPosition: 66.66667%);
         line-height: 1;
       }
     }
@@ -973,11 +985,29 @@ ul.list-of-lists {
       margin: 0;
     }
   }
+
+  &.landing li {
+    background-color: $insetBackgroundColor;
+    border: {
+      color: $highlight1Color;
+      color: rgba($highlight1Color, .4);
+      style: solid;
+      width: 1px 0 0 0;
+    }
+    margin-bottom: $spacingUnit / 2;
+    padding: $spacingUnit ($spacingUnit * 2);
+  }
+}
+
+.bibliography-content {
+  background-color: $insetBackgroundColor;
+  margin: $spacingUnit 0;
+  padding: $spacingUnit ($spacingUnit * 2);
 }
 
 ul.list-of-citations {
   list-style-type: none;
-  margin: $spacingUnit 0;
+  margin: 0;
   padding: 0;
 
   li {
@@ -1077,61 +1107,165 @@ ul.bibliography-filters {
 /**
  * Posts
  */
-.post-header {
-  @include header-gradient;
+.list {
+  .post-header {
+    @include header-gradient;
 
-  background: {
-    position: top;
-    repeat: repeat-x;
-    size: auto 200px;
+    background: {
+      position: top;
+      repeat: repeat-x;
+      size: auto 200px;
+    }
+    height: 260px;
+    position: relative;
+
+    .header-inset {
+      background: $accentColor;
+      background: -moz-linear-gradient(top,  $accentColor 0%, rgba($accentColor, .4) 100%); // FF3.6+
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $accentColor), color-stop(100%, rgba($accentColor, .4))); // Chrome,Safari4+
+      background: -webkit-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Chrome10+,Safari5.1+
+      background: -o-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Opera 11.10+
+      background: -ms-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // IE10+
+      background: linear-gradient(to bottom, $accentColor 0%, rgba($accentColor, .4) 100%); // W3C
+
+      height: 200px;
+      position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .header-drawer {
+      position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .wrapper {
+      height: 200px;
+    }
+
+    .title-card {
+      background-color: $accentColor;
+      background-color: rgba($accentColor, .8);
+      color: $backgroundColor;
+      padding: ($spacingUnit / 2) $spacingUnit;
+      position: absolute;
+        left: 0;
+        bottom: 0;
+    }
   }
-  height: 260px;
+}
+
+
+.post, .page {
   position: relative;
 
-  .header-inset {
-    background: $accentColor;
-    background: -moz-linear-gradient(top,  $accentColor 0%, rgba($accentColor, .4) 100%); // FF3.6+
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $accentColor), color-stop(100%, rgba($accentColor, .4))); // Chrome,Safari4+
-    background: -webkit-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Chrome10+,Safari5.1+
-    background: -o-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // Opera 11.10+
-    background: -ms-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // IE10+
-    background: linear-gradient(to bottom, $accentColor 0%, rgba($accentColor, .4) 100%); // W3C
-
-    height: 200px;
+  .header-drawer {
     position: absolute;
       top: 0;
       right: 0;
       left: 0;
   }
+}
 
-  .header-drawer {
-    @include header-gradient;
+.post {
+  position: relative;
 
+  .post-header {
+    background-color: $insetBackgroundColor;
     border: {
-      color: rgba($highlight1Color, .5);
+      color: $highlight1Color;
+      color: rgba($highlight1Color, .4);
       style: solid;
       width: 1px 0 0 0;
     }
-    height: 60px;
-    position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    margin-bottom: $spacingUnit * 2.5;
+    padding: $spacingUnit ($spacingUnit * 2);
+    position: relative;
+      top: $spacingUnit * 2;
+
+    .post-title {
+      @include sans-serif-font-stack;
+
+      font: {
+        size: 2.5em;
+      }
+      letter-spacing: -1px;
+      margin-bottom: 0;
+    }
+
+    .post-meta {
+      color: $textColor;
+      font: {
+        size: .875em;
+      }
+      margin: 1em 0 0 0;
+    }
+
+    a.social-link {
+      vertical-align: middle;
+
+      svg {
+        height: 18px;
+        width: 18px;
+        vertical-align: top;
+
+        path {
+          fill: $accentColor;
+        }
+      }
+
+      &:hover {
+        svg path {
+          fill: $highlight2Color;
+        }
+      }
+    }
   }
 
-  .wrapper {
-    height: 200px;
-  }
+  .post-content {
+    background: {
+      color: $insetBackgroundColor;
+      image: url('/images/interface/small-1-color-logomark.png');
+      position: 50% calc(100% - 2.5em);
+      repeat: no-repeat;
+      size: 24px 23px;
+    }
+    line-height: 166.66666667%;
+    margin: 0 auto;
+    padding: ($spacingUnit * 2) ($spacingUnit * 2) ($spacingUnit * 4) ($spacingUnit * 2);
 
-  .title-card {
-    background-color: $accentColor;
-    background-color: rgba($accentColor, .8);
-    color: $backgroundColor;
-    padding: ($spacingUnit / 2) $spacingUnit;
-    position: absolute;
-      left: 0;
-      bottom: 0;
+    p:first-child {
+      margin-top: 0;
+
+      &:first-line {
+        font-weight: 700;
+        letter-spacing: .025em;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    p a {
+      @include special-link-underline($insetBackgroundColor, 66.6667%);
+      line-height: 100%;
+    }
   }
+}
+
+.header-drawer {
+  @include header-gradient;
+
+  border: {
+    color: rgba($highlight1Color, .5);
+    style: solid;
+    width: 1px 0 0 0;
+  }
+  height: 60px;
 }
 
 .page-title {
@@ -1159,10 +1293,6 @@ ul.bibliography-filters {
     font-size: .5em;
     margin-top: .25em;
   }
-
-  @include media-query($onLaptop) {
-    font-size: 36px; // TODO: Proportional
-  }
 }
 
 .post-content {
@@ -1186,10 +1316,6 @@ ul.bibliography-filters {
     padding: ($spacingUnit / 3) 0 ($spacingUnit / 2) 0;
     text-transform: uppercase;
 
-    @include media-query($onLaptop) {
-      font-size: 28px; // TODO: Proportional
-    }
-
     .wrapper {
       padding: 0 ($spacingUnit * 2)
     }
@@ -1199,18 +1325,10 @@ ul.bibliography-filters {
     font: {
       size: 1.25em; // 20px
     }
-
-    @include media-query($onLaptop) {
-      font-size: 22px; // TODO: Proportional
-    }
   }
 
   h4 {
     font-size: 20px; // TODO: Proportional
-
-    @include media-query($onLaptop) {
-      font-size: 18px; // TODO: Proportional
-    }
   }
 
   hr {
@@ -1253,20 +1371,55 @@ ul.bibliography-filters {
       }
     }
 
+    p a {
+      @include special-link-underline($insetBackgroundColor, 66.6667%);
+      line-height: 100%;
+    }
+
+    div.intro-sidebar {
+      float: right;
+      margin: 0 (-$spacingUnit * 2) $spacingUnit $spacingUnit;
+      width: 33.3333%;
+    }
+
+    ul.social-actions {
+      list-style-type: none;
+      margin: ($spacingUnit / 2) 0 0 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        height: 36px;
+        line-height: 1;
+      }
+
+      svg {
+        width: 36px;
+        height: 36px;
+
+        path {
+          fill: $accentColor;
+        }
+
+        &:hover path {
+          fill: $highlight2Color;
+        }
+      }
+    }
+
     div.author-profile {
       @include sans-serif-font-stack;
 
       background-color: $highlight1Color;
       background-color: rgba($highlight1Color,.2);
-      float: right;
       font-size: .8em;
-      margin: 0 (-$spacingUnit * 2) $spacingUnit $spacingUnit;
       padding: 1.5em;
-      width: 33.3333%;
 
-      a {
+      p a {
         @include special-link-underline;
       }
+
     }
   }
 
@@ -1287,6 +1440,10 @@ ul.bibliography-filters {
       @include special-link-underline($insetBackgroundColor, 66.6667%);
       line-height: 100%;
     }
+  }
+
+  .capsule {
+    clear: left;
   }
 
   .citation {
@@ -1336,6 +1493,15 @@ ul.bibliography-filters {
     margin: 0 (-$spacingUnit * 2) 0 $spacingUnit;
     padding: ($spacingUnit / 2) $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
     width: 25%;
+
+    &.before {
+      display: block;
+    }
+    &.after {
+      display: none;
+      margin-top: $spacingUnit;
+      margin-bottom: -$spacingUnit / 2;
+    }
   }
 
   .cover {

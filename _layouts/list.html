@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="list">
 
-  <header class="post-header" style="background-image: url({{ siteUrl }}/images/list-headers/{{ page.header }})"><div class="header-inset"><div class="wrapper">
+  <header class="post-header" style="background-image: url({{ siteUrl }}/images/list-headers/{{ page.image_id }})"><div class="header-inset"><div class="wrapper">
     <div class="title-card">
       <h1 class="post-title">
         {{ page.title }}
@@ -24,8 +24,15 @@ layout: default
 
   <article class="post-content">
     <div class="intro-block wrapper">
-      <div class="author-profile">
-        {{ page.author | author_bio }}
+      <div class="intro-sidebar">
+        <div class="author-profile">
+          {{ page.author | author_bio }}
+        </div>
+
+        <ul class="social-actions">
+          <li><a href="#" title="Share on Facebook" class="facebook-share">{% include svg/facebook.html %}</a></li>
+          <li><a href="https://twitter.com/share" title="Share on Twitter" class="twitter-share">{% include svg/twitter.html %}</a></li>
+        </ul>
       </div>
       {{ content }}
     </div>

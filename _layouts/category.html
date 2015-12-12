@@ -2,13 +2,11 @@
 layout: page
 ---
 
-<div class="wrapper">
-  <ul class="list-of-lists">
-    {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
-      {% include categories/list_line_item.html %}
-    {% endif %}{% endfor %}{% endfor %}
-  </ul>
-</div>
+<ul class="list-of-lists landing">
+  {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
+    {% include categories/list_line_item.html %}
+  {% endif %}{% endfor %}{% endfor %}
+</ul>
 
 {% include categories/table.html prefix='bottom' %}
 

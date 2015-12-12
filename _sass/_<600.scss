@@ -1,0 +1,298 @@
+@media screen and (max-width: 600px) {
+  body.homepage {
+    .home.top-row {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      img {
+        width: 75%;
+      }
+    }
+
+    .home-left-col, .home-left-col.inverse {
+      float: none;
+      margin: 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .home-right-col, .home-right-col.inverse {
+      float: none;
+      margin: 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .tagline-callout {
+      height: auto;
+      margin: 1em 0;
+      padding: 0;
+      position: relative;
+        top: auto;
+    }
+
+    .featured-list-wrapper .featured-list .details-card h3 {
+      font-size: 1.5em;
+    }
+
+    .homepage-bucket {
+      margin-bottom: $spacingUnit;
+
+      &.follow {
+        ul.contact-list {
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+      }
+
+      &.recommendation {
+        text-align: center;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .recent-wrapper {
+      margin-bottom: $spacingUnit * 1.5;
+    }
+  }
+
+  .third-col {
+    width: 100%;
+  }
+
+  .two-thirds-col {
+    width: 100%;
+  }
+
+  .post-title {
+    font-size: 1.75em;
+  }
+
+  .post-meta {
+    font-size: .75em;
+  }
+
+  .site-nav .page-link {
+    font-size: 1em;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: $spacingUnit / 2;
+    }
+  }
+
+  .page-header {
+    margin-top: -$spacingUnit;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  .list {
+    .post-header {
+      height: 200px;
+
+      .title-card {
+        padding-right: $spacingUnit / 2;
+        padding-left: $spacingUnit / 2;
+      }
+
+      .header-drawer {
+        display: none;
+      }
+    }
+  }
+
+  .post-content .intro-block {
+    background: {
+      color: $insetBackgroundColor;
+      image: url('/images/interface/small-1-color-logomark.png');
+      position: 50% calc(100% - 1.5em);
+      repeat: no-repeat;
+      size: 18px 18px;
+    }
+    margin-top: -$spacingUnit * 2;
+    padding-top: $spacingUnit / 2;
+    padding-left: $spacingUnit / 2;
+    padding-right: $spacingUnit / 2;
+    padding-bottom: $spacingUnit * 2;
+
+    div.intro-sidebar {
+      float: none;
+      margin: (-$spacingUnit / 2) (-$spacingUnit / 2) $spacingUnit (-$spacingUnit / 2);
+      width: auto;
+
+      .author-profile {
+        font-size: .8em;
+        padding: $spacingUnit / 2;
+      }
+
+      ul.social-actions {
+        margin-left: $spacingUnit / 2;
+        text-align: left;
+
+        li {
+          height: 24px;
+          width: 24px;
+        }
+
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+  }
+
+  .page-content p {
+    font-size: 1em;
+
+    &.page-number {
+      font-size: .875em;
+    }
+  }
+
+  .post {
+    .post-header {
+      top: $spacingUnit;
+      margin-bottom: $spacingUnit * 1.5;
+      padding: $spacingUnit / 2;
+
+      h1 {
+        font-size: 1.75em;
+      }
+    }
+
+    .post-content {
+      padding: ($spacingUnit / 2) ($spacingUnit / 2) ($spacingUnit * 3) ($spacingUnit / 2);
+    }
+
+    .post-content p {
+      font-size: 1em;
+    }
+  }
+
+  .post-content h2 .wrapper {
+    padding: 0 ($spacingUnit / 2);
+  }
+
+  .post-content .book-block {
+    padding: $spacingUnit / 2;
+  }
+
+  .post-content .sidebar {
+    float: none;
+    margin: (-$spacingUnit / 2) (-$spacingUnit / 2) $spacingUnit (-$spacingUnit / 2);
+    width: auto;
+
+    .cover {
+      float: left;
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    &.before {
+      display: none;
+    }
+    &.after {
+      display: block;
+    }
+  }
+
+  .post-content .citation h3 {
+    font-size: 1.1em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .post-content ul.affiliate-grid {
+    float: right;
+    padding-top: $spacingUnit;
+    padding-left: $spacingUnit;
+    width: 50%;
+
+    &.no-cover {
+      float: none;
+      padding: 0;
+      text-align: center;
+      width: auto;
+
+      li {
+        display: inline-block;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .post-content .book-block {
+    margin-top: $spacingUnit;
+  }
+
+  .bibliography-filters {
+    font-size: .875em;
+  }
+
+  .bibliography-content {
+    padding: $spacingUnit / 2;
+
+    h3 {
+      font-size: 1em;
+    }
+
+    ul {
+      font-size: .875em;
+    }
+  }
+
+
+  .display-table .table-panel ul.categories li {
+    font-size: 1em;
+  }
+
+  ul.list-of-lists.landing, ul.list-of-posts.landing {
+    li {
+      padding: $spacingUnit / 2;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .biblio-block {
+    padding-left: $spacingUnit / 2;
+    padding-right: $spacingUnit / 2;
+  }
+
+  .site-footer {
+    ul.page-list {
+      font-size: 1em;
+    }
+
+    ul.contact-list {
+      font-size: .8em;
+
+      li {
+        display: inline-block;
+        margin-top: .5em;
+        margin-right: 1em;
+        margin-bottom: .5em;
+      }
+    }
+
+    p.credit {
+      font-size: .8em;
+    }
+  }
+}

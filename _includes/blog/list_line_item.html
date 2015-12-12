@@ -1,0 +1,9 @@
+<li>
+  <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+  <p class="metadata">
+    {% if post.author %}
+      {{ post.author | person_full_name }} •
+    {% endif %}
+    {{ post.date | date: "%B %-d, %Y" }}
+  </p>
+</li>

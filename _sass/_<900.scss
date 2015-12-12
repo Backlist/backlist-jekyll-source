@@ -1,0 +1,47 @@
+@media screen and (max-width: 920px) {
+  .post-title {
+    font-size: 2.5em;
+  }
+
+  .post-content .intro-block div.author-profile {
+    font-size: .7em;
+  }
+
+  .post-content .sidebar {
+    width: 33.3333%;
+  }
+
+  .follow ul.contact-list {
+    font-size: 1em;
+  }
+
+  body.homepage .homepage-bucket.recommendation p {
+    font-size: .7em;
+  }
+
+  body.homepage .recent-wrapper {
+    ul.list-of-lists {
+      h3 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    ul.list-of-posts {
+      h3 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    a.bottom-link {
+      font-size: 1.1em;
+    }
+  }
+}
