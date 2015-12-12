@@ -22,6 +22,10 @@
   display_name: 'United States'
   group: geo
 
+- id: cultural
+  display_name: 'Cultural'
+  group: theme
+
 - id: diplomatic-international
   display_name: 'Diplomatic / International'
   group: theme
@@ -30,8 +34,16 @@
   display_name: 'Empire'
   group: theme
 
+- id: film-studies
+  display_name: 'Film Studies'
+  group: theme
+
 - id: peace-and-conflict
   display_name: 'Peace and Conflict'
+  group: theme
+
+- id: popular-culture
+  display_name: 'Popular Culture'
   group: theme
 
 - id: theory-and-method
