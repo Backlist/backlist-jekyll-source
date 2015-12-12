@@ -74,7 +74,7 @@ module Jekyll
       case slug
       when :amzn
         if @tokens[:amzn]
-          url = "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/clionautics-20"
+          url = "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/backlist0e-20"
           label = 'Buy from Amazon'
           affiliate = true
         end
