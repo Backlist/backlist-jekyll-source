@@ -6,7 +6,7 @@ date: 2015-12-16 06:00:00
 image_id: "poole-monsters.jpg"
 permalink: "/lists/monsters-in-american-history"
 description:  "Oddly, monsters have only recently begun to appear in American historiography, though other disciplines, and in fact other historiographical traditions, have given them much deserved attention. I found few places to start within my own field, especially in the study of modern America. So, I went on a monster hunt."
-zotero: 
+zotero: https://www.zotero.org/groups/backlist/items/collectionKey/X69NZXH5
 sections: 
   - id: 0
     books:
