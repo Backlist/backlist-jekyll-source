@@ -72,13 +72,13 @@ module Jekyll
         result = ''
         result += '<div class="book-meta-block">'
         result += generate_sidebar(book, :before, context)
-        result += '<div class="citation"><h3>'
+        result += "<div class=\"citation\"><h3><a href=\"#{book.affiliate_url_for(:amzn)}\" target=\"_blank\">"
         result += Kramdown::Document.new(
                       "#{book.casual_citation}",
                       auto_ids: false
                       ).to_html()[3..-6]
         book_link = "#{context.registers[:page]['permalink']}##{book.id}"
-        result += "<a href='#{book_link}'><span class='icon'>"
+        result += "</a><a href='#{book_link}'><span class='icon'>"
         result +=
           Liquid::Template.parse('{% include svg/hyperlink.html %}').render(context)
         result += '</span></a>'
@@ -110,8 +110,9 @@ module Jekyll
           result += '<div class="sidebar">'
         end
         if book.has_cover_image
-          result += "<img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\">"
+          result += "<a href=\"#{book.affiliate_url_for(:amzn)}\" target=\"_blank\"><img class=\"cover\" src=\"/images/covers/#{@book_id[0]}/#{@book_id}-small.jpg\"></a>"
         end
+        result += "<a href=\"#{book.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"buy-button\">Buy Now</a>"
         result += generate_links(book, context)
         result += '<div class="clear-block"></div>'
         result += '</div>'
