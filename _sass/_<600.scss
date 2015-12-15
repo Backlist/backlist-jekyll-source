@@ -212,9 +212,16 @@
     padding-bottom: 0;
   }
 
+  .post-content a.buy-button {
+    float: right;
+    margin-top: $spacingUnit;
+    margin-left: $spacingUnit;
+    width: calc(50% - #{$spacingUnit});
+  }
+
   .post-content ul.affiliate-grid {
     float: right;
-    padding-top: $spacingUnit;
+    padding-top: $spacingUnit / 2;
     padding-left: $spacingUnit;
     width: 50%;
 
