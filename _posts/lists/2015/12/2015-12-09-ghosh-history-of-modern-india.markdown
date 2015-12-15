@@ -7,6 +7,7 @@ image_id: "ghosh-modern-india.jpg"
 permalink: "/lists/the-history-of-modern-india"
 description: "In recent years, the kind of objective truth-telling a professional history implies has been roundly contested by those who feel that elites should not be in charge of writing the history of a large and diverse population. The popular history of India is often told quite differently, and as scholars have attempted to bridge the gap between professional and popular history, many have paid more attention to non-elite and subaltern perspectives."
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/6UZK7DFB
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=1
 sections:
   - id: 0
     books:
