@@ -7,6 +7,7 @@ image_id: "kelman-graphic-histories.jpg"
 permalink: "/lists/graphic-histories-and-memoirs"
 description: "Ari Kelman has selected titles below that offer a glimpse at how graphic books can accomplish things that text-based histories can’t – especially how this sort of work can rely on visual metaphors to drive unusually spare narrative strategies."
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/MGK4HNZ8
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=5
 sections:
   - id: 0
     books:

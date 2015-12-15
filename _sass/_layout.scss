@@ -1457,9 +1457,17 @@ ul.bibliography-filters {
       vertical-align: middle;
 
       a {
+        color: $textColor;
         line-height: 100%;
-        margin-left: .5em;
         vertical-align: middle;
+
+        &.icon {
+          margin-left: .25em;
+        }
+
+        &:hover {
+          color: $highlight2Color;
+        }
 
         span.icon {
           svg {
@@ -1490,7 +1498,7 @@ ul.bibliography-filters {
     background-color: $highlight1Color;
     background-color: rgba($highlight1Color,.2);
     float: right;
-    margin: 0 (-$spacingUnit * 2) 0 $spacingUnit;
+    margin: 0 (-$spacingUnit * 2) $spacingUnit $spacingUnit;
     padding: ($spacingUnit / 2) $spacingUnit ($spacingUnit / 2) ($spacingUnit / 2);
     width: 25%;
 
@@ -1505,7 +1513,31 @@ ul.bibliography-filters {
   }
 
   .cover {
+  }
+
+  a.buy-button {
+    @include sans-serif-font-stack;
+    @include transition-stack;
+    background-color: $highlight2Color;
+    border: {
+      color: $highlight1Color;
+      radius: 1em;
+      style: solid;
+      width: 3px;
+    }
+    color: $insetBackgroundColor;
+    display: block;
+    font-size: 1em;
+    line-height: 100%;
+    margin-top: $spacingUnit / 4;
     margin-bottom: $spacingUnit / 2;
+    padding: .5em 1em;
+    text-align: center;
+
+    &:hover {
+      background-color: $highlight1Color;
+      color: $highlight2Color;
+    }
   }
 
   ul.affiliate-grid {
