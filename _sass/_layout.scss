@@ -1459,8 +1459,11 @@ ul.bibliography-filters {
       a {
         color: $textColor;
         line-height: 100%;
-        margin-left: .5em;
         vertical-align: middle;
+
+        &.icon {
+          margin-left: .25em;
+        }
 
         &:hover {
           color: $highlight2Color;

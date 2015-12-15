@@ -78,7 +78,7 @@ module Jekyll
                       auto_ids: false
                       ).to_html()[3..-6]
         book_link = "#{context.registers[:page]['permalink']}##{book.id}"
-        result += "</a><a href='#{book_link}'><span class='icon'>"
+        result += "</a><a href='#{book_link}' class=\"icon\"><span class='icon'>"
         result +=
           Liquid::Template.parse('{% include svg/hyperlink.html %}').render(context)
         result += '</span></a>'
