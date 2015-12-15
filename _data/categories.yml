@@ -1,5 +1,13 @@
+- id: early-modern
+  display_name: 'Early Modern'
+  group: chrono
+  
 - id: 16th-century
   display_name: '16th Century'
+  group: chrono
+
+- id: 17th-century
+  display_name: '17th Century'
   group: chrono
 
 - id: 20th-century
@@ -8,6 +16,10 @@
 
 - id: china
   display_name: China
+  group: geo
+
+- id: global
+  display_name: Global
   group: geo
 
 - id: latin-america
@@ -22,12 +34,20 @@
   display_name: 'United States'
   group: geo
 
+- id: cultural
+  display_name: Cultural
+  group: theme
+
 - id: diplomatic-international
   display_name: 'Diplomatic / International'
   group: theme
 
 - id: empire
   display_name: 'Empire'
+  group: theme
+
+- id: medical
+  display_name: Medical
   group: theme
 
 - id: peace-and-conflict
