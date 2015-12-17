@@ -35,7 +35,11 @@
   group: geo
 
 - id: cultural
+<<<<<<< HEAD
+  display_name: Cultural
+=======
   display_name: 'Cultural'
+>>>>>>> development
   group: theme
 
 - id: diplomatic-international
@@ -46,12 +50,13 @@
   display_name: 'Empire'
   group: theme
 
-- id: film-studies
-  display_name: 'Film Studies'
-  group: theme
-
+<<<<<<< HEAD
 - id: medical
   display_name: Medical
+=======
+- id: film-studies
+  display_name: 'Film Studies'
+>>>>>>> development
   group: theme
 
 - id: peace-and-conflict
