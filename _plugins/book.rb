@@ -67,43 +67,52 @@ module Jekyll
       @tokens[:betterworld_image] = book.data['betterworld_image'] if book.data['betterworld_image']
     end
 
+    def affiliate_url_for(slug)
+      case slug
+      when :amzn
+        "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/backlist0e-20"
+      when :indiebound
+        "http://www.indiebound.org/book/#{@tokens[:indiebound]}?aff=clionautics"
+      when :powells
+        "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_wgt"
+      when :oclc
+        "http://worldcat.org/oclc/#{@tokens[:oclc]}"
+      when :direct
+        @tokens[:direct]
+      else
+        ''
+      end
+    end
+
     def build_link_for(slug)
       url = ''
       label = ''
 
+      url = self.affiliate_url_for(slug)
+
       case slug
       when :amzn
         if @tokens[:amzn]
-          url = "http://www.amazon.com/exec/obidos/asin/#{@tokens[:amzn]}/ref=nosim/clionautics-20"
           label = 'Buy from Amazon'
           affiliate = true
         end
       when :indiebound
         if @tokens[:indiebound]
-          url = "http://www.indiebound.org/book/#{@tokens[:isbn]}?aff=clionautics"
           label = 'Buy from Indiebound'
           affiliate = true
         end
       when :powells
         if @tokens[:powells]
-          url = "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_wgt"
           label = 'Buy from Powell’s'
           affiliate = true
         end
       when :direct
         if @tokens[:direct]
-          url = @tokens[:direct]
           label = 'Visit Publisher'
           affiliate = false
         end
-      when :betterworld
-        if @tokens[:betterworld] and @tokens[:betterworld_image]
-          url = @tokens[:betterworld]
-          label = "Buy from BetterWorld Books<img src='#{@tokens[:betterworld_image]}' width='1' height='1' border='0' />"
-        end
       when :oclc
         if @tokens[:oclc]
-          url = "http://worldcat.org/oclc/#{@tokens[:oclc]}"
           label = 'Find at Your Library'
           affiliate = false
         end
