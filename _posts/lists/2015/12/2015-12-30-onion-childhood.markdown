@@ -6,8 +6,8 @@ date: 2015-12-30 06:00:00
 image_id: "onion-childhood.jpg"
 permalink: "/lists/history-of-american-childhood"
 description: "Contemporary American attitudes about childhood are rife with paradox. We’re convinced that our children are overprotected, yet parents find it impossible to step back from the many protective measures put in place over the past century. Here are ten books that can help you figure out how we came to be so confused about childhood."
-zotero: 
-astore: 
+zotero: https://www.zotero.org/groups/backlist/items/collectionKey/GIATGQFQ
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=8
 sections:
   - id: 0
     books:
