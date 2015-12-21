@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Last Minute Holiday Gift Guide for Historians and the People Who Love Them"
-date:   2015-12-21 22:00:00
+date: 2015-12-21 21:00:00
 permalink: "/blog/2015-holiday-gift-guide"
 ---
 ‘Twas the night before Christmas, and all through the house, historians were worrying about all the things they didn’t read or write that year. 
