@@ -38,6 +38,10 @@
   display_name: 'Film Studies'
   group: theme
 
+- id: labor
+  display_name: Labor
+  group: theme
+  
 - id: peace-and-conflict
   display_name: 'Peace and Conflict'
   group: theme
