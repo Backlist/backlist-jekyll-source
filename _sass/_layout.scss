@@ -1237,7 +1237,7 @@ ul.bibliography-filters {
     margin: 0 auto;
     padding: ($spacingUnit * 2) ($spacingUnit * 2) ($spacingUnit * 4) ($spacingUnit * 2);
 
-    p:first-child {
+    & > p:first-child {
       margin-top: 0;
 
       &:first-line {
