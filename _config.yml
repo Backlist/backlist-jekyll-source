@@ -13,8 +13,5 @@ collections:
   - people
 
 # Build settings
-gems:
-  - jekyll-redirect-from
-  
 markdown: kramdown
 future: true
