@@ -726,6 +726,21 @@ body.homepage {
   font-size: 24px; // TODO: Proportional
 }
 
+.footer-message {
+  @include sans-serif-font-stack;
+  margin-top: $spacingUnit;
+  padding-left: $spacingUnit * 2;
+  padding-right: $spacingUnit * 2;
+
+  p {
+    font-size: 1em;
+    a {
+      @include special-link-underline;
+      line-height: 1;
+    }
+  }
+}
+
 .biblio-block {
   @include sans-serif-font-stack;
   margin-top: $spacingUnit;
