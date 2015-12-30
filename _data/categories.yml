@@ -6,6 +6,9 @@
   display_name: '16th Century'
   group: chrono
 
+- id: 19th-century
+  display_name: '19th Century'
+
 - id: 17th-century
   display_name: '17th Century'
   group: chrono
@@ -38,6 +41,10 @@
   display_name: 'Cultural'
   group: theme
 
+- id: demography-family
+  display_name: 'Demography / Family'
+  group: theme
+  
 - id: diplomatic-international
   display_name: 'Diplomatic / International'
   group: theme
