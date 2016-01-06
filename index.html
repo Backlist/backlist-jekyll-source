@@ -90,6 +90,9 @@ layout: homepage
     $(document).on('ready', function() {
       strechColumns('.categories-row .third-col .homepage-bucket');
     });
+    $(window).on('load', function() {
+      strechColumns('.categories-row .third-col .homepage-bucket');
+    });
     $(window).on('resize', function() {
       strechColumns('.categories-row .third-col .homepage-bucket');
     });
