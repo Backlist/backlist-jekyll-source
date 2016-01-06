@@ -60,6 +60,10 @@
 - id: medical
   display_name: Medical
   group: theme
+  
+- id: labor
+  display_name: Labor
+  group: theme
 
 - id: peace-and-conflict
   display_name: 'Peace and Conflict'
