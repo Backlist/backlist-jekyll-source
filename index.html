@@ -104,9 +104,13 @@ layout: homepage
     <div class="recent-wrapper">
       <h2 class="featured-banner">Recent Lists</h2>
       <ul class="list-of-lists">
-        {% for post in site.posts %}{% if post.layout == 'list' %}{% if forloop.index > 1 %}{% if forloop.index < 6 %}
-          {% include categories/list_line_item.html %}
-        {% endif %}{% endif %}{% endif %}{% endfor %}
+        {% assign list_counter = 0 %}
+        {% for post in site.posts %}{% if post.layout == 'list' %}
+          {% if list_counter > 0 %}{% if list_counter < 6 %}
+            {% include categories/list_line_item.html %}
+          {% endif %}{% endif %}
+          {% assign list_counter = list_counter | plus: 1 %}
+        {% endif %}{% endfor %}
       </ul>
 
       <a class="bottom-link" href="{{ site.baseurl }}lists">Browse All Lists…</a>
