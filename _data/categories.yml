@@ -21,9 +21,9 @@
   display_name: China
   group: geo
 
-- id: global
-  display_name: Global
-  group: geo
+- id: world-global-transnational
+  display_name: 'World / Global / Transnational'
+  group: theme
 
 - id: latin-america
   display_name: 'Latin America'
