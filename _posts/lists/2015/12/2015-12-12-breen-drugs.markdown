@@ -31,7 +31,7 @@ categories:
   - early-modern
   - 17th-century
   - 20th-century
-  - global
+  - world-global-transnational
   - cultural
   - medical
 author: 562231f67d1f72cf
