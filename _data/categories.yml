@@ -76,3 +76,7 @@
 - id: theory-and-method
   display_name: 'Theory and Method'
   group: theme
+
+- id: race-and-ethnicity
+  display_name: 'Race and Ethnicity'
+  group: theme
