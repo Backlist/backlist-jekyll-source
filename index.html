@@ -29,7 +29,7 @@ layout: homepage
           </a>
         </h3>
         <p class="description">
-          {{ post.description }}
+          {{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
         <p class="description">
           <a class="read-more" href="{{ post.permalink }}">Read more…</a>
