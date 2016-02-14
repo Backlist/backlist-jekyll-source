@@ -28,6 +28,11 @@ sections:
       - 39c380e95fe8d3c0
       - d865a0aee34f6617
 categories:
+  - science-and-technology
+  - europe
+  - early-modern
+  - 16th-century
+  - 17th-century
 author: a3ad88a5acfa645c
 ---
 Ask ten historians of science and medicine what they do and you will get ten different answers. For some historians, their field chronicles how geniuses moved mountains of ancient authority in an effort to articulate a new worldview—think Copernicus and his heliocentric theory, or Newton and his universal laws. For others (this historian included), the history of science and medicine is a tale of arcane byways strewn with good ideas that never came to much, and bad ideas that were showered with investments of time and money only to meet the same fate. Some historical accounts focus on the places where scientific thinking evolved: artisans’ shops, alchemical laboratories, and anatomical theatres. Some historians zoom in on the ideas themselves and the often-incremental changes that were necessary before scientific theories developed and gained traction. 
