@@ -2,7 +2,7 @@
 id: cc7ac9d59919e1ba
 layout: list
 title: (Caribbean Tourism)
-date: 2016-02-15 06:00:00
+date: 2016-02-24 06:00:00
 image_id: 
 permalink: /lists/caribbean-tourism
 description: ''
@@ -22,8 +22,6 @@ sections:
     books:
       - 002b095743b132b4
       - 13ba1ff30e005f27
-  - id: 3
-    books:
 categories: 
   - race-and-ethnicity
   - labor
