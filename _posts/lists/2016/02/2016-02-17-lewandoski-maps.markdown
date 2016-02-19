@@ -10,22 +10,31 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/TSWVXJQN
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=13
 sections: 
   - id: 0
-    books:
-      - dc0b27ba89634385
-      - a132bcfab420f909
+    listings:
+      - type: book
+        id: dc0b27ba89634385
+      - type: book
+        id: a132bcfab420f909
   - id: 1
-    books:
-      - c42f417bb2e3206c
-      - 5ad7e9e7612fc0e2
-      - 7d476e35ff3580c5
+    listings:
+      - type: book
+        id: c42f417bb2e3206c
+      - type: book
+        id: 5ad7e9e7612fc0e2
+      - type: book
+        id: 7d476e35ff3580c5
   - id: 2
-    books:
-      - 816ec8646e25ebf3
-      - e5b0af463ea02395
+    listings:
+      - type: book
+        id: 816ec8646e25ebf3
+      - type: book
+        id: e5b0af463ea02395
   - id: 3
-    books:
-      - 9496d1e3f05a58ba
-      - 0897e7fd5c41ddd2
+    listings:
+      - type: book
+        id: 9496d1e3f05a58ba
+      - type: book
+        id: 0897e7fd5c41ddd2
 categories:
   - world-global-transnational
   - atlantic-world

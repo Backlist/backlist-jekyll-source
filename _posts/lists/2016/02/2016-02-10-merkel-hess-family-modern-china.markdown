@@ -10,23 +10,33 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/Q57MBZ93
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=11
 sections: 
   - id: 0
-    books:
-      - b83ab6883474a1c5
-      - c95b5e205981d88c
+    listings:
+      - type: book
+        id: b83ab6883474a1c5
+      - type: book
+        id: c95b5e205981d88c
   - id: 1
-    books:
-      - 64420fa56c0ee540
-      - d8d3e507ae8969e1
+    listings:
+      - type: book
+        id: 64420fa56c0ee540
+      - type: book
+        id: d8d3e507ae8969e1
   - id: 2
-    books:
-      - afebe02c2afe76f6
-      - f969b3f6fa64f8c2
-      - 4ee465b3e7c01ca2
+    listings:
+      - type: book
+        id: afebe02c2afe76f6
+      - type: book
+        id: f969b3f6fa64f8c2
+      - type: book
+        id: 4ee465b3e7c01ca2
   - id: 3
-    books:
-      - ab4794998a7bbc65
-      - 8f3c78afea595ea3
-      - f222bbaaf4942f5b
+    listings:
+      - type: book
+        id: ab4794998a7bbc65
+      - type: book
+        id: 8f3c78afea595ea3
+      - type: book
+        id: f222bbaaf4942f5b
 categories:
   - cultural
   - social

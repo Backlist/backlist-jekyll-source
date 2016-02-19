@@ -10,23 +10,33 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/R3TGE8BG
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=9
 sections: 
   - id: 0
-    books:
-      - eee61d0f1fc0772b
-      - 70b1d1e45a6a07fd
+    listings:
+      - type: book
+        id: eee61d0f1fc0772b
+      - type: book
+        id: 70b1d1e45a6a07fd
   - id: 1
-    books:
-      - 1a86e8fa538af4cf
-      - bb4e8d4f09a25cb9
-      - 2c41b61c3fbbd96c
+    listings:
+      - type: book
+        id: 1a86e8fa538af4cf
+      - type: book
+        id: bb4e8d4f09a25cb9
+      - type: book
+        id: 2c41b61c3fbbd96c
   - id: 2
-    books:
-      - b257c7d4d18c2fde
-      - 177ed2c931befab8
+    listings:
+      - type: book
+        id: b257c7d4d18c2fde
+      - type: book
+        id: 177ed2c931befab8
   - id: 3
-    books:
-      - 2a3baf6bcbd5e8e5
-      - bbe71fccc2084e8e
-      - 69ad6231101a1912
+    listings:
+      - type: book
+        id: 2a3baf6bcbd5e8e5
+      - type: book
+        id: bbe71fccc2084e8e
+      - type: book
+        id: 69ad6231101a1912
 categories:
   - 20th-century
   - united-states
