@@ -10,21 +10,31 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/GIATGQFQ
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=8
 sections:
   - id: 0
-    books:
-      - a3f28c43b238a3ea
-      - 804271a5ebcf5856
-      - 60973f610e9f4674
-      - 43fcf3965ded308f
+    listings:
+      - type: book
+        id: a3f28c43b238a3ea
+      - type: book
+        id: 804271a5ebcf5856
+      - type: book
+        id: 60973f610e9f4674
+      - type: book
+        id: 43fcf3965ded308f
   - id: 1
-    books:
-      - 63e50e8e4ca254d5
-      - 84706e534dbc11dd
-      - 080b07cdd57a07af
-      - 5067f82a77b53822
+    listings:
+      - type: book
+        id: 63e50e8e4ca254d5
+      - type: book
+        id: 84706e534dbc11dd
+      - type: book
+        id: 080b07cdd57a07af
+      - type: book
+        id: 5067f82a77b53822
   - id: 2
-    books:
-      - 10d067b1ca835730
-      - a6699eaf52afea41
+    listings:
+      - type: book
+        id: 10d067b1ca835730
+      - type: book
+        id: a6699eaf52afea41
 categories:
   - 19th-century
   - 20th-century

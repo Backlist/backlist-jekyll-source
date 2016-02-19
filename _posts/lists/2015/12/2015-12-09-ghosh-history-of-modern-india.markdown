@@ -10,23 +10,33 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/6UZK7DFB
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=1
 sections:
   - id: 0
-    books:
-      - 0555cc88af97c9be
+    listings:
+      - type: book
+        id: 0555cc88af97c9be
   - id: 1
-    books:
-      - 6e6f86c1b46637b3
-      - d3205fc3d4fec926
-      - 748bfc2b6f5a2264
+    listings:
+      - type: book
+        id: 6e6f86c1b46637b3
+      - type: book
+        id: d3205fc3d4fec926
+      - type: book
+        id: 748bfc2b6f5a2264
   - id: 2
-    books:
-      - 317bd8899ed1d5ad
-      - b386895459eaa2af
-      - c0a1b9230086651c
+    listings:
+      - type: book
+        id: 317bd8899ed1d5ad
+      - type: book
+        id: b386895459eaa2af
+      - type: book
+        id: c0a1b9230086651c
   - id: 3
-    books:
-      - 60c9eb63458f4634
-      - 136411881879442a
-      - 631c8ba0dfc72554
+    listings:
+      - type: book
+        id: 60c9eb63458f4634
+      - type: book
+        id: 136411881879442a
+      - type: book
+        id: 631c8ba0dfc72554
 categories:
   - south-asia
   - 20th-century
