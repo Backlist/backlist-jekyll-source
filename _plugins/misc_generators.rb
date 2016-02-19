@@ -12,16 +12,18 @@ module Jekyll
           author = Person.new(post.data['author'], site)
 
           post.data['sections'].each do |section|
-            section['books'].each do |id|
-              book = Book.new(id, site)
+            section['listings'].each do |listing|
+              if listing['type'] == 'book'
+                book = Book.new(listing['id'], site)
 
-              if book.has_cover_image
-                books << {
-                  book_id: id,
-                  list_title: post.data['title'],
-                  list_permalink: post.data['permalink'],
-                  author: author.full_name
-                }
+                if book.has_cover_image
+                  books << {
+                    book_id: listing['id'],
+                    list_title: post.data['title'],
+                    list_permalink: post.data['permalink'],
+                    author: author.full_name
+                  }
+                end
               end
             end
           end

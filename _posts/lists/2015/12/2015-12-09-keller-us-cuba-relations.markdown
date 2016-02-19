@@ -10,23 +10,33 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/2H3CCBC2
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=4
 sections:
   - id: 0
-    books:
-      - cbe0936f600a1a67
-      - 9a8b106982cccdf5
-      - 32d1f7b9828bdea8
+    listings:
+      - type: book
+        id: cbe0936f600a1a67
+      - type: book
+        id: 9a8b106982cccdf5
+      - type: book
+        id: 32d1f7b9828bdea8
   - id: 1
-    books:
-      - 417c35fadf8165cc
-      - 0dadd2a9063e9630
-      - 3c1cd7bcf72a49c9
+    listings:
+      - type: book
+        id: 417c35fadf8165cc
+      - type: book
+        id: 0dadd2a9063e9630
+      - type: book
+        id: 3c1cd7bcf72a49c9
   - id: 2
-    books:
-      - 922ca8769ba865b5
-      - 9e574b66f7070937
+    listings:
+      - type: book
+        id: 922ca8769ba865b5
+      - type: book
+        id: 9e574b66f7070937
   - id: 3
-    books:
-      - 3635f5e7c9f3f2c3
-      - d982aeb96ffd583a
+    listings:
+      - type: book
+        id: 3635f5e7c9f3f2c3
+      - type: book
+        id: d982aeb96ffd583a
 categories:
   - latin-america
   - united-states
