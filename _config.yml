@@ -11,6 +11,7 @@ email: info@backlist.cc
 collections:
   - books
   - films
+  - links
   - people
 
 # Build settings

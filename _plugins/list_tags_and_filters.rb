@@ -62,6 +62,8 @@ module Jekyll
         source = Book.new(@id, context.registers[:site])
       when 'film'
         source = Film.new(@id, context.registers[:site])
+      when 'link'
+        source = CustomLink.new(@id, context.registers[:site])
       end
 
       result = "<div id=\"#{@id}\" class=\"source-block wrapper\">"
@@ -79,7 +81,11 @@ module Jekyll
         result = ''
         result += '<div class="source-meta-block">'
         result += generate_sidebar(source, :before, context)
-        result += "<div class=\"citation\"><h3><a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\">"
+        if ['book', 'film'].include? @type
+          result += "<div class=\"citation\"><h3><a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\">"
+        elsif ['link'].include? @type
+          result += "<div class=\"citation\"><h3><a href=\"#{source.main_link}\" target=\"_blank\">"
+        end
         result += Kramdown::Document.new(
                       "#{source.casual_citation}",
                       auto_ids: false
@@ -116,8 +122,10 @@ module Jekyll
         else
           result += '<div class="sidebar">'
         end
-        if source.has_cover_image
-          result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\"><img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\"></a>"
+        if ['book', 'film'].include? @type
+          if source.has_cover_image
+            result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\"><img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\"></a>"
+          end
         end
         if source.has_link_for?(:amzn)
           result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"buy-button\">Buy Now</a>"
@@ -132,7 +140,7 @@ module Jekyll
       def generate_links(source, context)
         result = ''
 
-        if source.has_cover_image
+        if ['book','film'].include?(@type) and source.has_cover_image
           result += '<ul class="affiliate-grid">'
         else
           result += '<ul class="affiliate-grid no-cover">'
@@ -141,7 +149,7 @@ module Jekyll
         [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc, :homepage].each do |slug|
           result += "<li>#{source.build_link_for(slug)}</li>" if source.has_link_for?(slug)
         end
-        if ['film'].include? @type
+        if ['film', 'link'].include? @type
           source.links.each do |link|
             result += "<li><a href=\"#{link[:url]}\" target=\"_blank\">#{link[:label]}</a></li>"
           end

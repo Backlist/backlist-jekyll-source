@@ -46,6 +46,8 @@ layout: default
           {% sourceblock {{ listing['id'] }}, book, {{ page.id }} %}
         {% elsif listing['type'] == 'film' %}
           {% sourceblock {{ listing['id'] }}, film, {{ page.id }} %}
+        {% elsif listing['type'] == 'link' %}
+          {% sourceblock {{ listing['id'] }}, link, {{ page.id }} %}
         {% endif %}
       {% endfor %}
     {% endfor %}

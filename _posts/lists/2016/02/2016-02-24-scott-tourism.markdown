@@ -31,6 +31,8 @@ sections:
         id: 13ba1ff30e005f27
   - id: 3
     listings:
+      - type: link
+        id: 93c49f7e0e5398bc
       - type: book
         id: 0ef24717ff8f74de
       - type: film
