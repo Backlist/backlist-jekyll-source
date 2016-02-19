@@ -44,6 +44,8 @@ layout: default
       {% for listing in section['listings'] %}
         {% if listing['type'] == 'book' %}
           {% sourceblock {{ listing['id'] }}, book, {{ page.id }} %}
+        {% elsif listing['type'] == 'film' %}
+          {% sourceblock {{ listing['id'] }}, film, {{ page.id }} %}
         {% endif %}
       {% endfor %}
     {% endfor %}

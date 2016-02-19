@@ -10,6 +10,7 @@ email: info@backlist.cc
 # Data
 collections:
   - books
+  - films
   - people
 
 # Build settings

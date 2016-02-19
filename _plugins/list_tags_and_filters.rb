@@ -119,7 +119,9 @@ module Jekyll
         if source.has_cover_image
           result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\"><img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\"></a>"
         end
-        result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"buy-button\">Buy Now</a>"
+        if source.has_link_for?(:amzn)
+          result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"buy-button\">Buy Now</a>"
+        end
         result += generate_links(source, context)
         result += '<div class="clear-block"></div>'
         result += '</div>'
@@ -138,6 +140,11 @@ module Jekyll
 
         [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
           result += "<li>#{source.build_link_for(slug)}</li>" if source.has_link_for?(slug)
+        end
+        if ['film'].include? @type
+          source.links.each do |link|
+            result += "<li><a href=\"#{link[:url]}\" target=\"_blank\">#{link[:label]}</a></li>"
+          end
         end
         result += '</ul>'
 
