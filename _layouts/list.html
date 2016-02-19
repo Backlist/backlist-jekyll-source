@@ -43,7 +43,7 @@ layout: default
 
       {% for listing in section['listings'] %}
         {% if listing['type'] == 'book' %}
-          {% bookblock {{ listing['id'] }}, {{ page.id }} %}
+          {% sourceblock {{ listing['id'] }}, book, {{ page.id }} %}
         {% endif %}
       {% endfor %}
     {% endfor %}
