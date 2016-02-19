@@ -138,7 +138,7 @@ module Jekyll
           result += '<ul class="affiliate-grid no-cover">'
         end
 
-        [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc].each do |slug|
+        [:amzn, :powells, :indiebound, :betterworld, :direct, :oclc, :homepage].each do |slug|
           result += "<li>#{source.build_link_for(slug)}</li>" if source.has_link_for?(slug)
         end
         if ['film'].include? @type
