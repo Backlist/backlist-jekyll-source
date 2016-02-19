@@ -10,18 +10,29 @@ zotero:
 astore: 
 sections: 
   - id: 0
-    books:
-      - 10706fab85c39bbe
-      - 149a74798daccef5
+    listings:
+      - type: book
+        id: 10706fab85c39bbe
+      - type: book
+        id: 149a74798daccef5
   - id: 1
-    books:
-      - 2f7668c33411e2a1
-      - 4fb336d884391958
-      - 85e3c6310ccc64b8
+    listings:
+      - type: book
+        id: 2f7668c33411e2a1
+      - type: book
+        id: 4fb336d884391958
+      - type: book
+        id: 85e3c6310ccc64b8
   - id: 2
-    books:
-      - 002b095743b132b4
-      - 13ba1ff30e005f27
+    listings:
+      - type: book
+        id: 002b095743b132b4
+      - type: book
+        id: 13ba1ff30e005f27
+  - id: 3
+    listings:
+      - type: film
+        id: 9f64d022fad407ec
 categories: 
   - race-and-ethnicity
   - labor
