@@ -1,5 +1,5 @@
 ---
-id: 13be4c9cda293271
+list_id: 13be4c9cda293271
 layout: list
 title: "The History of Modern India"
 date: 2015-12-09 06:00:00

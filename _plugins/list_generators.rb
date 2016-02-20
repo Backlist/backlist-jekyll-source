@@ -36,7 +36,7 @@ module Jekyll
 
         ids.each do |id|
           site.collections['books'].docs.each do |book|
-            if id == book.data['id']
+            if id == book.data['book_id']
               result += book.content + "\n"
             end
           end
@@ -49,7 +49,7 @@ module Jekyll
         result = {}
 
         site.collections['books'].docs.each do |book|
-          id = book.data['id']
+          id = book.data['book_id']
           content = book.content
 
           result[id] = content

@@ -18,7 +18,7 @@ module Jekyll
     def initialize(id, site)
       @id = id
 
-      links = site.collections['links'].docs.select { |l| l.data['id'].to_s == id.to_s }
+      links = site.collections['links'].docs.select { |l| l.data['link_id'].to_s == id.to_s }
       link = links.first
 
       if !link

@@ -20,7 +20,7 @@ module Jekyll
     def initialize(id, site)
       @id = id
 
-      films = site.collections['films'].docs.select { |f| f.data['id'].to_s == id.to_s }
+      films = site.collections['films'].docs.select { |f| f.data['film_id'].to_s == id.to_s }
       film = films.first
 
       if !film

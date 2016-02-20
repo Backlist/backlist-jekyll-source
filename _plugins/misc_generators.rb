@@ -43,7 +43,7 @@ module Jekyll
       site.posts.docs.each do |post|
         if post.data['layout'] == 'list'
           lists << {
-              id: post.data['id'],
+              id: post.data['list_id'],
               title: post.data['title'],
               permalink: post.data['permalink'] }
         end
@@ -57,14 +57,14 @@ module Jekyll
             list_permalink = ''
             book.data['reviews'].each do |review|
               lists.each do |list|
-                if list[:id] == review['list_id']
+                if list['list_id'] == review['list_id']
                   list_title = list[:title]
                   list_permalink = list[:permalink]
                   break
                 end
               end
               books << {
-                id: book.data['id'],
+                id: book.data['book_id'],
                 list_title: list_title,
                 list_permalink: list_permalink
               }

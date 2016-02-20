@@ -1,5 +1,5 @@
 ---
-id: b03ee6843ec562c0
+list_id: b03ee6843ec562c0
 layout: list
 title: "Monsters in American History"
 date: 2015-12-16 06:00:00
