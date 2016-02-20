@@ -1,5 +1,5 @@
 ---
-id: 4f66879eedaf52c0
+list_id: 4f66879eedaf52c0
 layout: list
 title: U.S. Labor History
 date: 2016-01-06 06:00:00
