@@ -14,13 +14,13 @@ module Jekyll
           content += "\# Published #{post.data['date'].strftime('%B %d, %Y')}\n"
           content += "\# http://backlist.cc#{post.data['permalink']}\n\n"
 
-          book_ids = []
+          source_ids = []
           post.data['sections'].each do |section|
-            section['books'].each do |book_id|
-              book_ids << book_id
+            section['listings'].each do |listing|
+              source_ids << listing['id']
             end
           end
-          content += build_bibtex_list(book_ids, site)
+          content += build_bibtex_list(source_ids, site)
           f = File.new(File.join(site.source, post.permalink + '.bib'), 'w+')
           f.write(content)
           f.close()
@@ -36,7 +36,7 @@ module Jekyll
 
         ids.each do |id|
           site.collections['books'].docs.each do |book|
-            if id == book.data['id']
+            if id == book.data['book_id']
               result += book.content + "\n"
             end
           end
@@ -49,7 +49,7 @@ module Jekyll
         result = {}
 
         site.collections['books'].docs.each do |book|
-          id = book.data['id']
+          id = book.data['book_id']
           content = book.content
 
           result[id] = content

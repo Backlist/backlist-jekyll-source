@@ -12,16 +12,18 @@ module Jekyll
           author = Person.new(post.data['author'], site)
 
           post.data['sections'].each do |section|
-            section['books'].each do |id|
-              book = Book.new(id, site)
+            section['listings'].each do |listing|
+              if listing['type'] == 'book'
+                book = Book.new(listing['id'], site)
 
-              if book.has_cover_image
-                books << {
-                  book_id: id,
-                  list_title: post.data['title'],
-                  list_permalink: post.data['permalink'],
-                  author: author.full_name
-                }
+                if book.has_cover_image
+                  books << {
+                    book_id: listing['id'],
+                    list_title: post.data['title'],
+                    list_permalink: post.data['permalink'],
+                    author: author.full_name
+                  }
+                end
               end
             end
           end
@@ -41,7 +43,7 @@ module Jekyll
       site.posts.docs.each do |post|
         if post.data['layout'] == 'list'
           lists << {
-              id: post.data['id'],
+              id: post.data['list_id'],
               title: post.data['title'],
               permalink: post.data['permalink'] }
         end
@@ -55,14 +57,14 @@ module Jekyll
             list_permalink = ''
             book.data['reviews'].each do |review|
               lists.each do |list|
-                if list[:id] == review['list_id']
+                if list['list_id'] == review['list_id']
                   list_title = list[:title]
                   list_permalink = list[:permalink]
                   break
                 end
               end
               books << {
-                id: book.data['id'],
+                id: book.data['book_id'],
                 list_title: list_title,
                 list_permalink: list_permalink
               }

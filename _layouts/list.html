@@ -41,8 +41,10 @@ layout: default
     {% for section in page.sections %}
       {% list_section_header {{ section['id'] }} %}
 
-      {% for book in section['books'] %}
-        {% bookblock {{ book }}, {{ page.id }} %}
+      {% for listing in section['listings'] %}
+        {% if listing['type'] == 'book' %}
+          {% sourceblock {{ listing['id'] }}, book, {{ page.list_id }} %}
+        {% endif %}
       {% endfor %}
     {% endfor %}
     {% endstrip %}

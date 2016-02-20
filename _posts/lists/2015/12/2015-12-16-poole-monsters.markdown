@@ -1,5 +1,5 @@
 ---
-id: b03ee6843ec562c0
+list_id: b03ee6843ec562c0
 layout: list
 title: "Monsters in American History"
 date: 2015-12-16 06:00:00
@@ -10,19 +10,25 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/X69NZXH5
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=6
 sections: 
   - id: 0
-    books:
-      - d09a424b945be2e3
+    listings:
+      - type: book
+        id: d09a424b945be2e3
   - id: 1
-    books:
-      - 110c479c862850fb
-      - 7d9e98fdd1782cd4
+    listings:
+      - type: book
+        id: 110c479c862850fb
+      - type: book
+        id: 7d9e98fdd1782cd4
   - id: 2
-    books:
-      - ffce12b035515fb4
-      - 4311a872bd32e0b3
+    listings:
+      - type: book
+        id: ffce12b035515fb4
+      - type: book
+        id: 4311a872bd32e0b3
   - id: 3
-    books:
-      - 4c4e5662104dfffd
+    listings:
+      - type: book
+        id: 4c4e5662104dfffd
 categories:
   - united-states
   - cultural

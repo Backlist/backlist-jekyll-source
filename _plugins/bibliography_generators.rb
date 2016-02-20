@@ -33,10 +33,10 @@ module Jekyll
         site.collections['books'].docs.each do |book|
           if defined? book.data['reviews']
             if filter == :all
-              ids << book.data['id']
+              ids << book.data['book_id']
             else
               if book.data['full_citation'][0].downcase == filter.to_s.downcase
-                ids << book.data['id']
+                ids << book.data['book_id']
               end
             end
           end

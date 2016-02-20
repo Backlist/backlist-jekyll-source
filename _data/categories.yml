@@ -57,6 +57,10 @@
   display_name: 'Film Studies'
   group: theme
 
+- id: gender
+  display_name: 'Gender'
+  group: theme
+
 - id: medical
   display_name: Medical
   group: theme
@@ -73,12 +77,20 @@
   display_name: 'Popular Culture'
   group: theme
 
+- id: social
+  display_name: 'Social'
+  group: theme
+
 - id: theory-and-method
   display_name: 'Theory and Method'
   group: theme
 
 - id: science-and-technology
   display_name: 'Science and Technology'
+  group: theme
+
+- id: atlantic-world
+  display_name: 'Atlantic World'
   group: theme
 
 - id: europe

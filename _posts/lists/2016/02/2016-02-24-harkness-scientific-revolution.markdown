@@ -1,8 +1,8 @@
 ---
-id: eada717733e4d21b
+list_id: eada717733e4d21b
 layout: list
 title: Histories of the Scientific Revolution
-date: 2016-02-17 06:00:00
+date: 2016-02-24 06:00:00
 image_id: harkness-scientific-revolution.jpg
 permalink: /lists/histories-of-the-scientific-revolution
 description: 'While most historians are happy to admit something happened to the study of nature between 1400 and 1700, we remain strangely unable to describe exactly what that something was. The maddening maze of qualifications and uncertainties that riddle our thinking and our prose led Steven Shapin to famously proclaim in his 1996 book, _The Scientific Revolution_, “There is no such thing as the Scientific Revolution and here is a book about it.” Here are ten more books about the Scientific Revolution—if indeed there is such a thing.'
@@ -10,23 +10,33 @@ zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/ERIQNABW'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=12'
 sections: 
   - id: 0
-    books:
-      - 837b48c644bbb360
-      - f383b0d298a362f2
-      - e38565a3c7e1966c
+    listings:
+      - type: book
+        id: 837b48c644bbb360
+      - type: book
+        id: f383b0d298a362f2
+      - type: book
+        id: e38565a3c7e1966c
   - id: 1
-    books:
-      - 4fa43cd2e788198d
-      - 5348234fb627534e
-      - 81632e7c11b27768
+    listings:
+      - type: book
+        id: 4fa43cd2e788198d
+      - type: book
+        id: 5348234fb627534e
+      - type: book
+        id: 81632e7c11b27768
   - id: 2
-    books:
-      - 065356face10bd52
-      - 0f370f68b4174746
+    listings:
+      - type: book
+        id: 065356face10bd52
+      - type: book
+        id: 0f370f68b4174746
   - id: 3
-    books:
-      - 39c380e95fe8d3c0
-      - d865a0aee34f6617
+    listings:
+      - type: book
+        id: 39c380e95fe8d3c0
+      - type: book
+        id: d865a0aee34f6617
 categories:
   - science-and-technology
   - europe

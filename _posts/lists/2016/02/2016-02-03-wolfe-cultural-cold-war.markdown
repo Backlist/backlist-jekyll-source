@@ -1,5 +1,5 @@
 ---
-id: e3428997a7b44962
+list_id: e3428997a7b44962
 layout: list
 title: The Cultural Cold War
 date: 2016-02-03 06:00:00
@@ -10,23 +10,33 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/K9GQZV5M
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=10
 sections: 
   - id: 0
-    books:
-      - 28f26dd877903c14
-      - 61eeb5b1057aeffe
-      - fc86345170598d54
+    listings:
+      - type: book
+        id: 28f26dd877903c14
+      - type: book
+        id: 61eeb5b1057aeffe
+      - type: book
+        id: fc86345170598d54
   - id: 1
-    books:
-      - 812d8aed1d768c74
-      - 1390320f6e451fe3
-      - 12dbb9d338cc79e6
+    listings:
+      - type: book
+        id: 812d8aed1d768c74
+      - type: book
+        id: 1390320f6e451fe3
+      - type: book
+        id: 12dbb9d338cc79e6
   - id: 2
-    books:
-      - 135b81eb9bc50f2e
-      - c1063ddd472a1f3b
+    listings:
+      - type: book
+        id: 135b81eb9bc50f2e
+      - type: book
+        id: c1063ddd472a1f3b
   - id: 3
-    books:
-      - ae0d9f067a3534c0
-      - 235e0ba8ce759fe3
+    listings:
+      - type: book
+        id: ae0d9f067a3534c0
+      - type: book
+        id: 235e0ba8ce759fe3
 categories:
   - 20th-century
   - united-states
