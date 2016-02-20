@@ -1,5 +1,5 @@
 ---
-id: 6d6e8eeca39d03a6
+list_id: 6d6e8eeca39d03a6
 layout: list
 title: "The History of American Childhood"
 date: 2015-12-30 06:00:00

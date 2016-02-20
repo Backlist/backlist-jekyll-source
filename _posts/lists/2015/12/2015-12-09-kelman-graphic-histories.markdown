@@ -1,5 +1,5 @@
 ---
-id: 159c0c63b166932e
+list_id: 159c0c63b166932e
 layout: list
 title: "Graphic Histories and Memoirs"
 date: 2015-12-09 06:00:00

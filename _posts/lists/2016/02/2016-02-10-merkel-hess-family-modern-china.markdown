@@ -1,5 +1,5 @@
 ---
-id: c67863622f438c12
+list_id: c67863622f438c12
 layout: list
 title: Family and Gender in Modern Chinese History
 date: 2016-02-10 06:00:00

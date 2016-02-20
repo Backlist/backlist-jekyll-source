@@ -1,5 +1,5 @@
 ---
-id: e3428997a7b44962
+list_id: e3428997a7b44962
 layout: list
 title: The Cultural Cold War
 date: 2016-02-03 06:00:00

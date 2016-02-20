@@ -1,5 +1,5 @@
 ---
-id: 82676761d7f99055
+list_id: 82676761d7f99055
 layout: list
 title: "The History of Modern China"
 date: 2015-12-09 06:00:00

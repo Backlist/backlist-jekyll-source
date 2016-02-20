@@ -1,5 +1,5 @@
 ---
-id: 7052479f9a771ab6
+list_id: 7052479f9a771ab6
 layout: list
 title: "The History of U.S.-Cuban Relations"
 date: 2015-12-09 06:00:00
