@@ -7,7 +7,7 @@ module Jekyll
     def initialize(id, site)
       @id = id
 
-      people = site.collections['people'].docs.select { |p| p.data['id'].to_s == id.to_s }
+      people = site.collections['people'].docs.select { |p| p.data['person_id'].to_s == id.to_s }
       person = people.first
 
       @last_name = person.data['last_name']
