@@ -3,9 +3,9 @@ list_id: cc7ac9d59919e1ba
 layout: list
 title: The History of that Supposedly-Fun Caribbean Vacation
 date: 2016-03-02 06:00:00
-image_id: 
+image_id: scott-tourism.jpg
 permalink: /lists/caribbean-tourism
-description: ''
+description: 'There is nothing timeless about today’s traveling culture. The modern tourism industry stretching from south Florida to northern South America emerged out of a long and complicated history of colonialism, slavery, exploration, and dreams of the exotic. To offer a guide into tourism’s past, this eclectic list of stories challenges us to rethink the meaning of Caribbean tourism.'
 zotero: 
 astore: 
 sections: 
