@@ -9,7 +9,7 @@ module Jekyll
     def initialize(id, site)
       @id = id
 
-      posts = site.posts.docs.select { |p| p.data['id'].to_s == id.to_s }
+      posts = site.posts.docs.select { |p| p.data['list_id'].to_s == id.to_s }
       post = posts.first
 
       @title = post.data['title']
