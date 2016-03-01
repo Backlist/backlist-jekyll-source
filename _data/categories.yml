@@ -93,6 +93,10 @@
   display_name: 'Atlantic World'
   group: theme
 
+- id: europe
+  display_name: Europe
+  group: geo
+
 - id: race-and-ethnicity
   display_name: 'Race and Ethnicity'
   group: theme
