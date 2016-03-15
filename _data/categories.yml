@@ -100,3 +100,7 @@
 - id: race-and-ethnicity
   display_name: 'Race and Ethnicity'
   group: theme
+
+- id: religion
+  display_name: 'Religion'
+  group: theme
