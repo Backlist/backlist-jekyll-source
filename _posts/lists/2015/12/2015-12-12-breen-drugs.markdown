@@ -1,5 +1,5 @@
 ---
-id: ad4e02cadd9fcda2
+list_id: ad4e02cadd9fcda2
 layout: list
 title: 'The History of Drugs from Ambergris to Zedoary'
 date: 2015-12-21 06:00:00
@@ -10,23 +10,33 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/PR9JQQA6
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=7
 sections: 
   - id: 0
-    books:
-      - 18d3cd9a757aa872
-      - c249ceaa02a778ee
+    listings:
+      - type: book
+        id: 18d3cd9a757aa872
+      - type: book
+        id: c249ceaa02a778ee
   - id: 1
-    books:
-      - 3973de2b5bdc3f44
-      - d371a7aa52b12e68
-      - 23c1b737f08a81e7
+    listings:
+      - type: book
+        id: 3973de2b5bdc3f44
+      - type: book
+        id: d371a7aa52b12e68
+      - type: book
+        id: 23c1b737f08a81e7
   - id: 2
-    books:
-      - 82fe38a762eb0ef7
-      - 6ca687ff8fc8388f
+    listings:
+      - type: book
+        id: 82fe38a762eb0ef7
+      - type: book
+        id: 6ca687ff8fc8388f
   - id: 3
-    books:
-      - 91839b10efbdc4db
-      - 18ffc8c3bcb879f7
-      - 74fe60c899baabe8
+    listings:
+      - type: book
+        id: 91839b10efbdc4db
+      - type: book
+        id: 18ffc8c3bcb879f7
+      - type: book
+        id: 74fe60c899baabe8
 categories:
   - early-modern
   - 17th-century

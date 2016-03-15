@@ -1,5 +1,5 @@
 ---
-id: 82676761d7f99055
+list_id: 82676761d7f99055
 layout: list
 title: "The History of Modern China"
 date: 2015-12-09 06:00:00
@@ -10,22 +10,31 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/UIJ9U5CG
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=2
 sections:
   - id: 0
-    books:
-      - ec11a1ef730ffdca
-      - 68a47e2427d02858
-      - 50cb39a736ba1ec1
+    listings:
+      - type: book
+        id: ec11a1ef730ffdca
+      - type: book
+        id: 68a47e2427d02858
+      - type: book
+        id: 50cb39a736ba1ec1
   - id: 1
-    books:
-      - 67836178be2ad5f1
-      - a65759cf99447fb4
+    listings:
+      - type: book
+        id: 67836178be2ad5f1
+      - type: book
+        id: a65759cf99447fb4
   - id: 2
-    books:
-      - 593e9daa14beb2ce
-      - 4e9257fbfcb4b8e1
+    listings:
+      - type: book
+        id: 593e9daa14beb2ce
+      - type: book
+        id: 4e9257fbfcb4b8e1
   - id: 3
-    books:
-      - be2ae99ca673e92f
-      - e81ec1ef93cdc749
+    listings:
+      - type: book
+        id: be2ae99ca673e92f
+      - type: book
+        id: e81ec1ef93cdc749
 categories:
   - china
   - 20th-century
