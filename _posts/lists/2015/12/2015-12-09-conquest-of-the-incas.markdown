@@ -1,5 +1,5 @@
 ---
-id: adece18449a0062b
+list_id: adece18449a0062b
 layout: list
 title: "The Conquest of the Incas"
 date: 2015-12-09 06:00:00
@@ -10,22 +10,31 @@ zotero: https://www.zotero.org/groups/backlist/items/collectionKey/TQZ8BGPU
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=3
 sections:
   - id: 0
-    books:
-      - d821c5a3ef29dec4
-      - f0a1ad725afcde63
+    listings:
+      - type: book
+        id: d821c5a3ef29dec4
+      - type: book
+        id: f0a1ad725afcde63
   - id: 1
-    books:
-      - 0fc4b3f92c2a6936
-      - 2fc95e2aaa5e0217
+    listings:
+      - type: book
+        id: 0fc4b3f92c2a6936
+      - type: book
+        id: 2fc95e2aaa5e0217
   - id: 2
-    books:
-      - 0a26df4b0847a28a
-      - 6d6422c6c18ff0cb
+    listings:
+      - type: book
+        id: 0a26df4b0847a28a
+      - type: book
+        id: 6d6422c6c18ff0cb
   - id: 3
-    books:
-      - 09a5262dfddf4acc
-      - 53c1c16b2878cbfa
-      - a0a657ee8843a8c2
+    listings:
+      - type: book
+        id: 09a5262dfddf4acc
+      - type: book
+        id: 53c1c16b2878cbfa
+      - type: book
+        id: a0a657ee8843a8c2
 categories:
     - latin-america
     - 16th-century

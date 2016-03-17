@@ -6,7 +6,7 @@ layout: page
 <div class="bibliography-content">
   <ul class="list-of-citations">
     {% for book in site.books %}
-      {% if page.book_ids contains book['id'] %}
+      {% if page.book_ids contains book['book_id'] %}
         {% if book['reviews'].size > 0 %}
           <li>
             <h3>{{ book['full_citation'] | markdown_span }}</h3>
