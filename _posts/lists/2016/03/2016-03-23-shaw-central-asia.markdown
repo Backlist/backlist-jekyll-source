@@ -2,12 +2,12 @@
 list_id: f51d8c6fd17a50d9
 layout: list
 title: 'Off the Silk Road, beyond the Great Game: Histories of Modern Central Asia'
-date: 2016-03-30 06:00:00
+date: 2016-03-23 06:00:00
 image_id: shaw-central-asia.jpg
 permalink: /lists/off-the-silk-road
-description: ''
-zotero: 
-astore: 
+description: 'Terms like “Silk Road” and “Great Game” have done a great service in attracting readers to Central Asian history. However, these phrases—both coined by outsiders—have done little to advance an understanding of the societies they describe, one implying an inert timelessness, the other merely a rocky theater for European imperial rivalry. So how can we understand modern Central Asia on its own terms?'
+zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/G9UDDT9Q'
+astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=17'
 sections: 
   - id: 0
     listings:
@@ -42,6 +42,9 @@ sections:
       - type: book
         id: aded918c71d38e2d
 categories:
+  - central-asia
+  - world-global-transnational
+  - 20th-century
 author: b96e16f483c96d4a
 ---
 Terms like “Silk Road” and “Great Game” have done a great service in attracting readers to Central Asian history. However, these phrases—both coined by outsiders—have done little to advance an understanding of the societies they describe, one implying an inert timelessness, the other merely a rocky theater for European imperial rivalry. And the emerging habit of adding “new” to these terms when describing contemporary politics and economics in the region suggests that modern writers are not doing any better.  
