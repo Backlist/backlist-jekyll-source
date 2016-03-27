@@ -3,7 +3,7 @@ list_id: eb551040a8517944
 layout: list
 title: 'The History of North American Slavery'
 date: 2016-04-06 06:00:00
-image_id: 
+image_id: 'rothman-slavery.jpg'
 permalink: '/lists/history-of-north-american-slavery'
 description: ''
 zotero: 
