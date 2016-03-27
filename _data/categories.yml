@@ -104,3 +104,11 @@
 - id: religion
   display_name: 'Religion'
   group: theme
+
+- id: central-asia
+  display_name: 'Central Asia'
+  group: geo
+
+- id: borderlands
+  display_name: 'Borderlands'
+  group: theme
