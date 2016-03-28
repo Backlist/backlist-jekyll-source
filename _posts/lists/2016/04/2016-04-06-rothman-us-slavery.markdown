@@ -5,9 +5,9 @@ title: 'The History of North American Slavery'
 date: 2016-04-06 06:00:00
 image_id: 'rothman-slavery.jpg'
 permalink: '/lists/history-of-north-american-slavery'
-description: ''
-zotero: 
-astore: 
+description: 'Historians of the United States have written and argued more about American slavery than about nearly any other subject, and yet scholarly interpretations of slavery have changed drastically over the course of the last century.  This list does not purport to provide even a smattering of what most scholars would consider the most important works on the subject. But collectively, they hint at where the field has been, demonstrate some of its contemporary evolution, and provide room for the voices of both people who experienced enslavement and artists who have imagined it in especially powerful ways.'
+zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/CHVABZPQ/itemKey/FFFV4WEW'
+astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=18'
 sections: 
   - id: 0
     listings:
