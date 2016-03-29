@@ -6,7 +6,7 @@ date: 2016-04-13 06:00:00
 image_id: 'chang-asian-migrations.jpg'
 permalink: '/lists/history-of-asian-migrations'
 description: ''
-zotero: 
+zotero: https://www.zotero.org/groups/backlist/items/collectionKey/8MJFW47B
 astore: 
 sections: 
   - id: 0
