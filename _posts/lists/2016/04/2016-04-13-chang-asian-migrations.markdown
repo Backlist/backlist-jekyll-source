@@ -5,9 +5,9 @@ title: 'The History of Asian Migrations'
 date: 2016-04-13 06:00:00
 image_id: 'chang-asian-migrations.jpg'
 permalink: '/lists/history-of-asian-migrations'
-description: ''
+description: 'This list merely skims the surface of the rich scholarship on Asian migrations, offering a starting point for curious readers. The books and memoirs here tell many stories—of the mass mobilization of Asian labor for colonial development, the intimate encounters between migrants and immigration laws, the social histories of diasporic communities, and their sense of alienation and negotiated belonging in new, foreign places.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/8MJFW47B
-astore: 
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=19
 sections: 
   - id: 0
     listings:
