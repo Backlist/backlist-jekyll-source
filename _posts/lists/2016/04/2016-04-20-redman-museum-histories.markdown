@@ -6,7 +6,7 @@ date: 2016-04-20 06:00:00
 image_id: redman-museum-histories.jpg
 permalink: '/lists/museum-histories'
 description: ''
-zotero: 
+zotero: https://www.zotero.org/groups/backlist/items/collectionKey/BQDSTVHQ
 astore: 
 sections: 
   - id: 0
