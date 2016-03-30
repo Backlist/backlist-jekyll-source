@@ -109,6 +109,10 @@
   display_name: 'Central Asia'
   group: geo
 
+- id: political
+  display_name: 'Political'
+  group: theme
+
 - id: borderlands
   display_name: 'Borderlands'
   group: theme
