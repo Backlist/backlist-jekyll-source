@@ -42,6 +42,11 @@ sections:
       - type: book
         id: 09e7533a33e027f9
 categories:
+  - slavery
+  - atlantic-world
+  - capitalism
+  - african-american
+  - united-states
 author: 2014fc94f049deba
 ---
 Historians of the United States have written and argued more about American slavery than about nearly any other subject, at least in part because the connection between racial hierarchy and economic production has always been central to American life. Scholarly interpretations of slavery, however, have changed drastically over the course of the last century. Where historians in the early twentieth century described slavery as an essentially benign institution, historians of the postwar era described it as a cruel and harsh one akin to a prison. By the 1970s, that latter reading gave way to one stressing how slaveholders dulled slave resistance by cultivating ideas about mutual obligations between masters and slaves. But other scholars responded by showing the vitality of the faith, families, and communities of enslaved people, demonstrating how pervasive slave resistance actually was, and pointing out that slaveholders were acquisitive, entrepreneurial, and not nearly so paternalistic as they claimed.
