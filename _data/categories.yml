@@ -109,10 +109,18 @@
   display_name: 'Central Asia'
   group: geo
 
-- id: political
-  display_name: 'Political'
-  group: theme
-
 - id: borderlands
   display_name: 'Borderlands'
+  group: theme
+
+- id: slavery
+  display_name: 'Slavery'
+  group: theme
+
+- id: capitalism
+  display_name: 'Capitalism'
+  group: theme
+
+- id: african-american
+  display_name: 'African American'
   group: theme
