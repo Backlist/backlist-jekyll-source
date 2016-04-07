@@ -6,11 +6,12 @@
   display_name: '16th Century'
   group: chrono
 
-- id: 19th-century
-  display_name: '19th Century'
-
 - id: 17th-century
   display_name: '17th Century'
+  group: chrono
+
+- id: 19th-century
+  display_name: '19th Century'
   group: chrono
 
 - id: 20th-century
