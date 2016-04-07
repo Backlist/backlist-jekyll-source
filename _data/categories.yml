@@ -88,20 +88,32 @@
   display_name: 'Gender'
   group: theme
 
-- id: medical
-  display_name: Medical
+- id: intellectual
+  display_name: 'Intellectual'
   group: theme
-  
+
 - id: labor
   display_name: Labor
   group: theme
 
+- id: medical
+  display_name: Medical
+  group: theme
+
+- id: material-culture
+  display_name: 'Material Culture'
+  group: theme
+  
 - id: peace-and-conflict
   display_name: 'Peace and Conflict'
   group: theme
 
 - id: popular-culture
   display_name: 'Popular Culture'
+  group: theme
+
+- id: public
+  display_name: 'Public'
   group: theme
 
 - id: race-and-ethnicity

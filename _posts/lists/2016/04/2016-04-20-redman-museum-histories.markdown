@@ -5,9 +5,9 @@ title: Museum Histories
 date: 2016-04-20 06:00:00
 image_id: redman-museum-histories.jpg
 permalink: '/lists/museum-histories'
-description: ''
+description: 'Historians generally agree that museums manifest expressions of colonial scientific enterprises evolving over time. Growing to include millions of objects—including human remains and culturally and spiritually sensitive objects—civic museums in the United States and Europe by the mid-twentieth century had become, for a time, among the most important cultural centers worldwide. This list highlights books exploring how these museums grew to have many of the most important anthropological collections on the planet and how Eurocentric museum practices spread into non-Western places, especially in regions where colonial influence proved strong.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/BQDSTVHQ
-astore: 
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=20
 sections: 
   - id: 0
     listings:
@@ -38,6 +38,12 @@ sections:
       - type: book
         id: c01b74f8167ea403
 categories:
+  - empire
+  - material-culture
+  - public
+  - intellectual
+  - cultural
+  - united-states
 author: 84d972a896336192
 ---
 It’s a dramatic story, really. At virtually the same moment in history Europeans are able to travel and communicate much longer distances—enabling them to collect cultural artifacts like never before—newly emergent cities across the United States and Europe built massive new civic museums. These grand new museums, perhaps predictably, beckoned to be filled with those things collected from around the globe. Appearing in places like Chicago, Amsterdam, New York, Berlin, Philadelphia and even, after some time, places like Jakarta, new museums (and their expanding collections) frequently became a point of pride for cities and their boosters. Museums in the United States and Europe rapidly expanded, competing for the biggest, best, most unique artifacts. Growing to include millions of objects—including human remains, culturally and spiritually sensitive objects, and important genealogical information for indigenous people today—these museums became, for a time, among the most important cultural centers worldwide. This list highlights some of the most important and interesting books exploring how these museums grew to have many of the most important anthropological collections on the planet. It also touches on how Eurocentric museum practices spread into non-Western places, especially in regions where colonial influence proved strong.
