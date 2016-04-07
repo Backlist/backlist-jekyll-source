@@ -6,13 +6,12 @@
   <title>{% if page.title %}{{ page.title }} / {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
 
   <!-- TODO: set up environment based inclusion of zepto
   <script src="{{ site.baseurl }}includes/scripts/lib/zepto.min.js"></script>
   -->
   <script src="{{ site.baseurl }}includes/scripts/lib/zepto.js"></script>
-  <script src="{{ site.baseurl }}includes/scripts/categories.js"></script>
 
   <script src="https://use.typekit.net/wze0hjz.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>

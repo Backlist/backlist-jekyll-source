@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="list">
 
-  <header class="post-header" style="background-image: url({{ siteUrl }}/images/list-headers/{{ page.image_id }})"><div class="header-inset"><div class="wrapper">
+  <header class="post-header"><div class="header-background" style="background-image: url({{ siteUrl }}/images/list-headers/{{ page.image_id }})"><div class="header-inset"><div class="wrapper">
     <div class="title-card">
       <h1 class="post-title">
         {{ page.title }}
@@ -19,8 +19,20 @@ layout: default
         </ul>
       </div>
     </div>
-  </div></div>
+  </div></div></div>
   <div class="header-drawer"></div></header>
+  <script type="text/javascript">
+    function positionTitle() {
+      var headerHeight = $('.header-inset').height();
+      var titleHeight = $('.title-card').height();
+
+      if (titleHeight < headerHeight) {
+        $('.title-card').addClass('short');
+      }
+    }
+    $(document).on('ready', function() { positionTitle() });
+    $(window).on('load', function() { positionTitle() });
+  </script>
 
   <article class="post-content">
     <div class="intro-block wrapper">

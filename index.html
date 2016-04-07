@@ -9,9 +9,17 @@ layout: homepage
     </h1>
   </div>
   <div class="home-right-col inverse">
-    <p class="tagline-callout">
-      <b>Historians</b> <b>recommend</b> the <b>books</b> they <b>love</b>.
-    </p>
+    <div class="tagline">
+      <p class="tagline-callout">
+        <b>Historians</b> <b>recommend</b> the <b>books</b> they <b>love</b>.
+      </p>
+      <ul class="tagline-links">
+        <li><a href="{{ site.baseurl }}lists">Lists</a></li><!--
+        --><li><a href="{{ site.baseurl }}books/all">Books</a></li><!--
+        --><li><a href="{{ site.baseurl }}blog">Blog</a></li><!--
+        --><li><a href="{{ site.baseurl }}about">About</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -21,82 +29,61 @@ layout: homepage
     {% assign grabbed_post = true %}
     <h2 class="featured-banner">New List</h2>
     <div class="featured-list-wrapper" style="background-image: url(images/list-headers/{{ post.image_id }});"><div class="featured-list">
-      <div class="details-card">
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <span class="attribution">By {{ post.author | person_full_name }}</span>
-          </a>
-        </h3>
-        <p class="description">
-          {{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}
-        </p>
-        <p class="description">
-          <a class="read-more" href="{{ post.permalink }}">Read more…</a>
-        </p>
-      </div>
+        <a class="header" href="{{ post.url }}">
+          <div class="inset-background">
+            <h3>
+              {{ post.title }}
+              <span class="attribution">By {{ post.author | person_full_name }}</span>
+            </h3>
+          </div>
+        </a>
+        <div class="details-card inset-background">
+          <p class="description">
+            {{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </p>
+          <p class="description">
+            <a class="read-more" href="{{ post.permalink }}">Read more…</a>
+          </p>
+        </div>
     </div></div>
   {% endif %}{% endif %}{% endfor %}
 </div>
-<div class="home categories-row wrapper">
-  <div class="third-col left">
-    <div class="homepage-bucket">
-      <h3>When</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
+
+<div class="home follow-row wrapper">
+  <div class="homepage-bucket follow">
+    <h3>Keep in Touch</h3>
+    <ul class="contact-list">
+      <li>
+        <a href="http://eepurl.com/bzqp9f" target="_blank">
+          <span class="icon">{% include svg/email.html %}</span>
+          <span class="label">Join Our Newsletter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+          <span class="icon">{% include svg/twitter.html %}</span>
+          <span class="label">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/Backlist-985726241511832">
+          <span class="icon">{% include svg/facebook.html %}</span>
+          <span class="label">Facebook</span>
+        </a>
+      <li>
+        <a href="https://github.com/{{ site.github_username }}">
+          <span class="icon">{% include svg/github.html %}</span>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://feedpress.me/backlist">
+          <span class="icon">{% include svg/feed.html %}</span>
+          <span class="label">RSS Feed</span>
+        </a>
+      </li>
+    </ul>
   </div>
-
-  <div class="third-col mid">
-    <div class="homepage-bucket">
-      <h3>Where</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <div class="third-col right">
-    <div class="homepage-bucket">
-      <h3>What</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    function strechColumns(columnString) {
-      var maxHeight = 0;
-
-      $(columnString).height('auto');
-
-      $(columnString).each(function() {
-        if ($(this).height() > maxHeight) {
-          maxHeight = $(this).height();
-        }
-      });
-
-      $(columnString).height(maxHeight);
-    }
-
-    $(document).on('ready', function() {
-      strechColumns('.categories-row .third-col .homepage-bucket');
-    });
-    $(window).on('load', function() {
-      strechColumns('.categories-row .third-col .homepage-bucket');
-    });
-    $(window).on('resize', function() {
-      strechColumns('.categories-row .third-col .homepage-bucket');
-    });
-  </script>
 </div>
 
 <div class="home wrapper">
@@ -106,7 +93,7 @@ layout: homepage
       <ul class="list-of-lists">
         {% assign list_counter = 0 %}
         {% for post in site.posts %}{% if post.layout == 'list' %}
-          {% if list_counter > 0 %}{% if list_counter < 6 %}
+          {% if list_counter > 0 %}{% if list_counter < 11 %}
             {% include categories/list_line_item.html %}
           {% endif %}{% endif %}
           {% assign list_counter = list_counter | plus: 1 %}
@@ -137,41 +124,6 @@ layout: homepage
   </div>
 
   <div class="third-col right">
-    <div class="homepage-bucket follow">
-      <h3>Keep in Touch</h3>
-      <ul class="contact-list">
-        <li>
-          <a href="http://eepurl.com/bzqp9f" target="_blank">
-            <span class="icon">{% include svg/email.html %}</span>
-            <span class="label">Join Our Newsletter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-            <span class="icon">{% include svg/twitter.html %}</span>
-            <span class="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/Backlist-985726241511832">
-            <span class="icon">{% include svg/facebook.html %}</span>
-            <span class="label">Facebook</span>
-          </a>
-        <li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <span class="icon">{% include svg/github.html %}</span>
-            <span class="label">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://feedpress.me/backlist">
-            <span class="icon">{% include svg/feed.html %}</span>
-            <span class="label">RSS Feed</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
     <div class="homepage-bucket recommendation">
       <h3>Read a Book</h3>
       <a class="book" id="read-recommendation-title-link" href="#">
@@ -182,6 +134,22 @@ layout: homepage
         <a id="read-recommendation-list-link" href="#"></a>
       </p>
     </div>
+
+    <div class="homepage-bucket">
+      <h3>When</h3>
+      {% include categories/chrono_categories_grid.html %}
+    </div>
+
+    <div class="homepage-bucket">
+      <h3>Where</h3>
+      {% include categories/geo_categories_grid.html %}
+    </div>
+
+    <div class="homepage-bucket">
+      <h3>What</h3>
+      {% include categories/theme_categories_grid.html %}
+    </div>
+
   </div>
 </div>
 
