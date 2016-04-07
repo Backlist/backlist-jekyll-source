@@ -224,7 +224,6 @@ body.homepage {
 
     &.top-row {
       padding-top: $spacingUnit;
-      padding-bottom: $spacingUnit;
     }
 
     &.categories-row {
@@ -257,14 +256,57 @@ body.homepage {
     }
   }
 
+  .tagline {
+    margin-top: -2.35em;
+    position: absolute;
+      top: 50%;
+  }
+
   .tagline-callout {
     font: {
       size: 1.6em;
+      style: italic;
     }
-    line-height: 1;
-    margin-top: -.6em;
-    position: absolute;
-      top: 50%;
+    line-height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .tagline-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    li {
+      @include sans-serif-font-stack;
+
+      color: $highlight1Color;
+      display: inline-block;
+      font-size: 1.25em;
+      margin: 0 .5em 0 0;
+
+      &::after {
+        content: '•';
+      }
+
+      &:last-child {
+        &::after {
+          content: '';
+        }
+      }
+
+      a {
+        display: inline-block;
+        color: $accentColor;
+        margin-right: .5em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   h2.featured-banner {
