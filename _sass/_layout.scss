@@ -26,6 +26,10 @@ body {
   height: 0;
 }
 
+.inset-background {
+  background-color: $insetBackgroundColor;
+}
+
 /**
  * Site header
  */
@@ -383,10 +387,6 @@ body.homepage {
         size: auto 240px;
       }
 
-      .inset-background {
-        background-color: $insetBackgroundColor;
-      }
-
       .details-card {
         margin: 0 $spacingUnit;
         padding: 1px 0;
@@ -610,6 +610,56 @@ body.homepage {
   p a {
     @include special-link-underline($verticalPosition: 66.6667%);
     line-height: 1;
+  }
+}
+
+.sidebar-bucket {
+  @include header-gradient;
+
+  border: {
+    color: $highlight1Color;
+    style: solid;
+    width: 0 0 1px 0;
+  }
+  margin-bottom: $spacingUnit;
+
+  h3 {
+    @include sans-serif-font-stack;
+
+    background-color: $highlight1Color;
+    color: $backgroundColor;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: .5em;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+  }
+
+  ul.categories {
+    list-style-type: none;
+    margin: 0;
+    padding: ($spacingUnit / 2);
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+
+      a {
+        @include sans-serif-font-stack;
+
+        color: $accentColor;
+        text-decoration: none;
+
+        &:hover {
+          color: $highlight2Color;
+        }
+      }
+    }
   }
 }
 
@@ -1002,6 +1052,7 @@ ul.list-of-posts {
   padding: 0;
 
   li {
+    margin-bottom: 1.5em;
 
     h3 {
       font: {
@@ -1023,16 +1074,9 @@ ul.list-of-posts {
     }
   }
 
-  &.landing li {
-    background-color: $insetBackgroundColor;
-    border: {
-      color: $highlight1Color;
-      color: rgba($highlight1Color, .4);
-      style: solid;
-      width: 1px 0 0 0;
-    }
-    margin-bottom: $spacingUnit / 2;
-    padding: $spacingUnit ($spacingUnit * 2);
+  &.landing {
+    margin-top: 0;
+    padding: 1em;
   }
 }
 
@@ -1064,16 +1108,9 @@ ul.list-of-lists {
     }
   }
 
-  &.landing li {
-    background-color: $insetBackgroundColor;
-    border: {
-      color: $highlight1Color;
-      color: rgba($highlight1Color, .4);
-      style: solid;
-      width: 1px 0 0 0;
-    }
-    margin-bottom: $spacingUnit / 2;
-    padding: $spacingUnit ($spacingUnit * 2);
+  &.landing {
+    margin-top: 0;
+    padding: 1em;
   }
 }
 
@@ -1354,6 +1391,10 @@ ul.bibliography-filters {
   }
   letter-spacing: -1px;
   margin-bottom: 0;
+
+  &.bottom-padded {
+    margin-bottom: $spacingUnit;
+  }
 }
 
 .post-title {

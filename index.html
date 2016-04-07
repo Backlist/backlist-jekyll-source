@@ -137,29 +137,17 @@ layout: homepage
 
     <div class="homepage-bucket">
       <h3>When</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
+      {% include categories/chrono_categories_grid.html %}
     </div>
 
     <div class="homepage-bucket">
       <h3>Where</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
+      {% include categories/geo_categories_grid.html %}
     </div>
 
     <div class="homepage-bucket">
       <h3>What</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
+      {% include categories/theme_categories_grid.html %}
     </div>
 
   </div>
