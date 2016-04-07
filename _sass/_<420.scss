@@ -3,6 +3,55 @@
     width: 100%;
   }
 
+  a.site-title {
+    float: none;
+    margin: 0 auto;
+  }
+
+  nav.site-nav {
+    float: none;
+    padding: .5em 0;
+    position: relative;
+      top: 0;
+      right: auto;
+    text-align: center;
+  }
+
+  h1.page-title {
+    font-size: 1.5em;
+    padding-bottom: $spacingUnit / 2;
+    padding-left: $spacingUnit / 2;
+  }
+
+  ul.list-of-lists li {
+    p.metadata {
+      span.author {
+        display: block;
+      }
+
+      span.date {
+        display: block;
+      }
+    }
+  }
+
+  .tagline {
+    padding-right: $spacingUnit / 2;
+    padding-left: $spacingUnit / 2;
+  }
+
+  body.homepage .featured-list-wrapper .featured-list {
+    a.header {
+      padding-right: $spacingUnit / 2;
+      padding-left: $spacingUnit / 2;
+    }
+
+    div.details-card {
+      margin-right: $spacingUnit / 2;
+      margin-left: $spacingUnit / 2;
+    }
+  }
+
   .site-header {
     padding-right: $spacingUnit / 2;
     padding-left: $spacingUnit / 2;
