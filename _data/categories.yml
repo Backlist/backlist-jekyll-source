@@ -1,3 +1,5 @@
+# Chronological
+
 - id: early-modern
   display_name: 'Early Modern'
   group: chrono
@@ -6,24 +8,31 @@
   display_name: '16th Century'
   group: chrono
 
-- id: 19th-century
-  display_name: '19th Century'
-
 - id: 17th-century
   display_name: '17th Century'
+  group: chrono
+
+- id: 19th-century
+  display_name: '19th Century'
   group: chrono
 
 - id: 20th-century
   display_name: '20th Century'
   group: chrono
 
+# Geographical
+
+- id: central-asia
+  display_name: 'Central Asia'
+  group: geo
+
 - id: china
   display_name: China
   group: geo
-
-- id: world-global-transnational
-  display_name: 'World / Global / Transnational'
-  group: theme
+  
+- id: europe
+  display_name: Europe
+  group: geo
 
 - id: latin-america
   display_name: 'Latin America'
@@ -32,10 +41,28 @@
 - id: south-asia
   display_name: 'South Asia'
   group: geo
-  
+
 - id: united-states
   display_name: 'United States'
   group: geo
+  
+# Thematic
+
+- id: african-american
+  display_name: 'African American'
+  group: theme
+
+- id: atlantic-world
+  display_name: 'Atlantic World'
+  group: theme
+
+- id: borderlands
+  display_name: 'Borderlands'
+  group: theme
+
+- id: capitalism
+  display_name: 'Capitalism'
+  group: theme
 
 - id: cultural
   display_name: 'Cultural'
@@ -77,26 +104,6 @@
   display_name: 'Popular Culture'
   group: theme
 
-- id: social
-  display_name: 'Social'
-  group: theme
-
-- id: theory-and-method
-  display_name: 'Theory and Method'
-  group: theme
-
-- id: science-and-technology
-  display_name: 'Science and Technology'
-  group: theme
-
-- id: atlantic-world
-  display_name: 'Atlantic World'
-  group: theme
-
-- id: europe
-  display_name: Europe
-  group: geo
-
 - id: race-and-ethnicity
   display_name: 'Race and Ethnicity'
   group: theme
@@ -105,10 +112,22 @@
   display_name: 'Religion'
   group: theme
 
-- id: central-asia
-  display_name: 'Central Asia'
-  group: geo
+- id: science-and-technology
+  display_name: 'Science and Technology'
+  group: theme
 
-- id: borderlands
-  display_name: 'Borderlands'
+- id: slavery
+  display_name: 'Slavery'
+  group: theme
+
+- id: social
+  display_name: 'Social'
+  group: theme
+
+- id: theory-and-method
+  display_name: 'Theory and Method'
+  group: theme
+
+- id: world-global-transnational
+  display_name: 'World / Global / Transnational'
   group: theme
