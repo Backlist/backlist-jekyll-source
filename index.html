@@ -46,65 +46,42 @@ layout: homepage
     </div></div>
   {% endif %}{% endif %}{% endfor %}
 </div>
-<div class="home categories-row wrapper">
-  <div class="third-col left">
-    <div class="homepage-bucket">
-      <h3>When</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
+
+<div class="home follow-row wrapper">
+  <div class="homepage-bucket follow">
+    <h3>Keep in Touch</h3>
+    <ul class="contact-list">
+      <li>
+        <a href="http://eepurl.com/bzqp9f" target="_blank">
+          <span class="icon">{% include svg/email.html %}</span>
+          <span class="label">Join Our Newsletter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+          <span class="icon">{% include svg/twitter.html %}</span>
+          <span class="label">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/Backlist-985726241511832">
+          <span class="icon">{% include svg/facebook.html %}</span>
+          <span class="label">Facebook</span>
+        </a>
+      <li>
+        <a href="https://github.com/{{ site.github_username }}">
+          <span class="icon">{% include svg/github.html %}</span>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://feedpress.me/backlist">
+          <span class="icon">{% include svg/feed.html %}</span>
+          <span class="label">RSS Feed</span>
+        </a>
+      </li>
+    </ul>
   </div>
-
-  <div class="third-col mid">
-    <div class="homepage-bucket">
-      <h3>Where</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <div class="third-col right">
-    <div class="homepage-bucket">
-      <h3>What</h3>
-      <ul class="categories">
-        {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
-          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    function strechColumns(columnString) {
-      var maxHeight = 0;
-
-      $(columnString).height('auto');
-
-      $(columnString).each(function() {
-        if ($(this).height() > maxHeight) {
-          maxHeight = $(this).height();
-        }
-      });
-
-      $(columnString).height(maxHeight);
-    }
-
-    $(document).on('ready', function() {
-      strechColumns('.categories-row .third-col .homepage-bucket');
-    });
-    $(window).on('load', function() {
-      strechColumns('.categories-row .third-col .homepage-bucket');
-    });
-    $(window).on('resize', function() {
-      strechColumns('.categories-row .third-col .homepage-bucket');
-    });
-  </script>
 </div>
 
 <div class="home wrapper">
@@ -145,41 +122,6 @@ layout: homepage
   </div>
 
   <div class="third-col right">
-    <div class="homepage-bucket follow">
-      <h3>Keep in Touch</h3>
-      <ul class="contact-list">
-        <li>
-          <a href="http://eepurl.com/bzqp9f" target="_blank">
-            <span class="icon">{% include svg/email.html %}</span>
-            <span class="label">Join Our Newsletter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-            <span class="icon">{% include svg/twitter.html %}</span>
-            <span class="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/Backlist-985726241511832">
-            <span class="icon">{% include svg/facebook.html %}</span>
-            <span class="label">Facebook</span>
-          </a>
-        <li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <span class="icon">{% include svg/github.html %}</span>
-            <span class="label">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://feedpress.me/backlist">
-            <span class="icon">{% include svg/feed.html %}</span>
-            <span class="label">RSS Feed</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
     <div class="homepage-bucket recommendation">
       <h3>Read a Book</h3>
       <a class="book" id="read-recommendation-title-link" href="#">
@@ -190,6 +132,34 @@ layout: homepage
         <a id="read-recommendation-list-link" href="#"></a>
       </p>
     </div>
+
+    <div class="homepage-bucket">
+      <h3>When</h3>
+      <ul class="categories">
+        {% for category in site.data['categories'] %}{% if category.group == 'chrono' %}
+          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+
+    <div class="homepage-bucket">
+      <h3>Where</h3>
+      <ul class="categories">
+        {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
+          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+
+    <div class="homepage-bucket">
+      <h3>What</h3>
+      <ul class="categories">
+        {% for category in site.data['categories'] %}{% if category.group == 'theme' %}
+          <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+
   </div>
 </div>
 

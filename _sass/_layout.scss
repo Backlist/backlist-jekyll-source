@@ -226,8 +226,8 @@ body.homepage {
       padding-top: $spacingUnit;
     }
 
-    &.categories-row {
-      padding-top: $spacingUnit;
+    &.follow-row {
+      padding-bottom: $spacingUnit;
     }
   }
 
@@ -445,7 +445,11 @@ body.homepage {
       style: solid;
       width: 0 0 1px 0;
     }
-    margin-bottom: $spacingUnit * 2;
+    margin-bottom: $spacingUnit;
+
+    &.follow {
+      margin-bottom: 0;
+    }
 
     h3 {
       @include sans-serif-font-stack;
@@ -521,13 +525,17 @@ body.homepage {
         @include sans-serif-font-stack;
         line-height: 100%;
         margin: 1em .5em;
+        text-align: center;
 
         li {
+          display: inline-block;
+          margin-right: .5em;
           margin-bottom: .25em;
         }
 
         a {
           color: $accentColor;
+          margin-right: .5em;
           text-decoration: none;
 
           .icon {
