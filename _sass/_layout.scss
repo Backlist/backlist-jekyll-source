@@ -339,7 +339,6 @@ body.homepage {
     }
 
     a.bottom-link {
-
       color: $highlight1Color;
       display: block;
       font: {
@@ -383,56 +382,66 @@ body.homepage {
         position: 50% 0;
         size: auto 240px;
       }
-      padding-top: $spacingUnit * 4;
+
+      .inset-background {
+        background-color: $insetBackgroundColor;
+      }
 
       .details-card {
+        margin: 0 $spacingUnit;
+        padding: 1px 0;
+      }
+
+      a.header {
+        @include transition-stack(all ease .5s);
+
+        color: $accentColor;
+        display: block;
+        padding: ($spacingUnit * 4) $spacingUnit 0 $spacingUnit;
+        text-decoration: none;
+
+        &:hover {
+          h3 {
+            background-color: $highlight1Color;
+            background-color: rgba($highlight1Color, .2);
+          }
+        }
+      }
+
+      h3 {
+        @include display-font-stack;
+        @include header-gradient;
+        @include transition-stack(all ease .5s);
+
         background-color: $insetBackgroundColor;
         border: {
           color: $highlight1Color;
           style: solid;
           width: 1px 0 0 0;
         }
-        margin: 0 $spacingUnit;
+        color: $accentColor;
+        font: {
+          size: 2em;
+          weight: 700;
+        }
+        line-height: 1.1;
+        margin-bottom: 0;
+        padding: .5em;
 
-        h3 {
-          @include display-font-stack;
-
+        .attribution {
+          @include sans-serif-font-stack;
+          display: block;
           font: {
-            size: 2em;
-            weight: 700;
+            size: .6666667em;
+            weight: 400;
           }
-          line-height: 1.1;
-
-          a {
-            @include header-gradient;
-            @include transition-stack(all ease .5s);
-
-            display: block;
-            padding: .5em;
-            text-decoration: none;
-
-            &:hover {
-              background-color: $highlight1Color;
-              background-color: rgba($highlight1Color, .2);
-              color: $accentColor;
-            }
-          }
-
-          .attribution {
-            @include sans-serif-font-stack;
-            display: block;
-            font: {
-              size: .6666667em;
-              weight: 400;
-            }
-            padding: 0 .1em;
-          }
+          padding: 0 .1em;
         }
+      }
 
-        p.description {
-          margin: 1em;
-          max-width: 700px;
-        }
+      p.description {
+        margin: 1em;
+        max-width: 700px;
       }
     }
   }
