@@ -996,7 +996,7 @@ ul.list-of-posts {
 
     h3 {
       font: {
-        size: 1.5em;
+        size: 1.25em;
         weight: 700;
       }
       margin-bottom: 0;
@@ -1008,6 +1008,8 @@ ul.list-of-posts {
     }
 
     p.metadata {
+      @include sans-serif-font-stack;
+      font-size: 1em;
       margin: 0;
     }
   }
@@ -1031,11 +1033,11 @@ ul.list-of-lists {
   padding: 0;
 
   li {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 
     h3 {
       font: {
-        size: 1.5em;
+        size: 1.25em;
         weight: 700;
       }
       margin-bottom: 0;
@@ -1047,6 +1049,8 @@ ul.list-of-lists {
     }
 
     p.metadata {
+      @include sans-serif-font-stack;
+      font-size: 1em;
       margin: 0;
     }
   }

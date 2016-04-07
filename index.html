@@ -91,7 +91,7 @@ layout: homepage
       <ul class="list-of-lists">
         {% assign list_counter = 0 %}
         {% for post in site.posts %}{% if post.layout == 'list' %}
-          {% if list_counter > 0 %}{% if list_counter < 6 %}
+          {% if list_counter > 0 %}{% if list_counter < 11 %}
             {% include categories/list_line_item.html %}
           {% endif %}{% endif %}
           {% assign list_counter = list_counter | plus: 1 %}
