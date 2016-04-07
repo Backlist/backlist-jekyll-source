@@ -118,7 +118,7 @@
       repeat: no-repeat;
       size: 18px 18px;
     }
-    margin-top: -$spacingUnit * 2;
+    margin-top: -60px;
     padding-top: $spacingUnit / 2;
     padding-left: $spacingUnit / 2;
     padding-right: $spacingUnit / 2;
@@ -264,10 +264,6 @@
   }
 
   ul.list-of-lists.landing, ul.list-of-posts.landing {
-    li {
-      padding: $spacingUnit / 2;
-    }
-
     h3 {
       font-size: 1.2em;
     }

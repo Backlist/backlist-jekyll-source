@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plaintext
 title: About Backlist
 header: About Backlist
 ---
