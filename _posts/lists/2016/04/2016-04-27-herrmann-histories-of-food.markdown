@@ -27,8 +27,18 @@ sections:
         id: 04877e27df4ecfec
   - id: 2
     listings:
+      - type: book
+        id: 9ad2800e6c4ea8c9
+      - type: book
+        id: 28437d766a95ecb4
+      - type: book
+        id: f59f379b4152a6aa
+      - type: book
+        id: 61f1407e54ee269
   - id: 3
     listings:
+      - type: book
+        id: fea57790a0dd02a1
 categories:
 author: 4ed89a7314c6922c
 ---
