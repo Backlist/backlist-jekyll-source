@@ -1226,13 +1226,18 @@ ul.bibliography-filters {
   .post-header {
     @include header-gradient;
 
-    background: {
-      position: top;
-      repeat: repeat-x;
-      size: auto 200px;
-    }
-    height: 260px;
+    min-height: 260px;
+    padding-bottom: 60px;
     position: relative;
+
+    .header-background {
+      background: {
+        color: $accentColor;
+        position: bottom;
+        repeat: repeat-x;
+        size: auto 100%;
+      }
+    }
 
     .header-inset {
       background: $accentColor;
@@ -1243,11 +1248,7 @@ ul.bibliography-filters {
       background: -ms-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // IE10+
       background: linear-gradient(to bottom, $accentColor 0%, rgba($accentColor, .4) 100%); // W3C
 
-      height: 200px;
-      position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
+      min-height: 200px;
     }
 
     .header-drawer {
@@ -1258,17 +1259,20 @@ ul.bibliography-filters {
     }
 
     .wrapper {
-      height: 200px;
+      min-height: 200px;
     }
 
     .title-card {
       background-color: $accentColor;
       background-color: rgba($accentColor, .8);
       color: $backgroundColor;
+      display: inline-block;
       padding: ($spacingUnit / 2) $spacingUnit;
-      position: absolute;
-        left: 0;
+
+      &.short {
+        position: absolute;
         bottom: 0;
+      }
     }
   }
 }
