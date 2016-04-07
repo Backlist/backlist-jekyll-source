@@ -1,6 +1,11 @@
 @media screen and (max-width: 420px) {
   .wrapper {
     width: 100%;
+
+    .plain-text {
+      padding-right: $spacingUnit / 2;
+      padding-left: $spacingUnit / 2;
+    }
   }
 
   a.site-title {
