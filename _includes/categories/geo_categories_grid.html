@@ -1,0 +1,5 @@
+<ul class="categories">
+  {% for category in site.data['categories'] %}{% if category.group == 'geo' %}
+    <li><a href="{{ category.id | prepend: 'category/' | prepend: site.baseurl }}">{{ category.display_name }}</a></li>
+  {% endif %}{% endfor %}
+</ul>

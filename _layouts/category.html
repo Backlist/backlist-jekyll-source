@@ -2,15 +2,23 @@
 layout: page
 ---
 
-<ul class="list-of-lists landing">
-  {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
-    {% include categories/list_line_item.html %}
-  {% endif %}{% endfor %}{% endfor %}
-</ul>
+<div class="inset-background">
+  <ul class="list-of-lists landing">
+    {% for post in site.posts %}{% for post_category in post.categories %}{% if post_category == page.category %}
+      {% include categories/list_line_item.html %}
+    {% endif %}{% endfor %}{% endfor %}
+  </ul>
+</div>
 
-{% include categories/table.html prefix='bottom' %}
-
-<script type="text/javascript">
-var bottomTablePanel = new CategoriesTable('bottom');
-bottomTablePanel.setup();
-</script>
+<div class="sidebar-bucket">
+  <h3>When</h3>
+  {% include categories/chrono_categories_grid.html %}
+</div>
+<div class="sidebar-bucket">
+  <h3>Where</h3>
+  {% include categories/geo_categories_grid.html %}
+</div>
+<div class="sidebar-bucket">
+  <h3>What</h3>
+  {% include categories/theme_categories_grid.html %}
+</div>
