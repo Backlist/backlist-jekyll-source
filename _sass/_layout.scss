@@ -4,7 +4,7 @@ body {
     style: solid;
     width: 2px 0 0 0;
   }
-  min-width: 380px;
+  min-width: 320px;
 
   &.homepage {
     border: {
@@ -24,6 +24,10 @@ body {
 .clear-block {
   clear: both;
   height: 0;
+}
+
+.inset-background {
+  background-color: $insetBackgroundColor;
 }
 
 /**
@@ -224,11 +228,10 @@ body.homepage {
 
     &.top-row {
       padding-top: $spacingUnit;
-      padding-bottom: $spacingUnit;
     }
 
-    &.categories-row {
-      padding-top: $spacingUnit;
+    &.follow-row {
+      padding-bottom: $spacingUnit;
     }
   }
 
@@ -257,14 +260,57 @@ body.homepage {
     }
   }
 
+  .tagline {
+    margin-top: -2.35em;
+    position: absolute;
+      top: 50%;
+  }
+
   .tagline-callout {
     font: {
       size: 1.6em;
+      style: italic;
     }
-    line-height: 1;
-    margin-top: -.6em;
-    position: absolute;
-      top: 50%;
+    line-height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .tagline-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    li {
+      @include sans-serif-font-stack;
+
+      color: $highlight1Color;
+      display: inline-block;
+      font-size: 1.25em;
+      margin: 0 .5em 0 0;
+
+      &::after {
+        content: '•';
+      }
+
+      &:last-child {
+        &::after {
+          content: '';
+        }
+      }
+
+      a {
+        display: inline-block;
+        color: $accentColor;
+        margin-right: .5em;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   h2.featured-banner {
@@ -297,7 +343,6 @@ body.homepage {
     }
 
     a.bottom-link {
-
       color: $highlight1Color;
       display: block;
       font: {
@@ -341,56 +386,62 @@ body.homepage {
         position: 50% 0;
         size: auto 240px;
       }
-      padding-top: $spacingUnit * 4;
 
       .details-card {
+        margin: 0 $spacingUnit;
+        padding: 1px 0;
+      }
+
+      a.header {
+        @include transition-stack(all ease .5s);
+
+        color: $accentColor;
+        display: block;
+        padding: ($spacingUnit * 4) $spacingUnit 0 $spacingUnit;
+        text-decoration: none;
+
+        &:hover {
+          h3 {
+            background-color: $highlight1Color;
+            background-color: rgba($highlight1Color, .2);
+          }
+        }
+      }
+
+      h3 {
+        @include display-font-stack;
+        @include header-gradient;
+        @include transition-stack(all ease .5s);
+
         background-color: $insetBackgroundColor;
         border: {
           color: $highlight1Color;
           style: solid;
           width: 1px 0 0 0;
         }
-        margin: 0 $spacingUnit;
+        color: $accentColor;
+        font: {
+          size: 2em;
+          weight: 700;
+        }
+        line-height: 1.1;
+        margin-bottom: 0;
+        padding: .5em;
 
-        h3 {
-          @include display-font-stack;
-
+        .attribution {
+          @include sans-serif-font-stack;
+          display: block;
           font: {
-            size: 2em;
-            weight: 700;
+            size: .6666667em;
+            weight: 400;
           }
-          line-height: 1.1;
-
-          a {
-            @include header-gradient;
-            @include transition-stack(all ease .5s);
-
-            display: block;
-            padding: .5em;
-            text-decoration: none;
-
-            &:hover {
-              background-color: $highlight1Color;
-              background-color: rgba($highlight1Color, .2);
-              color: $accentColor;
-            }
-          }
-
-          .attribution {
-            @include sans-serif-font-stack;
-            display: block;
-            font: {
-              size: .6666667em;
-              weight: 400;
-            }
-            padding: 0 .1em;
-          }
+          padding: 0 .1em;
         }
+      }
 
-        p.description {
-          margin: 1em;
-          max-width: 700px;
-        }
+      p.description {
+        margin: 1em;
+        max-width: 700px;
       }
     }
   }
@@ -403,7 +454,11 @@ body.homepage {
       style: solid;
       width: 0 0 1px 0;
     }
-    margin-bottom: $spacingUnit * 2;
+    margin-bottom: $spacingUnit;
+
+    &.follow {
+      margin-bottom: 0;
+    }
 
     h3 {
       @include sans-serif-font-stack;
@@ -479,13 +534,17 @@ body.homepage {
         @include sans-serif-font-stack;
         line-height: 100%;
         margin: 1em .5em;
+        text-align: center;
 
         li {
+          display: inline-block;
+          margin-right: .5em;
           margin-bottom: .25em;
         }
 
         a {
           color: $accentColor;
+          margin-right: .5em;
           text-decoration: none;
 
           .icon {
@@ -551,6 +610,56 @@ body.homepage {
   p a {
     @include special-link-underline($verticalPosition: 66.6667%);
     line-height: 1;
+  }
+}
+
+.sidebar-bucket {
+  @include header-gradient;
+
+  border: {
+    color: $highlight1Color;
+    style: solid;
+    width: 0 0 1px 0;
+  }
+  margin-bottom: $spacingUnit;
+
+  h3 {
+    @include sans-serif-font-stack;
+
+    background-color: $highlight1Color;
+    color: $backgroundColor;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: .5em;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+  }
+
+  ul.categories {
+    list-style-type: none;
+    margin: 0;
+    padding: ($spacingUnit / 2);
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+
+      a {
+        @include sans-serif-font-stack;
+
+        color: $accentColor;
+        text-decoration: none;
+
+        &:hover {
+          color: $highlight2Color;
+        }
+      }
+    }
   }
 }
 
@@ -943,10 +1052,11 @@ ul.list-of-posts {
   padding: 0;
 
   li {
+    margin-bottom: 1.5em;
 
     h3 {
       font: {
-        size: 1.5em;
+        size: 1.25em;
         weight: 700;
       }
       margin-bottom: 0;
@@ -958,20 +1068,15 @@ ul.list-of-posts {
     }
 
     p.metadata {
+      @include sans-serif-font-stack;
+      font-size: 1em;
       margin: 0;
     }
   }
 
-  &.landing li {
-    background-color: $insetBackgroundColor;
-    border: {
-      color: $highlight1Color;
-      color: rgba($highlight1Color, .4);
-      style: solid;
-      width: 1px 0 0 0;
-    }
-    margin-bottom: $spacingUnit / 2;
-    padding: $spacingUnit ($spacingUnit * 2);
+  &.landing {
+    margin-top: 0;
+    padding: 1em;
   }
 }
 
@@ -981,11 +1086,11 @@ ul.list-of-lists {
   padding: 0;
 
   li {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 
     h3 {
       font: {
-        size: 1.5em;
+        size: 1.25em;
         weight: 700;
       }
       margin-bottom: 0;
@@ -997,20 +1102,15 @@ ul.list-of-lists {
     }
 
     p.metadata {
+      @include sans-serif-font-stack;
+      font-size: 1em;
       margin: 0;
     }
   }
 
-  &.landing li {
-    background-color: $insetBackgroundColor;
-    border: {
-      color: $highlight1Color;
-      color: rgba($highlight1Color, .4);
-      style: solid;
-      width: 1px 0 0 0;
-    }
-    margin-bottom: $spacingUnit / 2;
-    padding: $spacingUnit ($spacingUnit * 2);
+  &.landing {
+    margin-top: 0;
+    padding: 1em;
   }
 }
 
@@ -1126,13 +1226,18 @@ ul.bibliography-filters {
   .post-header {
     @include header-gradient;
 
-    background: {
-      position: top;
-      repeat: repeat-x;
-      size: auto 200px;
-    }
-    height: 260px;
+    min-height: 260px;
+    padding-bottom: 60px;
     position: relative;
+
+    .header-background {
+      background: {
+        color: $accentColor;
+        position: bottom;
+        repeat: repeat-x;
+        size: auto 100%;
+      }
+    }
 
     .header-inset {
       background: $accentColor;
@@ -1143,11 +1248,7 @@ ul.bibliography-filters {
       background: -ms-linear-gradient(top, $accentColor 0%, rgba($accentColor, .4) 100%); // IE10+
       background: linear-gradient(to bottom, $accentColor 0%, rgba($accentColor, .4) 100%); // W3C
 
-      height: 200px;
-      position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
+      min-height: 200px;
     }
 
     .header-drawer {
@@ -1158,17 +1259,20 @@ ul.bibliography-filters {
     }
 
     .wrapper {
-      height: 200px;
+      min-height: 200px;
     }
 
     .title-card {
       background-color: $accentColor;
       background-color: rgba($accentColor, .8);
       color: $backgroundColor;
+      display: inline-block;
       padding: ($spacingUnit / 2) $spacingUnit;
-      position: absolute;
-        left: 0;
+
+      &.short {
+        position: absolute;
         bottom: 0;
+      }
     }
   }
 }
@@ -1291,6 +1395,10 @@ ul.bibliography-filters {
   }
   letter-spacing: -1px;
   margin-bottom: 0;
+
+  &.bottom-padded {
+    margin-bottom: $spacingUnit;
+  }
 }
 
 .post-title {
