@@ -38,6 +38,18 @@ sections:
       - type: book
         id: 8fb530113711ac27
 categories:
+  - slavery
+  - pacific-rim
+  - migration-immigration-diaspora
+  - economic-business
+  - asian-american
+  - labor
+  - demography-family
+  - latin-america
+  - united-states
+  - south-asia
+  - global
+  - china
 author: fa508d153718d0ac
 ---
 For centuries, travelers from Asia crossed the turbulent waters of the Indian Ocean and the South China Sea, and traversed the harsh deserts of the Silk Road. Their journeys as artisans, slaves, merchants, itinerant pilgrims, scholars, and sojourners point to a long, variegated history of Asian mobility. Until recently, however, migration histories have tended to cast these movements as both temporary and “unfree,” and in contrast to the “free” European settlement migrations across the trans-Atlantic world. Why do we call some migrants “sojourners” and others “settlers” or “pioneers?” Under what conditions do we name a community a “diaspora”? 
