@@ -7,7 +7,7 @@ image_id: herrmann-food.jpg
 permalink: '/lists/histories-of-food-and-hunger'
 description: 'Here’s the thing about histories of food and hunger: they’re tricky to write because food and hunger are everywhere and nowhere. Food is everywhere in the sense that it often gets mentioned in passing in works of history that don’t focus on food. One could say that food _was_ nowhere as of ten or twenty years ago; only a small number of chronological histories existed—and many of them focused on the late-nineteenth and twentieth centuries. More recently, historians have turned their attention to the colonial period and the early nineteenth century, asking questions about race formation, power relations, and environmental changes over time.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/RTUG7CKK
-astore: 
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=21
 sections: 
   - id: 0
     listings:
