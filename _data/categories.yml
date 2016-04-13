@@ -34,6 +34,10 @@
   display_name: Europe
   group: geo
 
+- id: global
+  display_name: Global
+  group: geo
+  
 - id: latin-america
   display_name: 'Latin America'
   group: geo
@@ -50,6 +54,10 @@
 
 - id: african-american
   display_name: 'African American'
+  group: theme
+
+- id: asian-american
+  display_name: 'Asian American'
   group: theme
 
 - id: atlantic-world
@@ -84,16 +92,28 @@
   display_name: 'Film Studies'
   group: theme
 
+- id: economic-business
+  display_name: 'Economic / Business'
+  group: theme
+
 - id: gender
   display_name: 'Gender'
+  group: theme
+
+- id: labor
+  display_name: Labor
   group: theme
 
 - id: medical
   display_name: Medical
   group: theme
+
+- id: migration-immigration-diaspora
+  display_name: 'Migration / Immigration / Diaspora'
+  group: theme
   
-- id: labor
-  display_name: Labor
+- id: pacific-rim
+  display_name: 'Pacific Rim'
   group: theme
 
 - id: peace-and-conflict
