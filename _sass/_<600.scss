@@ -298,4 +298,16 @@
       font-size: .8em;
     }
   }
+
+  .footer-message {
+    padding-right: $spacingUnit / 2;
+    padding-left: $spacingUnit / 2;
+  }
+
+  #read-more .container {
+    div {
+      padding: $spacingUnit / 2;
+    }
+  }
+
 }

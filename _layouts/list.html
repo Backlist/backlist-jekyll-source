@@ -75,10 +75,28 @@ layout: default
     </ul>
   </div>
 
+
   <div class="footer-message wrapper">
     <p>
       <b>Backlist</b> relies on affiliate revenue from the booksellers listed with the books above. If you’d like to support our efforts and expand your history bookshelf at the same time, please consider shopping through these links or simply visit our <a href="{{ page.astore }}" target="_blank">Amazon store</a>.
     </p>
   </div>
 
+  <div id="read-more" class="post-content" style="display: none">
+    <h2>
+      <div class="wrapper">Read More</div>
+    </h2>
+
+    <div class="wrapper container"></div>
+  </div>
+
+  <script type="text/javascript">
+    var categories = new Array();
+    {% for page_category in page.categories %}
+      categories.push('{{ page_category }}');
+    {% endfor %}
+    var permalink = '{{ page.permalink }}';
+
+    readMoreBlocks.initialize(categories, permalink, '#read-more');
+  </script>
 </div>
