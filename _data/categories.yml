@@ -84,6 +84,10 @@
   display_name: 'Diplomatic / International'
   group: theme
 
+- id: economic-business
+  display_name: 'Economic / Business'
+  group: theme
+
 - id: empire
   display_name: 'Empire'
   group: theme
@@ -92,12 +96,12 @@
   display_name: 'Film Studies'
   group: theme
 
-- id: economic-business
+- id: gender
   display_name: 'Economic / Business'
   group: theme
 
-- id: gender
-  display_name: 'Gender'
+- id: intellectual
+  display_name: 'Intellectual'
   group: theme
 
 - id: labor
@@ -106,6 +110,10 @@
 
 - id: medical
   display_name: Medical
+  group: theme
+
+- id: material-culture
+  display_name: 'Material Culture'
   group: theme
 
 - id: migration-immigration-diaspora
@@ -122,6 +130,10 @@
 
 - id: popular-culture
   display_name: 'Popular Culture'
+  group: theme
+
+- id: public
+  display_name: 'Public'
   group: theme
 
 - id: race-and-ethnicity
