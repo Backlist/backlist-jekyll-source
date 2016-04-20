@@ -1,4 +1,38 @@
+require 'json'
+
 module Jekyll
+  class CategoryPostsDataPageGenerator < Generator
+    safe true
+
+    def generate(site)
+      data_includes = File.join(site.source, 'data-includes')
+      categories_includes = File.join(site.source, 'data-includes', 'categories')
+
+      Dir.mkdir(data_includes) unless Dir.exist?(data_includes)
+      Dir.mkdir(categories_includes) unless Dir.exist?(categories_includes)
+
+      site.data['categories'].each do |category|
+        lists = []
+
+        site.categories[category['id']].each do |post|
+          author = Person.new(post.data['author'], site)
+
+          lists << {
+            list_title: post.data['title'],
+            list_permalink: post.data['permalink'],
+            author: author.full_name
+          }
+        end
+
+        f = File.new(File.join(site.source, 'data-includes', 
+                     'categories', "#{category['id']}.json"), 'w+')
+        f.write(JSON.generate(lists))
+        f.close
+        site.static_files << Jekyll::StaticFile.new(site, site.source, File.join('data-includes', 'categories'), "#{category['id']}.json")
+      end
+    end
+  end
+
   class CategoryPage < Page
     def initialize(site, base, dir, category)
       @site = site
