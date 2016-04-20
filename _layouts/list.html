@@ -75,16 +75,6 @@ layout: default
     </ul>
   </div>
 
-  <div id="read-more-container"></div>
-  <script type="text/javascript">
-    var categories = new Array();
-    {% for page_category in page.categories %}
-      categories.push('{{ page_category }}');
-    {% endfor %}
-    var permalink = '{{ page.permalink }}';
-
-    readMoreBlocks.initialize(categories, permalink, '#read-more-container');
-  </script>
 
   <div class="footer-message wrapper">
     <p>
@@ -92,4 +82,21 @@ layout: default
     </p>
   </div>
 
+  <div id="read-more" class="post-content" style="display: none">
+    <h2>
+      <div class="wrapper">Read More</div>
+    </h2>
+
+    <div class="wrapper container"></div>
+  </div>
+
+  <script type="text/javascript">
+    var categories = new Array();
+    {% for page_category in page.categories %}
+      categories.push('{{ page_category }}');
+    {% endfor %}
+    var permalink = '{{ page.permalink }}';
+
+    readMoreBlocks.initialize(categories, permalink, '#read-more');
+  </script>
 </div>

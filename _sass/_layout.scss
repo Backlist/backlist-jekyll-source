@@ -664,6 +664,49 @@ body.homepage {
 }
 
 /**
+Read More
+**/
+
+#read-more .container {
+  @include sans-serif-font-stack;
+
+  div {
+    background-color: $insetBackgroundColor;
+    margin: 0 0 ($spacingUnit / 2) 0;
+    padding: $spacingUnit ($spacingUnit * 2);
+  }
+
+  h3 {
+    color: $accentColor;
+    font-weight: 100;
+    margin: 0 0 .5em 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      line-height: 150%;
+      margin-bottom: .75em;
+
+      a {
+        @include serif-font-stack;
+        @include special-link-underline($verticalPosition: 66.66667%);
+        font-size: 1.25em;
+        line-height: 1;
+      }
+
+      span.byline {
+        display: block;
+      }
+    }
+  }
+}
+
+/**
  * 404 Page
   */
 

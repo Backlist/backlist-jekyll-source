@@ -31,30 +31,37 @@
   }
 
   function buildCategoryCollection(data) {
-    if (data.length > 1) {
+    if (data['contents'].length > 1) {
       var lists = new Array();
 
-      data.forEach(function(list) {
+      data['contents'].forEach(function(list) {
         if (list["list_permalink"] !== permalink)
           lists.push(list);
       });
-
       lists = shrinkList(lists);
+      data['contents'] = lists;
 
-      return lists;
+      return data;
     }
 
     return false;
   }
 
   function buildReadMoreBlock(collection) {
+    var block = $('<div/>');
+    var header = $('<h3/>').text(collection['display_name']);
     var list = $('<ul/>');
 
-    collection.forEach(function(element) {
-      $(list).append($('<li/>').text(element['list_title']));
+    collection['contents'].forEach(function(element) {
+      var link = $('<a/>').attr('href', element['list_permalink'])
+                          .text(element['list_title']);
+      var byline = $('<span/>').addClass('byline')
+                               .text("By " + element['author']);
+
+      $(list).append($('<li/>').append(link).append(byline));
     })
-    
-    return $('<div/>').append(list);
+
+    return $(block).append(header).append(list);
   }
 
   function buildInterface(collections, container) {
@@ -62,7 +69,7 @@
 
     collections.forEach(function(collection) {
       var block = buildReadMoreBlock(collection);
-      $(container).append(block);
+      $(container).find('.container').append(block);
     });
   }
 
@@ -83,6 +90,7 @@
         remainingCategories -= 1;
         if (remainingCategories <= 0)
           buildInterface(categoryCollections, container);
+          $(container).show();
       });
     });
   }

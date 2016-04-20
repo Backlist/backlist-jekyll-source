@@ -24,9 +24,14 @@ module Jekyll
           }
         end
 
+        collection = {
+          "display_name": category['display_name'],
+          "contents": lists
+        }
+
         f = File.new(File.join(site.source, 'data-includes', 
                      'categories', "#{category['id']}.json"), 'w+')
-        f.write(JSON.generate(lists))
+        f.write(JSON.generate(collection))
         f.close
         site.static_files << Jekyll::StaticFile.new(site, site.source, File.join('data-includes', 'categories'), "#{category['id']}.json")
       end
