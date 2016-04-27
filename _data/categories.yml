@@ -56,6 +56,10 @@
   display_name: 'African American'
   group: theme
 
+- id: animal-studies
+  display_name: 'Animal Studies'
+  group: theme
+
 - id: asian-american
   display_name: 'Asian American'
   group: theme
@@ -88,12 +92,16 @@
   display_name: 'Economic / Business'
   group: theme
 
-- id: empire
-  display_name: 'Empire'
+- id: environmental
+  display_name: 'Environmental'
   group: theme
 
 - id: film-studies
   display_name: 'Film Studies'
+  group: theme
+
+- id: food-and-foodways
+  display_name: 'Food and Foodways'
   group: theme
 
 - id: gender
