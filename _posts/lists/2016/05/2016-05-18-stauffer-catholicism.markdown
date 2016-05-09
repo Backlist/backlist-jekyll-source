@@ -3,11 +3,11 @@ list_id: 0f3c15371120d1fa
 layout: list
 title: Catholicism in Modern Mexico
 date: 2016-05-18 06:00:00
-image_id: 
+image_id: ''
 permalink: /lists/catholicism-in-modern-mexico
-description: 
-zotero: 
-astore: 
+description: ''
+zotero: ''
+astore: ''
 sections: 
   - id: 0
     listings:
@@ -38,5 +38,7 @@ sections:
       - type: book
         id: 0316b779ebbfd86f
 categories:
+  - 19th-century
 author: e286d180ef8fc0bd
 ---
+TK
