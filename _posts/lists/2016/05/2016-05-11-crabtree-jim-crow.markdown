@@ -1,7 +1,7 @@
 ---
 list_id: d037a1e394921d57
 layout: list
-title: Jim Crow
+title: The History of Jim Crow
 date: 2016-05-11 06:00:00
 image_id: crabtree-jim-crow.jpg
 permalink: /lists/jim-crow
