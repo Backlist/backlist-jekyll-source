@@ -38,6 +38,10 @@ sections:
       - type: book
         id: e640ad1f056e7b3a
 categories:
+  - 19th-century
+  - 20th-century
+  - united-states
+  - african-american
 author: 095c892c97f9c05c
 ---
 To write about Jim Crow is to write about broken promises, many of which remain broken. Lincoln called for “a new birth of freedom” in the Gettysburg Address, but the promise of a just and democratic nation emerging from the ruins of the Civil War collapsed into what Rayford Logan called “the nadir of American race relations” with the end of Reconstruction. And so, to write about Jim Crow is also to write about the meaning of freedom. In some way or another, the authors included below grapple with the question: How free is free? They ask what it means for a nation that believes itself to be _the_ model democracy to use lynching, segregation, convict leasing, disfranchisement, debt peonage, race riots, and racist caricatures to control black men and women after abolishing slavery. They also ask how Jim Crow disrupted the interior lives of African Americans who survived it.
