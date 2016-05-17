@@ -5,7 +5,7 @@ title: Catholicism in Modern Mexico
 date: 2016-05-18 06:00:00
 image_id: stauffer-catholicism.jpg
 permalink: /lists/catholicism-in-modern-mexico
-description: 'The books on this list help explain how an imported and imposed religion succeeded, despite its attacks by the Mexican state over the course of the nineteenth and twentieth centuries, revealing how a diverse, internally fragmented faith was remarkably inclusive and responsive to local realities. The Catholicism portrayed here is historically dynamic, unlike the backwards and monolithic Church depicted by earlier scholars. The books included focus especially on the realm of belief and practice among ordinary people, acolytes of the brown-skinned Virgin of Guadalupe or the miraculous Christ of Chalma, to locate what Pope Francis has called Mexico’s religious “idiosyncrasy.”'
+description: 'The books on this list help explain how an imported and imposed religion succeeded, despite attacks by the Mexican state over the course of the nineteenth and twentieth centuries, revealing how a diverse, internally fragmented faith was remarkably inclusive and responsive to local realities. The Catholicism portrayed here is historically dynamic, unlike the backwards and monolithic Church depicted by earlier scholars. The books included focus especially on the realm of belief and practice among ordinary people, acolytes of the brown-skinned Virgin of Guadalupe or the miraculous Christ of Chalma, to locate what Pope Francis has called Mexico’s religious “idiosyncrasy.”'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/K6B6WB4N
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=23
 sections: 
