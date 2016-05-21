@@ -90,6 +90,7 @@ layout: default
     <div class="wrapper container"></div>
   </div>
 
+  <script src="{{ site.baseurl }}includes/scripts/amznLinks.js"></script>
   <script type="text/javascript">
     var categories = new Array();
     {% for page_category in page.categories %}
@@ -98,5 +99,21 @@ layout: default
     var permalink = '{{ page.permalink }}';
 
     readMoreBlocks.initialize(categories, permalink, '#read-more');
+
+    amznLinks.initialize('backlist0e-21',
+                        {
+                          "CA": "backlist06-20",
+                          "DE": "backlist02-21",
+                          "ES": "backlist09-21",
+                          "FR": "backlist42-21",
+                          "GB": "backlist-21",
+                          "IT": "backlist05-21"
+                        });
+
+    $(window).on('load', function() {
+      $.getJSON('http://ipinfo.io', function(data) {
+        amznLinks.localizeLinks('.amzn-link', data['country']);
+      });
+    });
   </script>
 </div>

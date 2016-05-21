@@ -82,7 +82,7 @@ module Jekyll
         result += '<div class="source-meta-block">'
         result += generate_sidebar(source, :before, context)
         if ['book', 'film'].include? @type
-          result += "<div class=\"citation\"><h3><a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\">"
+          result += "<div class=\"citation\"><h3><a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"amzn-link\">"
         elsif ['link'].include? @type
           result += "<div class=\"citation\"><h3><a href=\"#{source.main_link}\" target=\"_blank\">"
         end
@@ -124,11 +124,11 @@ module Jekyll
         end
         if ['book', 'film'].include? @type
           if source.has_cover_image
-            result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\"><img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\"></a>"
+            result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"amzn-link\"><img class=\"cover\" src=\"/images/covers/#{@id[0]}/#{@id}-small.jpg\"></a>"
           end
         end
         if source.has_link_for?(:amzn)
-          result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"buy-button\">Buy Now</a>"
+          result += "<a href=\"#{source.affiliate_url_for(:amzn)}\" target=\"_blank\" class=\"amzn-link buy-button\">Buy Now</a>"
         end
         result += generate_links(source, context)
         result += '<div class="clear-block"></div>'
