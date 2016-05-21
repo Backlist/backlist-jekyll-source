@@ -37,7 +37,7 @@ sections:
     listings:
       - type: book
         id: 51ae89a3d97726ca
-      - type: music
+      - type: audio_recording
         id: 76b01db9f874f3f1
       - type: book
         id: 484776ed885d3b28
