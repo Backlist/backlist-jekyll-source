@@ -1,13 +1,13 @@
 ---
 list_id: 3364bb11837b6498
 layout: list
-title: The History of Jazz
+title: Jazz History
 date: 2016-05-25 06:00:00
 image_id: schmidt-jazz.jpg
-permalink: /lists/the-history-of-jazz
-description: ''
-zotero: ''
-astore: ''
+permalink: /lists/jazz-history
+description: 'To repeat one of its favorite metaphors, the literature of jazz history is a thick gumbo of perspectives and forms. This list keeps that unevenness and multiplicity in mind, even if it also favors the work of the “New Jazz Studies” of the 1990s and its heirs. Some readers may want a chronological perspectives; others to read secondary texts alongside the primary voices. Or _Choose Your Own Adventure_ and look for order in the shuffle.'
+zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/QZEQSGZR'
+astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=24'
 sections: 
   - id: 0
     listings:
@@ -42,5 +42,16 @@ sections:
       - type: book
         id: 484776ed885d3b28
 categories:
+  - music
+  - african-american
+  - popular-culture
+  - cultural
+  - united-states
+  - 20th-century
 author: dc30143f95c9e8c6
 ---
+To repeat one of its favorite metaphors, the literature of jazz history is a thick gumbo of perspectives and forms. Its contributors have ranged from amateur folklorists to previously obscure musicians to Beat poets to university scholars (whose expertise was itself wide, from Medieval English to Sexology) and this diversity of backgrounds has made its mark on its shape. Jazz’s history lives beyond academic monographs; it is comprised of popular historical overviews, concert and record reviews, literary essays, autobiographies, interviews, and, of course, liner notes. 
+
+This list keeps that unevenness and multiplicity in mind, even if it also favors the work of the “New Jazz Studies” of the 1990s and its heirs. This latter group pushed aside the deep focus on musical periodization and stylistic evolutionism that had driven narratives since 1950s and delved into discussions that reflected the contemporary methodologies of cultural history and ethnomusicology. Part of the joy of reading jazz, however, lies in the unpredictability of the origin of insight.
+
+The following books can be absorbed in a host of ways. If a reader wants a chronological perspective, they could begin with Shipton’s excellent synthesis or read the sequence Brothers-Ehrenberg-DeVeaux-Lewis. One could also emphasize the sources and read secondary texts alongside the primary voices: say, Louis Armstrong’s New Orleans with the recorded testimony of another great Crescent City innovator, Jelly Roll Morton. Or one could simply follow the lead of Christian Marclay’s reassembled vinyl or Choose Your Own Adventure and look for order in the shuffle.

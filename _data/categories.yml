@@ -128,6 +128,10 @@
   display_name: 'Migration / Immigration / Diaspora'
   group: theme
   
+- id: music
+  display_name: Music
+  group: theme
+  
 - id: pacific-rim
   display_name: 'Pacific Rim'
   group: theme
