@@ -5,7 +5,7 @@ title: Jazz History
 date: 2016-05-25 06:00:00
 image_id: schmidt-jazz.jpg
 permalink: /lists/jazz-history
-description: 'To repeat one of its favorite metaphors, the literature of jazz history is a thick gumbo of perspectives and forms. This list keeps that unevenness and multiplicity in mind, even if it also favors the work of the “New Jazz Studies” of the 1990s and its heirs. Some readers may want a chronological perspectives; others to read secondary texts alongside the primary voices. Or _Choose Your Own Adventure_ and look for order in the shuffle.'
+description: 'To repeat one of its favorite metaphors, the literature of jazz history is a thick gumbo of perspectives and forms. This list keeps that unevenness and multiplicity in mind, even if it also favors the work of the “New Jazz Studies” of the 1990s and its heirs. Some readers may want chronological perspectives; others to read secondary texts alongside the primary voices. Or _Choose Your Own Adventure_ and look for order in the shuffle.'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/QZEQSGZR'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=24'
 sections: 
