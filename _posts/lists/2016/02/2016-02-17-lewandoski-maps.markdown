@@ -5,6 +5,7 @@ title: 'Maps: A Beginner’s Cartography'
 date: 2016-02-17 06:00:00
 image_id: lewandoski-maps.jpg
 permalink: /lists/maps-a-beginners-cartography
+meta_description: '9 recommended books for reading the history of maps and cartography from historian Julia Lewandoski'
 description: 'Maps locate histories—stories about time—in the geographies where they happened. But they also have their own histories, and their historians have spent the past few decades demonstrating just how complicated cartography can be. Maps aren’t just dispassionate depictions of territory, interpreted in the same, self-explanatory way by everyone who looks at them. In short, they are untrustworthy.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/TSWVXJQN
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=13

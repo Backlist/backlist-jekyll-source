@@ -5,6 +5,7 @@ title: Histories of the Scientific Revolution
 date: 2016-02-24 06:00:00
 image_id: harkness-scientific-revolution.jpg
 permalink: /lists/histories-of-the-scientific-revolution
+meta_description: '10 recommended books for reading the history of the Scientific Revolution from historian and novelist Deborah Harkness'
 description: 'While most historians are happy to admit something happened to the study of nature between 1400 and 1700, we remain strangely unable to describe exactly what that something was. The maddening maze of qualifications and uncertainties that riddle our thinking and our prose led Steven Shapin to famously proclaim in his 1996 book, _The Scientific Revolution_, “There was no such thing as the Scientific Revolution, and this is a book about it.” Here are ten more books about the Scientific Revolution—if indeed there is such a thing.'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/ERIQNABW'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=12'

@@ -5,6 +5,7 @@ title: The Cultural Cold War
 date: 2016-02-03 06:00:00
 image_id: wolfe-cultural-cold-war.jpg
 permalink: /lists/cultural-cold-war
+meta_description: '10 recommended books for reading the history of Cold War CIA culture, arts, and propaganda programs from historian Audra Wolfe'
 description: 'Between 1950 and 1967, the CIA and the U.S. Department of State took on writers, artists, musicians, and others as junior partners in U.S. propaganda campaigns. Uncovering the history of this rather unlikely branch of U.S. foreign relations has become a major preoccupation for diplomatic historians. Audra J. Wolfe shares ten books that sort it all out.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/K9GQZV5M
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=10

@@ -5,6 +5,7 @@ title: 'Global Histories of Identification and Surveillance'
 date: 2016-03-30 06:00:00
 image_id: ragas-id-tech.jpg
 permalink: /lists/global-identification-and-surveillance
+meta_description: '10 recommended books for reading the history of surveillance from historian José Ragas'
 description: 'Never before have our personal identities been scrutinized as they are today. In an age of increasing anxiety and concern for security—especially since 9/11—we are asked to authenticate our personal features on a daily basis, sometimes inadvertently. These books force readers to confront their beliefs and concerns about security and privacy, and make them think twice the next time they look at a camera, type their passwords, or get a new ID card.'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/R5MF7VXK'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=16'

@@ -5,6 +5,7 @@ title: "Monsters in American History"
 date: 2015-12-16 06:00:00
 image_id: "poole-monsters.jpg"
 permalink: "/lists/monsters-in-american-history"
+meta_description: '6 recommended books on the role of monsters in American history from historian W. Scott Poole'
 description:  "Oddly, monsters have only recently begun to appear in American historiography, though other disciplines, and in fact other historiographical traditions, have given them much deserved attention. I found few places to start within my own field, especially in the study of modern America. So, I went on a monster hunt."
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/X69NZXH5
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=6

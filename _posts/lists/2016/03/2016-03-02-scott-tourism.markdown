@@ -5,6 +5,7 @@ title: The History of that Supposedly-Fun Caribbean Vacation
 date: 2016-03-02 06:00:00
 image_id: scott-tourism.jpg
 permalink: /lists/caribbean-tourism
+meta_description: '10 recommendations in books and film for reading the history of Caribbean tourism from historian Blake Scott'
 description: 'There is nothing timeless about today’s traveling culture. The modern tourism industry stretching from south Florida to northern South America emerged out of a long and complicated history of colonialism, slavery, exploration, and dreams of the exotic. To offer a guide into tourism’s past, this eclectic list of stories challenges us to rethink the meaning of Caribbean tourism.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/FACPFJPC
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=14

@@ -5,6 +5,7 @@ title: U.S. Labor History
 date: 2016-01-06 06:00:00
 image_id: loomis-labor.jpg
 permalink: /lists/us-labor-history
+meta_description: '10 recommended books for reading the history of labor in the United States from historian Erik Loomis'
 description: 'The rise and fall of the American working class has led us to tell ourselves stories about the past to inspire us today. But American labor activists have often mythologized the past to no good end. Many of these books seek to strip away the mythology so that we can learn from the past in order to craft a better labor movement in the present and future.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/R3TGE8BG
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=9

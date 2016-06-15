@@ -5,6 +5,7 @@ title: Family and Gender in Modern Chinese History
 date: 2016-02-10 06:00:00
 image_id: merkel-hess-family-gender-china.jpg
 permalink: /lists/family-and-gender-in-modern-chinese-history
+meta_description: '10 recommended books for reading the history of family and gender in Modern China from historian Kate Merkel-Hess'
 description: 'Family and familial ties are at the heart of Chinese society and culture, and in reflection, historians have created a robust and thought-provoking body of work on family and gender in China. Social history remains the bread-and-butter of scholarship on China, but recent trends like the history of emotion and history of the body are also making themselves felt. This vibrant literature points us toward a Chinese history where women and gender are a persistent and vital part of what Chinese historians do.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/Q57MBZ93
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=11

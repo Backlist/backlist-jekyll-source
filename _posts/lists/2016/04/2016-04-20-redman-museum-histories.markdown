@@ -5,6 +5,7 @@ title: Museum Histories
 date: 2016-04-20 06:00:00
 image_id: redman-museum-histories.jpg
 permalink: '/lists/museum-histories'
+meta_description: '11 recommended books for reading the history of museums from historian Samuel J. Redman'
 description: 'Historians generally agree that museums manifest expressions of colonial scientific enterprises evolving over time. Growing to include millions of objects—including human remains and culturally and spiritually sensitive objects—civic museums in the United States and Europe by the mid-twentieth century had become, for a time, among the most important cultural centers worldwide. This list highlights books exploring how these museums grew to have many of the most important anthropological collections on the planet and how Eurocentric museum practices spread into non-Western places, especially in regions where colonial influence proved strong.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/BQDSTVHQ
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=20

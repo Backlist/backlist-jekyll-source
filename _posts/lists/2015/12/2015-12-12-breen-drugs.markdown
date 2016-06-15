@@ -5,6 +5,7 @@ title: 'The History of Drugs from Ambergris to Zedoary'
 date: 2015-12-21 06:00:00
 image_id: 'breen-drugs.jpg'
 permalink: '/lists/the-history-of-drugs-from-ambergris-to-zedoary'
+meta_description: '10 recommended books for reading the history of drugs from historian Benjamin Breen'
 description:  'These books range widely, from the Pulitzer-prize winning poet Odell Shepard’s Harry Potter-esque history of unicorns and Marcy Norton’s influential recent academic history of tobacco and chocolate to Alexander and Anne Shulgin’s utterly unique guide to various psychedelics and “entactogens” of their own manufacture. What binds them together is a fascination with that boundary-crossing, protean, and endlessly fascinating class of substances we call “drugs.”'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/PR9JQQA6
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=7

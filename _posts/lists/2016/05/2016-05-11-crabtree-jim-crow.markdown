@@ -5,6 +5,7 @@ title: The History of Jim Crow
 date: 2016-05-11 06:00:00
 image_id: crabtree-jim-crow.jpg
 permalink: /lists/jim-crow
+meta_description: '10 recommended books on the history of Jim Crow and segregation from historian Mari Crabtree'
 description: 'In some way or another, the authors included in this list grapple with the question: How free is free? They ask what it means for a nation that believes itself to be the model democracy to use lynching, segregation, convict leasing, disfranchisement, debt peonage, race riots, and racist caricatures to control black men and women after abolishing slavery. They also ask how Jim Crow disrupted the interior lives of African Americans who survived it.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/W4WJ2N67
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=22

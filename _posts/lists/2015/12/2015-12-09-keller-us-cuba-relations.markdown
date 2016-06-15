@@ -5,6 +5,7 @@ title: "The History of U.S.-Cuban Relations"
 date: 2015-12-09 06:00:00
 image_id: 'keller-us-cuba-relations.jpg'
 permalink: '/lists/history-of-us-cuba-relations'
+meta_description: '10 recommended books for reading the history of diplomatic relations between the United States and Cuba from historian Renata Keller'
 description: 'How did the United States and Cuba—two nations separated by a mere 90 miles of water—drift so far apart? Why has a country as small as Cuba played such an outsized role in U.S. foreign and domestic politics? Why do the heroes of the Cuban Revolution, by now either long dead or spending their retirement in tracksuits, still hold such power over the American imagination?'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/2H3CCBC2
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=4

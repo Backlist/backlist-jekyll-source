@@ -5,6 +5,7 @@ title: "The History of Modern China"
 date: 2015-12-09 06:00:00
 image_id: "wasserstrom-modern-china.jpg"
 permalink: "/lists/the-history-of-modern-china"
+meta_description: '9 recommended books for reading the history of modern china from historian Jeffrey Wasserstrom'
 description: "China’s current rulers, like some past ones, are fond of saying there is a single unified “Chinese tradition” of reverence for hierarchy and tradition. How is it, then, that history reveals a culture with multiple strands, including ones that extol questioning received wisdoms and turning the world upside down?"
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/UIJ9U5CG
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=2

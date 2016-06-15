@@ -5,6 +5,7 @@ title: 'The History of the Modern Papacy'
 date: 2016-03-16 06:00:00
 image_id: 'mijangos-modern-papacy.jpg'
 permalink: /lists/history-of-the-modern-papacy
+meta_description: '10 recommended books for reading the history of the modern papacy from history Pablo Mijangos'
 description: 'We expect the papacy to prize tradition and permanence. Yet, the papacy we know is to a large extent a product of the modern era. As Jesuit historian John W. O’Malley once claimed, the most salient fact of Catholic history in the last centuries is the “papalization” of Catholicism. How did this revolution happen?'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/VCCTSWGP'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=15'

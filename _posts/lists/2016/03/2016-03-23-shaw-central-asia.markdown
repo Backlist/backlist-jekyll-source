@@ -5,6 +5,7 @@ title: 'Off the Silk Road, beyond the Great Game: Histories of Modern Central As
 date: 2016-03-23 06:00:00
 image_id: shaw-central-asia.jpg
 permalink: /lists/off-the-silk-road
+meta_description: '12 recommended books for reading the history of Central Asia from historian Charles David Shaw'
 description: 'Terms like “Silk Road” and “Great Game” have done a great service in attracting readers to Central Asian history. However, these phrases—both coined by outsiders—have done little to advance an understanding of the societies they describe, one implying an inert timelessness, the other merely a rocky theater for European imperial rivalry. So how can we understand modern Central Asia on its own terms?'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/G9UDDT9Q'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=17'
