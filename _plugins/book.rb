@@ -74,7 +74,7 @@ module Jekyll
       when :indiebound
         "http://www.indiebound.org/book/#{@tokens[:indiebound]}?aff=clionautics"
       when :powells
-        "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_wgt"
+        "http://www.powells.com/book/#{@tokens[:powells]}?partnerid=44140&p_tx"
       when :oclc
         "http://worldcat.org/oclc/#{@tokens[:oclc]}"
       when :direct
