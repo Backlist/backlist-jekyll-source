@@ -1,0 +1,32 @@
+    <div class="social-block wrapper">
+      <div class="left-col">
+        <div>
+          <h3>Share this List</h3>
+          <ul class="social-actions">
+            <li><a href="#" title="Share on Facebook" class="facebook-share">{% include svg/facebook.html %}</a></li>
+            <li><a href="https://twitter.com/share" title="Share on Twitter" class="twitter-share">{% include svg/twitter.html %}</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Subscribe to Backlist</h3>
+          <ul>
+            <li><a href="http://eepurl.com/bzqp9f" target="_blank">Join Our Newsletter</a></li>
+          </ul>
+        </div>
+      </div><!--
+      --><div class="right-col{% if include.position == 'in-page' %} in-page{% endif %}">
+        <h3>Support Backlist</h3>
+        <p>
+          <b>Backlist</b> relies on affiliate revenue from the booksellers listed with the books on our lists. If you’d like to support our efforts and expand your history bookshelf at the same time, please consider shopping through these links or simply visit our <a href="{{ page.astore }}">Amazon store</a>.
+        </p>
+        {% if include.position != 'in-page' %}
+          <h3>Cited Sources</h3>
+          <ul class="citation-sources">
+            <li><a href="{{ page.zotero }}">Zotero</a></li><!--
+            --><li><a href="{{ siteUrl }}{{ page.permalink }}.bib">BibTeX</a></li><!--
+            --><li><a href="{{ page.astore }}" target="_blank">Amazon aStore</a></li>
+          </ul>
+        {% endif %}
+
+      </div>
+    </div>
