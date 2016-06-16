@@ -103,17 +103,6 @@ layout: homepage
       <a class="bottom-link" href="{{ site.baseurl }}lists">Browse All Lists…</a>
     </div>
 
-    <div class="recent-wrapper">
-      <h2 class="featured-banner">From the Blog</h2>
-      <ul class="list-of-posts">
-        {% assign grabbed_post = false %}
-        {% for post in site.posts %}{% if post.layout == 'post' %}{% if grabbed_post != true %}
-          {% assign grabbed_post = true %}
-          {% include blog/list_line_item.html %}
-        {% endif %}{% endif %}{% endfor %}
-      </ul>
-    </div>
-
     <div class="homepage-bucket social-actions">
       <h3>Spread the Word</h3>
       <ul class="social-actions">
