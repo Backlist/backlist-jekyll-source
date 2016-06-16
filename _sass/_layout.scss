@@ -1548,31 +1548,6 @@ ul.bibliography-filters {
       width: 33.3333%;
     }
 
-    ul.social-actions {
-      list-style-type: none;
-      margin: ($spacingUnit / 2) 0 0 0;
-      padding: 0;
-      text-align: center;
-
-      li {
-        display: inline-block;
-        height: 36px;
-        line-height: 1;
-      }
-
-      svg {
-        width: 36px;
-        height: 36px;
-
-        path {
-          fill: $accentColor;
-        }
-
-        &:hover path {
-          fill: $highlight2Color;
-        }
-      }
-    }
 
     div.author-profile {
       @include sans-serif-font-stack;
@@ -1586,6 +1561,89 @@ ul.bibliography-filters {
         @include special-link-underline;
       }
 
+    }
+  }
+
+  .social-block {
+    @include sans-serif-font-stack;
+    margin: $spacingUnit auto;
+    padding: 0 ($spacingUnit * 2);
+
+    div.left-col {
+      display: inline-block;
+      vertical-align: top;
+      width: 33.33333%;
+    }
+
+    div.right-col {
+      display: inline-block;
+      vertical-align: top;
+      width: 66.6666667%;
+    }
+
+    h3 {
+      color: $accentColor;
+      font: {
+        size: 1em;
+        weight: 300;
+      }
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1em;
+      margin: ($spacingUnit / 4) 0;
+
+      a {
+        @include special-link-underline;
+        line-height: 1;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin: ($spacingUnit / 4) 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 1em;
+        line-height: 1;
+      }
+
+      a {
+        color: $highlight2Color;
+
+        &:hover {
+          color: $highlight1Color;
+          text-decoration: underline;
+        }
+      }
+
+      &.social-actions {
+        a:hover {
+          text-decoration: none;
+        }
+
+        li {
+          margin-right: 0;
+          height: 36px;
+        }
+
+        svg {
+          width: 36px;
+          height: 36px;
+
+          path {
+            fill: $highlight2Color;
+          }
+
+          &:hover path {
+            fill: $highlight1Color;
+          }
+        }
+      }
     }
   }
 

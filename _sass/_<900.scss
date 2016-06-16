@@ -11,6 +11,18 @@
     width: 33.3333%;
   }
 
+  .post-content .social-block {
+    div.left-col, div.right-col {
+      width: 100%;
+    }
+
+    div.left-col div {
+      display: inline-block;
+      margin-right: $spacingUnit;
+      vertical-align: top;
+    }
+  }
+
   .follow ul.contact-list {
     font-size: 1em;
   }

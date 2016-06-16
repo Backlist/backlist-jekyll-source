@@ -41,13 +41,11 @@ layout: default
           {{ page.author | author_bio }}
         </div>
 
-        <ul class="social-actions">
-          <li><a href="#" title="Share on Facebook" class="facebook-share">{% include svg/facebook.html %}</a></li>
-          <li><a href="https://twitter.com/share" title="Share on Twitter" class="twitter-share">{% include svg/twitter.html %}</a></li>
-        </ul>
       </div>
       {{ content }}
     </div>
+
+    {% include social_block_for_lists.html position='in-page' %}
 
     {% strip %}
     {% for section in page.sections %}
@@ -66,23 +64,13 @@ layout: default
       {% endfor %}
     {% endfor %}
     {% endstrip %}
+
   </article>
 
-  <div class="biblio-block wrapper">
-    <ul class="citation-sources">
-      <li class="label">Cited Works:</li><!--
-      --><li><a href="{{ page.zotero }}">Zotero</a></li><!--
-      --><li><a href="{{ siteUrl }}{{ page.permalink }}.bib">BibTeX</a></li><!--
-      --><li><a href="{{ page.astore }}" target="_blank">Amazon aStore</a></li>
-    </ul>
+  <div class="post-content">
+    {% include social_block_for_lists.html %}
   </div>
 
-
-  <div class="footer-message wrapper">
-    <p>
-      <b>Backlist</b> relies on affiliate revenue from the booksellers listed with the books above. If you’d like to support our efforts and expand your history bookshelf at the same time, please consider shopping through these links or simply visit our <a href="{{ page.astore }}" target="_blank">Amazon store</a>.
-    </p>
-  </div>
 
   <div id="read-more" class="post-content" style="display: none">
     <h2>

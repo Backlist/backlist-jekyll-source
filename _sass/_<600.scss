@@ -206,6 +206,14 @@
     }
   }
 
+  .post-content .social-block {
+    padding: 0 ($spacingUnit / 2);
+
+    div.in-page {
+      display: none;
+    }
+  }
+
   .post-content .citation h3 {
     font-size: 1.1em;
     padding-top: 0;
