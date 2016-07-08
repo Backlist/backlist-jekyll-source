@@ -6,9 +6,9 @@ date: 2016-06-29 06:00:00
 image_id: 'howkins-antarctica.jpg'
 permalink: /lists/antarctica
 description: ''
-zotero: 
-astore: 
-sections: 
+zotero:
+astore:
+sections:
   - id: 0
     listings:
       - type: book
@@ -31,8 +31,12 @@ sections:
         id: 034af8c2d1f50232
       - type: book
         id: 370d120151310cda
+      - type: book
+        id: 45f256b5691fed23
   - id: 3
     listings:
+      - type: book
+        id: 805339f12a885b0c
       - type: book
         id: 99dae19ec7ae534c
 categories:
