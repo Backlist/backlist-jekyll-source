@@ -43,6 +43,13 @@ sections:
 categories:
   - latin-america
   - capitalism
+  - 19th-century
+  - science-and-technology
+  - gender
+  - environmental
+  - diplomatic-international
+  - cultural
+  - 20th-century
 author: a6295a2a3fc85082
 ---
 Antarctica has the shortest human history of any continent on Earth.  Although speculation about the existence of a large southern landmass can be traced back as far as the ancient Greeks, the first recorded sightings of continental Antarctica did not take place until the year 1820.  Some of the first explorers who sailed south took trinkets with them to give to the indigenous peoples they encountered.  But instead of local populations, all they found was cold, ice, and terrestrial landscapes that appeared completely devoid of life.  
