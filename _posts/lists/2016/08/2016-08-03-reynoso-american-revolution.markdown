@@ -32,6 +32,12 @@ sections:
       - type: book
         id: cf694f5a36d6b2a8
 categories:
+  - indigenous-studies
+  - citizenship-and-nationalism
+  - empire
+  - 18th-century
+  - borderlands
+  - united-states
 author: b333df72139ca7eb
 ---
 It is no secret that the American Revolution has enjoyed a long hold on the American psyche. For most Americans, the mere mention of it can easily bring to mind a slew of notable figures, events, and even regions, such as Boston and its harbor. It is not at all surprising, then, that the Revolutionary Era has also loomed large in the study of American history. In recent decades, however, historians have done much to move past more familiar understandings of the period, often focusing their studies on obscure individuals or settings. Yet, many of these lesser-known figures or locales fall within the boundaries of the thirteen British colonies that secured their independence from Britain in 1783—a set of colonies which most Americans know simply as “the thirteen colonies.”

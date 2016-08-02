@@ -3,13 +3,17 @@
 - id: early-modern
   display_name: 'Early Modern'
   group: chrono
-  
+
 - id: 16th-century
   display_name: '16th Century'
   group: chrono
 
 - id: 17th-century
   display_name: '17th Century'
+  group: chrono
+
+- id: 18th-century
+  display_name: '18th Century'
   group: chrono
 
 - id: 19th-century
@@ -29,7 +33,7 @@
 - id: china
   display_name: China
   group: geo
-  
+
 - id: europe
   display_name: Europe
   group: geo
@@ -37,7 +41,7 @@
 - id: global
   display_name: Global
   group: geo
-  
+
 - id: latin-america
   display_name: 'Latin America'
   group: geo
@@ -49,7 +53,7 @@
 - id: united-states
   display_name: 'United States'
   group: geo
-  
+
 # Thematic
 
 - id: african-american
@@ -76,6 +80,10 @@
   display_name: 'Capitalism'
   group: theme
 
+- id: citizenship-and-nationalism
+  display_name: 'Citizenship and National Identity / Nationalism'
+  group: theme
+
 - id: cultural
   display_name: 'Cultural'
   group: theme
@@ -83,13 +91,17 @@
 - id: demography-family
   display_name: 'Demography / Family'
   group: theme
-  
+
 - id: diplomatic-international
   display_name: 'Diplomatic / International'
   group: theme
 
 - id: economic-business
   display_name: 'Economic / Business'
+  group: theme
+
+- id: empire
+  display_name: Empire
   group: theme
 
 - id: environmental
@@ -106,6 +118,10 @@
 
 - id: gender
   display_name: 'Economic / Business'
+  group: theme
+
+- id: indigenous-studies
+  display_name: 'Indigenous Studies'
   group: theme
 
 - id: intellectual
@@ -127,11 +143,11 @@
 - id: migration-immigration-diaspora
   display_name: 'Migration / Immigration / Diaspora'
   group: theme
-  
+
 - id: music
   display_name: Music
   group: theme
-  
+
 - id: pacific-rim
   display_name: 'Pacific Rim'
   group: theme
