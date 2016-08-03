@@ -12,6 +12,10 @@
   display_name: '17th Century'
   group: chrono
 
+- id: 18th-century
+  display_name: '18th Century'
+  group: chrono
+
 - id: 19th-century
   display_name: '19th Century'
   group: chrono
@@ -94,6 +98,10 @@
 
 - id: economic-business
   display_name: 'Economic / Business'
+  group: theme
+
+- id: empire
+  display_name: Empire
   group: theme
 
 - id: environmental
