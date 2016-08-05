@@ -47,9 +47,11 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:image" content="http://backlist.cc/images/social-media-cards/backlist-logo.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    {% if page.og_image %}
+      <meta property="og:image" content="http://backlist.cc/images/social-media-cards/blog/{{ page.og_image }}" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+    {% endif %}
   {% elsif page.layout == 'homepage' %}
     <meta property="og:url" content="http://backlist.cc" />
     <meta property="og:type" content="website" />
