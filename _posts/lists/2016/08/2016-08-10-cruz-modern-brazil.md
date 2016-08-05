@@ -5,9 +5,9 @@ title: Histories of Modern Brazil
 date: 2016-08-10 06:00:00
 image_id: cruz-modern-brazil.jpg
 permalink: /lists/histories-of-modern-brazil
-description: ''
+description: 'As a Brazilian living in the US, Felipe Fernandes Cruz has seen over the past sixteen years a growing awareness about Brazil. The fascination perhaps lies on the fact that while the country itself is becoming more familiar, the story of how Brazil came to be remains a mystery to many Americans, let alone everyday Brazilians – a tale of contradictions within contradictions.'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/G7B9VQ4P'
-astore:
+astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=28'
 sections:
   - id: 0
     listings:
