@@ -1416,6 +1416,10 @@ ul.bibliography-filters {
       @include special-link-underline($insetBackgroundColor, 66.6667%);
       line-height: 100%;
     }
+
+    p img {
+      margin: 1em auto;
+    }
   }
 }
 
