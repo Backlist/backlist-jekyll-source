@@ -30,7 +30,7 @@ Liberty Hardy collects 100 histories and novels covering not only the time of th
 
 ---
 
-_The painting above of Alexander von Humboldt in his study is Eduard Hildebrandt’s “Arbeitszimmer des Alexander von Humboldt in Berlin, Oranienburger Srt. 67” from 1842. Image available from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arbeitszimmer_des_Alexander_von_Humboldt_in_Berlin,_Oranienburger_Str._67_(Gemälde).jpg)._
+_The painting above of Alexander von Humboldt in his study is Eduard Hildebrandt’s “Arbeitszimmer des Alexander von Humboldt in Berlin, Oranienburger Str. 67” from 1842. Image available from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arbeitszimmer_des_Alexander_von_Humboldt_in_Berlin,_Oranienburger_Str._67_(Gemälde).jpg)._
 
 [amrev]: /lists/american-revolution-in-unexpected-places
 [food-anthro]: http://anthropologyreport.com/food-anthropology-tribute-mintz/
