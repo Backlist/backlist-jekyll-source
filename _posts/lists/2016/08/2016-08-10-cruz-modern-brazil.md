@@ -41,7 +41,9 @@ categories:
   - latin-america
   - citizenship-and-nationalism
   - urban
+  - popular-culture
   - music
+  - religion
   - slavery
 author: 094f57a5432ced84
 ---
