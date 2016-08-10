@@ -36,6 +36,13 @@ sections:
       - type: book
         id: cd9f94da8bc51cb0
 categories:
+  - 19th-century
+  - 20th-century
+  - latin-america
+  - citizenship-and-nationalism
+  - urban
+  - music
+  - slavery
 author: 094f57a5432ced84
 ---
 As a Brazilian living in the US, I have seen over the past sixteen years a growing awareness about Brazil. I’ve gone from having to explain that Brazilians don’t speak Spanish, to seeing Brazil constantly on the news, for better or worse – from its economic boom that survived the global depression to the current political instability and the dire warnings surrounding the 2016 Olympics. The fascination perhaps lies on the fact that while the country itself is becoming more familiar, the story of how Brazil came to be remains a mystery to many Americans, let alone everyday Brazilians – a tale of contradictions within contradictions.
