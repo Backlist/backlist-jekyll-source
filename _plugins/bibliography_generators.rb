@@ -10,7 +10,7 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'bibliography.html')
-      self.data['filter'] = filter.to_s
+      self.data['filter'] = filter.to_s.upcase
       self.data['page_number'] = page_number
       self.data['max_page'] = max_page
       if filter == :all
