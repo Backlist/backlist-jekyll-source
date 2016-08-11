@@ -13,7 +13,9 @@
   var affiliates;
 
   exports.localizeLinks = function(selector, countryCode) {
-    if (countries.indexOf(countryCode)) {
+    if (countries.indexOf(countryCode) >= 0) {
+      console.log(countries.indexOf(countryCode));
+      console.log(countryCode);
       $(selector).each(function() {
         var reUrl = /amazon.com/i;
         var reAffiliate = /backlist0e-20/i;
@@ -27,7 +29,7 @@
   };
 
   exports.initialize = function(
-                          seedDefaultAffiliate, seedAffiliates, 
+                          seedDefaultAffiliate, seedAffiliates,
                           seedCountries, seedDomains, seedDefaultDomain) {
     if (seedDefaultDomain)
       defaultDomain = seedDefaultDomain;
