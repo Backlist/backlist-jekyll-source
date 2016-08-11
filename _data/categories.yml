@@ -132,16 +132,20 @@
   display_name: Labor
   group: theme
 
-- id: medical
-  display_name: Medical
-  group: theme
-
 - id: material-culture
   display_name: 'Material Culture'
   group: theme
 
+- id: medical
+  display_name: Medical
+  group: theme
+
 - id: migration-immigration-diaspora
   display_name: 'Migration / Immigration / Diaspora'
+  group: theme
+
+- id: military
+  display_name: Military
   group: theme
 
 - id: music
@@ -190,6 +194,10 @@
 
 - id: theory-and-method
   display_name: 'Theory and Method'
+  group: theme
+
+- id: urban
+  display_name: Urban
   group: theme
 
 - id: world-global-transnational
