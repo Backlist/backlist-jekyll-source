@@ -5,9 +5,9 @@ title: Histories of American National Parks
 date: 2016-08-31 06:00:00
 image_id: kohout-national-parks.jpg
 permalink: /lists/histories-of-american-national-parks
-description: ''
-zotero:
-astore:
+description: 'National parks have traditionally been central to American environmental history, but it is what national parks can reveal about the world beyond park boundaries that make them so important.'
+zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/TBGVXKHM'
+astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=29'
 sections:
   - id: 0
     listings:
@@ -38,6 +38,9 @@ sections:
       - type: book
         id: d0595d87c43d3321
 categories:
+  - united-states
+  - cultural
+  - environmental
 author: 3e6cdecb905f4929
 ---
 In the title of his [documentary miniseries](http://www.pbs.org/nationalparks/), filmmaker Ken Burns calls our national parks “America’s Best Idea.” Burns traces the growth of interest in preserving the natural wonders of places like Yellowstone and Yosemite, and tells the stories of individuals whose efforts resulted in the protection of public lands. But sometimes the stories we tell about national parks celebrate these victories of preservation without also examining their costs. In recent decades, environmental historians have worked to place the creation of the American national park system in a broader context, asking questions about how we came to value certain landscapes as “wilderness”; how the railroad, the automobile, and accompanying changes in recreation and vacation behavior shaped national park tourism; and how the development of these preserves affected the lives and livelihoods of both indigenous and local communities.
