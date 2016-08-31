@@ -5,6 +5,7 @@ title: Histories of American National Parks
 date: 2016-08-31 06:00:00
 image_id: kohout-national-parks.jpg
 permalink: /lists/histories-of-american-national-parks
+meta_description: '10 recommended books for reading the histories of US national parks from historian Amy Kohout'
 description: 'National parks have traditionally been central to American environmental history, but it is what national parks can reveal about the world beyond park boundaries that make them so important.'
 zotero: 'https://www.zotero.org/groups/backlist/items/collectionKey/TBGVXKHM'
 astore: 'http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=29'
