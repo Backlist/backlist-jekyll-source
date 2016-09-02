@@ -5,6 +5,8 @@ title: Histories of Peruvian Independence
 date: 2016-07-27 06:00:00
 image_id: escanilla-independence.jpg
 permalink: /lists/histories-of-peruvian-independence
+meta_description: >
+  Historian Silvia Escanilla Huerta recommends 10 books on the history of Peruvian independence
 description: 'Peru achieved its independence in 1824, later than any other mainland Spanish American colony and under the leadership of outsiders like José de San Martín and Simón Bolívar. For decades, historians attributed those facts to a repressive colonial society that had quashed dissent, despite massive rebellions from the mid-eighteenth century on. Since the 1970s, however, other historians have suggested that those rebellions—mostly Indian-led—terrified the country’s white elite, slowing independence’s arrival. The reality was more complex, in large part because of the indigenous Andeans who fought for both sides, for their own ideals of freedom and justice.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/WDXNQ442
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=26

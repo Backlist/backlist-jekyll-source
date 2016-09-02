@@ -5,6 +5,8 @@ title: Histories of Antarctica
 date: 2016-07-20 06:00:00
 image_id: 'howkins-antarctica.jpg'
 permalink: /lists/antarctica
+meta_description: >
+  11 recommended books for reading the history of Antarctica from historian Adrian Howkins
 description: >
   Antarctica has the shortest human history of any continent on Earth. Despite its short human history and lack of indigenous population, the southern continent has a fascinating historiography. Traditionally, historical interest in Antarctica has focused on exploration, and in particular on the history of the so-called “heroic era” of the first two decades of the twentieth century, but more recent historiography has seen a growth in more critical studies of these expeditions, connections to imperialism and nationalism, and their scientific and literary outputs.
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/8ZRIE2FM

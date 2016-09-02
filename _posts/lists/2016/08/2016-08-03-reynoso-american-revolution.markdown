@@ -5,6 +5,8 @@ title: The American Revolution in Unexpected Places
 date: 2016-08-03 06:00:00
 image_id: reynoso-american-revolution.jpg
 permalink: /lists/american-revolution-in-unexpected-places
+meta_description: >
+  Historian Jacqueline Reynoso recommends 7 books with new geographical perspectives on the American Revolution
 description: 'For most Americans, the mention of the American Revolution can easily bring to mind a slew of notable figures, events, and even regions, such as Boston and its harbor. In recent decades, historians have done much to move past more familiar understandings of the period, often focusing their studies on obscure individuals or settings, but many of these lesser-known subjects still fall within the boundaries of the thirteen British colonies that secured their independence in 1783. The books in the list move beyond the “thirteen colonies” to provide alternative vantage points that help paint a richer, more regionally complex understanding of the American Revolution.'
 zotero: https://www.zotero.org/groups/backlist/items/collectionKey/9WATBAXK
 astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=27
