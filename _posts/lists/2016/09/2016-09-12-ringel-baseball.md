@@ -2,13 +2,13 @@
 list_id: 294282d91cafabbc
 layout: list
 title: 'Histories of Baseball'
-date: 2016-09-21 06:00:00
+date: 2016-09-21T06:00:00-4:00
 image_id: ringel-baseball.jpg
 permalink: /lists/histories-of-baseball
-meta_description:
-description:
-zotero:
-astore:
+meta_description: 'Read the history of baseball in 10 books collected by historian Paul Ringel.'
+description: 'Histories of baseball, like military histories and writings about the U.S. founders, attract substantial popular audiences. Yet there is an abundance of well-researched, thoughtful, and exciting writing about baseball history being produced by both traditional academic scholars and writers from other backgrounds. What all these books have in common is a commitment to contextualizing the game rather than just examining what was happening on the field or in the players’ private lives.'
+zotero: https://www.zotero.org/groups/backlist/items/collectionKey/D3W3S6HT
+astore: http://astore.amazon.com/backlist0e-20?_encoding=UTF8&node=30
 sections:
   - id: 0
     listings:
@@ -39,6 +39,10 @@ sections:
       - type: book
         id: dc749f38f6433964
 categories:
+  - popular-culture
+  - cultural
+  - united-states
+  - 20th-century
 author: d40b0528781ddb76
 ---
 Histories of baseball, like military histories and writings about the U.S. founders, attract substantial popular audiences. That’s a great opportunity for scholars, but it also forces them to compete with writers who are more concerned with providing juicy anecdotes or igniting debates and controversy than with offering historical context. This challenge may be particularly keen for sports historians, who face an avalanche of books written by (or ghostwritten for) athletes with tremendous name recognition, a widespread resistance to integrating a beloved leisure activity into the “real world,” and an academic environment in which sports are still not always seen as an appropriate subject for rigorous scholarship. Given the absence of female authors on this list, it’s worth considering whether these challenges are exacerbated for women writing about sports played predominantly by men.
